@@ -299,7 +299,7 @@ namespace IPLab
             this.printPreviewFileItem,
             this.menuItem2,
             this.exitFileItem});
-            this.fileItem.Text = "&File";
+            this.fileItem.Text = "File";
             this.fileItem.Popup += new System.EventHandler(this.fileItem_Popup);
             // 
             // OpenItem
@@ -409,7 +409,7 @@ namespace IPLab
             this.menuItem3,
             this.centerViewItem});
             this.viewItem.MergeOrder = 1;
-            this.viewItem.Text = "&View";
+            this.viewItem.Text = "View";
             this.viewItem.Popup += new System.EventHandler(this.viewItem_Popup);
             // 
             // mainBarViewItem
@@ -486,7 +486,7 @@ namespace IPLab
             this.openInNewOptionsItem,
             this.rememberOptionsItem});
             this.optionsItem.MergeOrder = 2;
-            this.optionsItem.Text = "&Options";
+            this.optionsItem.Text = "Options";
             this.optionsItem.Popup += new System.EventHandler(this.optionsItem_Popup);
             // 
             // openInNewOptionsItem
@@ -506,7 +506,7 @@ namespace IPLab
             this.windowItem.Index = 3;
             this.windowItem.MdiList = true;
             this.windowItem.MergeOrder = 3;
-            this.windowItem.Text = "&Window";
+            this.windowItem.Text = "Window";
             // 
             // helpItem
             // 
@@ -514,12 +514,12 @@ namespace IPLab
             this.helpItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.aboutHelpItem});
             this.helpItem.MergeOrder = 4;
-            this.helpItem.Text = "&Help";
+            this.helpItem.Text = "Help";
             // 
             // aboutHelpItem
             // 
             this.aboutHelpItem.Index = 0;
-            this.aboutHelpItem.Text = "&About";
+            this.aboutHelpItem.Text = "About";
             this.aboutHelpItem.Click += new System.EventHandler(this.aboutHelpItem_Click);
             // 
             // statusBar
@@ -615,7 +615,7 @@ namespace IPLab
             this.mainToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.mainToolBar.DropDownArrows = true;
             this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(70, 75);
+            this.mainToolBar.Location = new System.Drawing.Point(78, 75);
             this.mainToolBar.Name = "mainToolBar";
             this.mainToolBar.ShowToolTips = true;
             this.mainToolBar.Size = new System.Drawing.Size(29, 202);
@@ -715,7 +715,7 @@ namespace IPLab
             this.imageToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.imageToolBar.DropDownArrows = true;
             this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(196, 122);
+            this.imageToolBar.Location = new System.Drawing.Point(210, 75);
             this.imageToolBar.Name = "imageToolBar";
             this.imageToolBar.ShowToolTips = true;
             this.imageToolBar.Size = new System.Drawing.Size(430, 26);
