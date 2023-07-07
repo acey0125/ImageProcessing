@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 

@@ -9,11 +9,11 @@ namespace IPLab
     /// <summary>
     /// Summary description for AboutForm.
     /// </summary>
-    public class AboutForm : System.Windows.Forms.Form
+    public class AboutForm : Form
     {
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private Button okButton;
+        private Label label2;
+        private PictureBox pictureBox2;
         private Label label3;
         /// <summary>
         /// Required designer variable.
@@ -51,17 +51,17 @@ namespace IPLab
         private void InitializeComponent( )
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
-            this.okButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.okButton = new Button();
+            this.label2 = new Label();
+            this.pictureBox2 = new PictureBox();
+            this.label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.okButton.Location = new System.Drawing.Point(348, 436);
             this.okButton.Name = "okButton";
@@ -85,7 +85,7 @@ namespace IPLab
             this.pictureBox2.Location = new System.Drawing.Point(67, 42);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(635, 287);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
@@ -111,12 +111,12 @@ namespace IPLab
             this.Controls.Add(this.label2);
             this.Controls.Add(this.okButton);
             this.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "AboutProgram";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -126,7 +126,7 @@ namespace IPLab
         #endregion
 
         // On mail link clicked
-        private void mailLabel_LinkClicked( object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e )
+        private void mailLabel_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
         {
             System.Diagnostics.Process.Start( e.Link.LinkData.ToString( ) );
         }

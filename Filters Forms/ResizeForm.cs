@@ -12,26 +12,26 @@ namespace IPLab
     /// <summary>
     /// Summary description for ResizeForm.
     /// </summary>
-    public class ResizeForm : System.Windows.Forms.Form
+    public class ResizeForm : Form
     {
         private Size originalSize;
         private FilterResize filter = null;
         private bool updating = false;
 
-        private System.Windows.Forms.RadioButton factorButton;
-        private System.Windows.Forms.TextBox factorBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton sizeButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox widthBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox heightBox;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox methodCombo;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.CheckBox ratioCheck;
+        private RadioButton factorButton;
+        private TextBox factorBox;
+        private PictureBox pictureBox1;
+        private RadioButton sizeButton;
+        private Label label1;
+        private TextBox widthBox;
+        private Label label2;
+        private TextBox heightBox;
+        private PictureBox pictureBox2;
+        private Label label3;
+        private ComboBox methodCombo;
+        private Button okButton;
+        private Button cancelButton;
+        private CheckBox ratioCheck;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -80,20 +80,20 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.factorButton = new System.Windows.Forms.RadioButton( );
-            this.factorBox = new System.Windows.Forms.TextBox( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.sizeButton = new System.Windows.Forms.RadioButton( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.widthBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.heightBox = new System.Windows.Forms.TextBox( );
-            this.ratioCheck = new System.Windows.Forms.CheckBox( );
-            this.pictureBox2 = new System.Windows.Forms.PictureBox( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.methodCombo = new System.Windows.Forms.ComboBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.factorButton = new RadioButton( );
+            this.factorBox = new TextBox( );
+            this.pictureBox1 = new PictureBox( );
+            this.sizeButton = new RadioButton( );
+            this.label1 = new Label( );
+            this.widthBox = new TextBox( );
+            this.label2 = new Label( );
+            this.heightBox = new TextBox( );
+            this.ratioCheck = new CheckBox( );
+            this.pictureBox2 = new PictureBox( );
+            this.label3 = new Label( );
+            this.methodCombo = new ComboBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.SuspendLayout( );
             // 
             // factorButton
@@ -117,7 +117,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 40 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 190, 2 );
@@ -170,7 +170,7 @@ namespace IPLab
             // ratioCheck
             // 
             this.ratioCheck.Checked = true;
-            this.ratioCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ratioCheck.CheckState = CheckState.Checked;
             this.ratioCheck.Enabled = false;
             this.ratioCheck.Location = new System.Drawing.Point( 30, 130 );
             this.ratioCheck.Name = "ratioCheck";
@@ -180,7 +180,7 @@ namespace IPLab
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point( 10, 155 );
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size( 190, 2 );
@@ -197,7 +197,7 @@ namespace IPLab
             // 
             // methodCombo
             // 
-            this.methodCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.methodCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.methodCombo.Items.AddRange( new object[] {
 															 "Nearest neighbour",
 															 "Bilinear",
@@ -209,7 +209,7 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 25, 205 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 10;
@@ -218,8 +218,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 115, 205 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 11;
@@ -231,7 +231,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 214, 238 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.methodCombo,
@@ -246,12 +246,12 @@ namespace IPLab
 																		  this.pictureBox1,
 																		  this.factorBox,
 																		  this.factorButton} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ResizeForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Resize image";
             this.Load += new System.EventHandler( this.ResizeForm_Load );
             this.ResumeLayout( false );

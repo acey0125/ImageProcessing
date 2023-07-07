@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 
@@ -30,12 +30,12 @@ namespace IPLab
         private int height;
         private IDocumentsHost host = null;
 
-        private System.Windows.Forms.MainMenu mainMenu;
-        private System.Windows.Forms.MenuItem fourierItem;
-        private System.Windows.Forms.MenuItem backwardFourierItem;
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem frequencyFilterFourierItem;
-        private System.Windows.Forms.MenuItem undoFourierItem;
+        private MainMenu mainMenu;
+        private MenuItem fourierItem;
+        private MenuItem backwardFourierItem;
+        private MenuItem menuItem1;
+        private MenuItem frequencyFilterFourierItem;
+        private MenuItem undoFourierItem;
 
         /// <summary>
         /// Required designer variable.
@@ -110,22 +110,22 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.mainMenu = new System.Windows.Forms.MainMenu( );
-            this.fourierItem = new System.Windows.Forms.MenuItem( );
-            this.backwardFourierItem = new System.Windows.Forms.MenuItem( );
-            this.menuItem1 = new System.Windows.Forms.MenuItem( );
-            this.frequencyFilterFourierItem = new System.Windows.Forms.MenuItem( );
-            this.undoFourierItem = new System.Windows.Forms.MenuItem( );
+            this.mainMenu = new MainMenu( );
+            this.fourierItem = new MenuItem( );
+            this.backwardFourierItem = new MenuItem( );
+            this.menuItem1 = new MenuItem( );
+            this.frequencyFilterFourierItem = new MenuItem( );
+            this.undoFourierItem = new MenuItem( );
             // 
             // mainMenu
             // 
-            this.mainMenu.MenuItems.AddRange( new System.Windows.Forms.MenuItem[] {
+            this.mainMenu.MenuItems.AddRange( new MenuItem[] {
 																					 this.fourierItem} );
             // 
             // fourierItem
             // 
             this.fourierItem.Index = 0;
-            this.fourierItem.MenuItems.AddRange( new System.Windows.Forms.MenuItem[] {
+            this.fourierItem.MenuItems.AddRange( new MenuItem[] {
 																						this.backwardFourierItem,
 																						this.menuItem1,
 																						this.frequencyFilterFourierItem,
@@ -154,7 +154,7 @@ namespace IPLab
             // undoFourierItem
             // 
             this.undoFourierItem.Index = 3;
-            this.undoFourierItem.Shortcut = System.Windows.Forms.Shortcut.CtrlZ;
+            this.undoFourierItem.Shortcut = Shortcut.CtrlZ;
             this.undoFourierItem.Text = "&Undo";
             this.undoFourierItem.Click += new System.EventHandler( this.undoFourierItem_Click );
             // 

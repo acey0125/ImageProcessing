@@ -13,23 +13,23 @@ namespace IPLab
     /// <summary>
     /// Summary description for FrequencyFilter.
     /// </summary>
-    public class FrequencyFilter : System.Windows.Forms.Form
+    public class FrequencyFilter : Form
     {
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox minBox;
-        private System.Windows.Forms.TrackBar minTrackBar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TrackBar maxTrackBar;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
+        private GroupBox groupBox1;
+        private Label label1;
+        private TextBox minBox;
+        private TrackBar minTrackBar;
+        private Label label2;
+        private TrackBar maxTrackBar;
+        private Button okButton;
+        private Button cancelButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.Container components = null;
 
         private IntRange inputRange = new IntRange( 0, 64 );
-        private System.Windows.Forms.TextBox maxBox;
+        private TextBox maxBox;
         private IntRange outputRange = new IntRange( 0, 64 );
 
         // Frequency input range property
@@ -90,15 +90,15 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.maxTrackBar = new System.Windows.Forms.TrackBar( );
-            this.maxBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.minTrackBar = new System.Windows.Forms.TrackBar( );
-            this.minBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.groupBox1 = new GroupBox( );
+            this.maxTrackBar = new TrackBar( );
+            this.maxBox = new TextBox( );
+            this.label2 = new Label( );
+            this.minTrackBar = new TrackBar( );
+            this.minBox = new TextBox( );
+            this.label1 = new Label( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.maxTrackBar ) ).BeginInit( );
             ( (System.ComponentModel.ISupportInitialize) ( this.minTrackBar ) ).BeginInit( );
@@ -106,7 +106,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.maxTrackBar,
 																					this.maxBox,
 																					this.label2,
@@ -174,8 +174,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 109, 135 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 1;
@@ -183,8 +183,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 194, 135 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 2;
@@ -196,16 +196,16 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 379, 168 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrequencyFilter";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Frequency Filter";
             this.groupBox1.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.maxTrackBar ) ).EndInit( );

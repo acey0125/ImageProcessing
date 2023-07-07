@@ -18,7 +18,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for HuePicker.
     /// </summary>
-    public class HuePicker : System.Windows.Forms.Control
+    public class HuePicker : Control
     {
         private HuePickerType type = HuePickerType.Value;
 
@@ -104,9 +104,9 @@ namespace IPLab
             // 
             // HSLPicker
             // 
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler( this.HSLPicker_MouseUp );
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler( this.HSLPicker_MouseMove );
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler( this.HSLPicker_MouseDown );
+            this.MouseUp += new MouseEventHandler( this.HSLPicker_MouseUp );
+            this.MouseMove += new MouseEventHandler( this.HSLPicker_MouseMove );
+            this.MouseDown += new MouseEventHandler( this.HSLPicker_MouseDown );
 
         }
 
@@ -215,7 +215,7 @@ namespace IPLab
         }
 
         // On mouse down
-        private void HSLPicker_MouseDown( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void HSLPicker_MouseDown( object sender, MouseEventArgs e )
         {
             // check coordinates of MIN pointer
             if ( ( e.X >= ptMin.X - 4 ) && ( e.Y >= ptMin.Y - 4 ) &&
@@ -238,7 +238,7 @@ namespace IPLab
         }
 
         // On mouse up
-        private void HSLPicker_MouseUp( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void HSLPicker_MouseUp( object sender, MouseEventArgs e )
         {
             if ( trackMode != 0 )
             {
@@ -253,7 +253,7 @@ namespace IPLab
         }
 
         // On mouse move
-        private void HSLPicker_MouseMove( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void HSLPicker_MouseMove( object sender, MouseEventArgs e )
         {
             if ( trackMode != 0 )
             {

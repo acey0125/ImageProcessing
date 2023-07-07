@@ -12,28 +12,28 @@ namespace IPLab
     /// <summary>
     /// Summary description for MathMorphologyForm.
     /// </summary>
-    public class MathMorphologyForm : System.Windows.Forms.Form
+    public class MathMorphologyForm : Form
     {
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox sizeCombo;
-        private System.Windows.Forms.Label label1;
+        private GroupBox groupBox1;
+        private ComboBox sizeCombo;
+        private Label label1;
         private IPLab.GridArrayInt grid;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox operatorCombo;
+        private Label label2;
+        private ComboBox operatorCombo;
 
         private static int[] sizes = new int[] { 3, 5, 7, 9, 11, 13, 15 };
         private short[,] se;
         private AForge.Imaging.Filters.IFilter filter;
-        private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button loadButton;
-        private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.OpenFileDialog ofd;
-        private System.Windows.Forms.SaveFileDialog sfd;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private Button OkButton;
+        private Button cancelButton;
+        private Button loadButton;
+        private Button saveButton;
+        private OpenFileDialog ofd;
+        private SaveFileDialog sfd;
+        private GroupBox groupBox2;
         private IPLab.FilterPreview filterPreview;
         private FilterTypes filterType = FilterTypes.Simple;
-        private System.Windows.Forms.Label legendLabel;
+        private Label legendLabel;
 
         // Type enumeration
         public enum FilterTypes
@@ -132,20 +132,20 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.legendLabel = new System.Windows.Forms.Label( );
-            this.loadButton = new System.Windows.Forms.Button( );
-            this.saveButton = new System.Windows.Forms.Button( );
+            this.groupBox1 = new GroupBox( );
+            this.legendLabel = new Label( );
+            this.loadButton = new Button( );
+            this.saveButton = new Button( );
             this.grid = new IPLab.GridArrayInt( );
-            this.sizeCombo = new System.Windows.Forms.ComboBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.operatorCombo = new System.Windows.Forms.ComboBox( );
-            this.OkButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.ofd = new System.Windows.Forms.OpenFileDialog( );
-            this.sfd = new System.Windows.Forms.SaveFileDialog( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.sizeCombo = new ComboBox( );
+            this.label1 = new Label( );
+            this.label2 = new Label( );
+            this.operatorCombo = new ComboBox( );
+            this.OkButton = new Button( );
+            this.cancelButton = new Button( );
+            this.ofd = new OpenFileDialog( );
+            this.sfd = new SaveFileDialog( );
+            this.groupBox2 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
             this.groupBox1.SuspendLayout( );
             this.groupBox2.SuspendLayout( );
@@ -153,10 +153,10 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ( ( ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom )
-                | System.Windows.Forms.AnchorStyles.Left )
-                | System.Windows.Forms.AnchorStyles.Right );
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
+                | AnchorStyles.Left )
+                | AnchorStyles.Right );
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.legendLabel,
 																					this.loadButton,
 																					this.saveButton,
@@ -170,9 +170,9 @@ namespace IPLab
             // 
             // legendLabel
             // 
-            this.legendLabel.Anchor = ( System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left );
+            this.legendLabel.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Left );
             this.legendLabel.BackColor = System.Drawing.Color.White;
-            this.legendLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.legendLabel.BorderStyle = BorderStyle.FixedSingle;
             this.legendLabel.Location = new System.Drawing.Point( 10, 345 );
             this.legendLabel.Name = "legendLabel";
             this.legendLabel.Size = new System.Drawing.Size( 240, 18 );
@@ -181,8 +181,8 @@ namespace IPLab
             // 
             // loadButton
             // 
-            this.loadButton.Anchor = ( System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right );
-            this.loadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
+            this.loadButton.FlatStyle = FlatStyle.Flat;
             this.loadButton.Location = new System.Drawing.Point( 340, 345 );
             this.loadButton.Name = "loadButton";
             this.loadButton.TabIndex = 2;
@@ -192,8 +192,8 @@ namespace IPLab
             // 
             // saveButton
             // 
-            this.saveButton.Anchor = ( System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right );
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
+            this.saveButton.FlatStyle = FlatStyle.Flat;
             this.saveButton.Location = new System.Drawing.Point( 255, 345 );
             this.saveButton.Name = "saveButton";
             this.saveButton.TabIndex = 3;
@@ -203,14 +203,14 @@ namespace IPLab
             // 
             // grid
             // 
-            this.grid.Anchor = ( ( ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom )
-                | System.Windows.Forms.AnchorStyles.Left )
-                | System.Windows.Forms.AnchorStyles.Right );
+            this.grid.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
+                | AnchorStyles.Left )
+                | AnchorStyles.Right );
             this.grid.AutoSizeMinHeight = 10;
             this.grid.AutoSizeMinWidth = 10;
             this.grid.AutoStretchColumnsToFitWidth = false;
             this.grid.AutoStretchRowsToFitHeight = false;
-            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.grid.BorderStyle = BorderStyle.FixedSingle;
             this.grid.ContextMenuStyle = SourceGrid2.ContextMenuStyle.None;
             this.grid.CustomSort = false;
             this.grid.GridToolTipActive = true;
@@ -223,8 +223,8 @@ namespace IPLab
             // 
             // sizeCombo
             // 
-            this.sizeCombo.Anchor = ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right );
-            this.sizeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sizeCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
+            this.sizeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.sizeCombo.Location = new System.Drawing.Point( 450, 30 );
             this.sizeCombo.Name = "sizeCombo";
             this.sizeCombo.Size = new System.Drawing.Size( 170, 21 );
@@ -233,7 +233,7 @@ namespace IPLab
             // 
             // label1
             // 
-            this.label1.Anchor = ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right );
+            this.label1.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
             this.label1.Location = new System.Drawing.Point( 450, 15 );
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size( 132, 15 );
@@ -242,7 +242,7 @@ namespace IPLab
             // 
             // label2
             // 
-            this.label2.Anchor = ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right );
+            this.label2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
             this.label2.Location = new System.Drawing.Point( 450, 60 );
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size( 120, 15 );
@@ -251,8 +251,8 @@ namespace IPLab
             // 
             // operatorCombo
             // 
-            this.operatorCombo.Anchor = ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right );
-            this.operatorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.operatorCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
+            this.operatorCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.operatorCombo.Location = new System.Drawing.Point( 450, 75 );
             this.operatorCombo.Name = "operatorCombo";
             this.operatorCombo.Size = new System.Drawing.Size( 170, 21 );
@@ -261,9 +261,9 @@ namespace IPLab
             // 
             // OkButton
             // 
-            this.OkButton.Anchor = ( System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right );
-            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.OkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OkButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
+            this.OkButton.DialogResult = DialogResult.OK;
+            this.OkButton.FlatStyle = FlatStyle.Flat;
             this.OkButton.Location = new System.Drawing.Point( 460, 355 );
             this.OkButton.Name = "OkButton";
             this.OkButton.TabIndex = 4;
@@ -271,9 +271,9 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.Anchor = ( System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right );
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 545, 355 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 5;
@@ -294,8 +294,8 @@ namespace IPLab
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ( System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right );
-            this.groupBox2.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
+            this.groupBox2.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox2.Location = new System.Drawing.Point( 450, 105 );
             this.groupBox2.Name = "groupBox2";
@@ -317,7 +317,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 627, 396 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.groupBox2,
 																		  this.cancelButton,
 																		  this.OkButton,
@@ -326,10 +326,10 @@ namespace IPLab
 																		  this.label1,
 																		  this.sizeCombo,
 																		  this.groupBox1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
             this.Name = "MathMorphologyForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Mathematical Morphology";
             this.groupBox1.ResumeLayout( false );
             this.groupBox2.ResumeLayout( false );

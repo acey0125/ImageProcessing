@@ -11,21 +11,21 @@ namespace IPLab
     /// <summary>
     /// Summary description for GaussianForm.
     /// </summary>
-    public class GaussianForm : System.Windows.Forms.Form
+    public class GaussianForm : Form
     {
         private GaussianBlur filter = new GaussianBlur( );
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar sigmaTrackBar;
-        private System.Windows.Forms.TextBox sigmaBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox sizeBox;
-        private System.Windows.Forms.TrackBar sizeTrackBar;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private Label label1;
+        private TrackBar sigmaTrackBar;
+        private TextBox sigmaBox;
+        private Label label2;
+        private TextBox sizeBox;
+        private TrackBar sizeTrackBar;
+        private GroupBox groupBox3;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Button cancelButton;
+        private Button okButton;
+        private PictureBox pictureBox1;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -83,17 +83,17 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.sigmaTrackBar = new System.Windows.Forms.TrackBar( );
-            this.sigmaBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.sizeBox = new System.Windows.Forms.TextBox( );
-            this.sizeTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.sigmaTrackBar = new TrackBar( );
+            this.sigmaBox = new TextBox( );
+            this.label2 = new Label( );
+            this.sizeBox = new TextBox( );
+            this.sizeTrackBar = new TrackBar( );
+            this.groupBox3 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.pictureBox1 = new PictureBox( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).BeginInit( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).BeginInit( );
             this.groupBox3.SuspendLayout( );
@@ -174,8 +174,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 237, 195 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 15;
@@ -183,8 +183,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 152, 195 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 14;
@@ -192,7 +192,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 178 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 260, 2 );
@@ -215,12 +215,12 @@ namespace IPLab
             this.Controls.Add( this.label2 );
             this.Controls.Add( this.sigmaTrackBar );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GaussianForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Gaussian Blur";
             ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).EndInit( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).EndInit( );

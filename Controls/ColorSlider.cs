@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 
@@ -29,7 +29,7 @@ namespace IPLab
     /// <summary>
     /// ColorSlider control
     /// </summary>
-    public class ColorSlider : System.Windows.Forms.Control
+    public class ColorSlider : Control
     {
         private Pen blackPen = new Pen( Color.Black, 1 );
         private Color color1 = Color.Black;
@@ -162,9 +162,9 @@ namespace IPLab
             // 
             // ColorSlider
             // 
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler( this.ColorSlider_MouseUp );
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler( this.ColorSlider_MouseMove );
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler( this.ColorSlider_MouseDown );
+            this.MouseUp += new MouseEventHandler( this.ColorSlider_MouseUp );
+            this.MouseMove += new MouseEventHandler( this.ColorSlider_MouseMove );
+            this.MouseDown += new MouseEventHandler( this.ColorSlider_MouseDown );
 
         }
 
@@ -242,7 +242,7 @@ namespace IPLab
         }
 
         // On mouse down
-        private void ColorSlider_MouseDown( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void ColorSlider_MouseDown( object sender, MouseEventArgs e )
         {
             int x = ( ClientRectangle.Right - width ) / 2 - 4;
             int y = 3 + height;
@@ -270,7 +270,7 @@ namespace IPLab
         }
 
         // On mouse up
-        private void ColorSlider_MouseUp( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void ColorSlider_MouseUp( object sender, MouseEventArgs e )
         {
             if ( trackMode != 0 )
             {
@@ -285,7 +285,7 @@ namespace IPLab
         }
 
         // On mouse move
-        private void ColorSlider_MouseMove( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void ColorSlider_MouseMove( object sender, MouseEventArgs e )
         {
             if ( trackMode != 0 )
             {

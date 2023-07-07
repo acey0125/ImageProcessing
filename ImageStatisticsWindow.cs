@@ -17,7 +17,7 @@ namespace IPLab
     /// </summary>
     public class ImageStatisticsWindow : Content
     {
-        private System.Windows.Forms.PropertyGrid propertyGrid;
+        private PropertyGrid propertyGrid;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -60,44 +60,39 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            System.Resources.ResourceManager resources = new System.Resources.ResourceManager( typeof( ImageStatisticsWindow ) );
-            this.propertyGrid = new System.Windows.Forms.PropertyGrid( );
-            this.SuspendLayout( );
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageStatisticsWindow));
+            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
+            this.SuspendLayout();
             // 
             // propertyGrid
             // 
-            this.propertyGrid.CommandsVisibleIfAvailable = true;
             this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.propertyGrid.HelpVisible = false;
-            this.propertyGrid.LargeButtons = false;
             this.propertyGrid.LineColor = System.Drawing.SystemColors.ScrollBar;
+            this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size( 270, 255 );
+            this.propertyGrid.Size = new System.Drawing.Size(420, 382);
             this.propertyGrid.TabIndex = 0;
-            this.propertyGrid.Text = "PropertyGrid";
             this.propertyGrid.ToolbarVisible = false;
-            this.propertyGrid.ViewBackColor = System.Drawing.SystemColors.Window;
-            this.propertyGrid.ViewForeColor = System.Drawing.SystemColors.WindowText;
             // 
             // ImageStatisticsWindow
             // 
-            this.AllowedStates = ( ( WeifenLuo.WinFormsUI.ContentStates.Float | WeifenLuo.WinFormsUI.ContentStates.DockLeft )
-                | WeifenLuo.WinFormsUI.ContentStates.DockRight );
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
-            this.ClientSize = new System.Drawing.Size( 270, 255 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
-																		  this.propertyGrid} );
+            this.AllowedStates = ((WeifenLuo.WinFormsUI.ContentStates)(((WeifenLuo.WinFormsUI.ContentStates.Float | WeifenLuo.WinFormsUI.ContentStates.DockLeft) 
+            | WeifenLuo.WinFormsUI.ContentStates.DockRight)));
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+            this.ClientSize = new System.Drawing.Size(420, 382);
+            this.Controls.Add(this.propertyGrid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HideOnClose = true;
-            this.Icon = ( (System.Drawing.Icon) ( resources.GetObject( "$this.Icon" ) ) );
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size( 276, 280 );
+            this.MinimumSize = new System.Drawing.Size(331, 302);
             this.Name = "ImageStatisticsWindow";
             this.ShowHint = WeifenLuo.WinFormsUI.DockState.DockRight;
             this.ShowInTaskbar = false;
             this.Text = "Image Statistics";
-            this.ResumeLayout( false );
+            this.ResumeLayout(false);
 
         }
         #endregion

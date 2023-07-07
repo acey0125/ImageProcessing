@@ -10,16 +10,16 @@ namespace IPLab
     /// <summary>
     /// Summary description for ContrastForm.
     /// </summary>
-    public class ContrastForm : System.Windows.Forms.Form
+    public class ContrastForm : Form
     {
         private ContrastCorrection filter = new ContrastCorrection( );
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox contrastBox;
-        private System.Windows.Forms.TrackBar contrastTrackBar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Label label1;
+        private TextBox contrastBox;
+        private TrackBar contrastTrackBar;
+        private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
+        private Button cancelButton;
+        private Button okButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -73,13 +73,13 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.contrastBox = new System.Windows.Forms.TextBox( );
-            this.contrastTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.contrastBox = new TextBox( );
+            this.contrastTrackBar = new TrackBar( );
+            this.groupBox1 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             ( (System.ComponentModel.ISupportInitialize) ( this.contrastTrackBar ) ).BeginInit( );
             this.groupBox1.SuspendLayout( );
             this.SuspendLayout( );
@@ -115,7 +115,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox1.Location = new System.Drawing.Point( 270, 5 );
             this.groupBox1.Name = "groupBox1";
@@ -134,8 +134,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 150, 143 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 20;
@@ -143,8 +143,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 60, 143 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 19;
@@ -156,19 +156,19 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 439, 178 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox1,
 																		  this.contrastTrackBar,
 																		  this.contrastBox,
 																		  this.label1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ContrastForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Contrast";
             ( (System.ComponentModel.ISupportInitialize) ( this.contrastTrackBar ) ).EndInit( );
             this.groupBox1.ResumeLayout( false );

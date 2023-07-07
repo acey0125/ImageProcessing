@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 
@@ -34,25 +34,25 @@ namespace IPLab
         private ImageStatistics stat;
         private IPLab.Histogram histogram;
         private AForge.Math.Histogram activeHistogram = null;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox channelCombo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label meanLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label stdDevLabel;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label medianLabel;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label levelLabel;
-        private System.Windows.Forms.Label countLabel;
-        private System.Windows.Forms.Label percentileLabel;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label minLabel;
-        private System.Windows.Forms.Label maxLabel;
-        private System.Windows.Forms.CheckBox logCheck;
+        private Label label1;
+        private ComboBox channelCombo;
+        private Label label2;
+        private Label meanLabel;
+        private Label label3;
+        private Label stdDevLabel;
+        private Label label4;
+        private Label medianLabel;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label levelLabel;
+        private Label countLabel;
+        private Label percentileLabel;
+        private Label label8;
+        private Label label9;
+        private Label minLabel;
+        private Label maxLabel;
+        private CheckBox logCheck;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -94,25 +94,25 @@ namespace IPLab
         {
             System.Resources.ResourceManager resources = new System.Resources.ResourceManager( typeof( HistogramWindow ) );
             this.histogram = new IPLab.Histogram( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.channelCombo = new System.Windows.Forms.ComboBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.meanLabel = new System.Windows.Forms.Label( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.stdDevLabel = new System.Windows.Forms.Label( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.medianLabel = new System.Windows.Forms.Label( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.label6 = new System.Windows.Forms.Label( );
-            this.label7 = new System.Windows.Forms.Label( );
-            this.levelLabel = new System.Windows.Forms.Label( );
-            this.countLabel = new System.Windows.Forms.Label( );
-            this.percentileLabel = new System.Windows.Forms.Label( );
-            this.label8 = new System.Windows.Forms.Label( );
-            this.label9 = new System.Windows.Forms.Label( );
-            this.minLabel = new System.Windows.Forms.Label( );
-            this.maxLabel = new System.Windows.Forms.Label( );
-            this.logCheck = new System.Windows.Forms.CheckBox( );
+            this.label1 = new Label( );
+            this.channelCombo = new ComboBox( );
+            this.label2 = new Label( );
+            this.meanLabel = new Label( );
+            this.label3 = new Label( );
+            this.stdDevLabel = new Label( );
+            this.label4 = new Label( );
+            this.medianLabel = new Label( );
+            this.label5 = new Label( );
+            this.label6 = new Label( );
+            this.label7 = new Label( );
+            this.levelLabel = new Label( );
+            this.countLabel = new Label( );
+            this.percentileLabel = new Label( );
+            this.label8 = new Label( );
+            this.label9 = new Label( );
+            this.minLabel = new Label( );
+            this.maxLabel = new Label( );
+            this.logCheck = new CheckBox( );
             this.SuspendLayout( );
             // 
             // histogram
@@ -135,7 +135,7 @@ namespace IPLab
             // 
             // channelCombo
             // 
-            this.channelCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.channelCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.channelCombo.Location = new System.Drawing.Point( 60, 5 );
             this.channelCombo.Name = "channelCombo";
             this.channelCombo.Size = new System.Drawing.Size( 130, 21 );
@@ -282,7 +282,7 @@ namespace IPLab
                 | WeifenLuo.WinFormsUI.ContentStates.DockRight );
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.ClientSize = new System.Drawing.Size( 270, 341 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.logCheck,
 																		  this.maxLabel,
 																		  this.minLabel,
@@ -303,7 +303,7 @@ namespace IPLab
 																		  this.label1,
 																		  this.channelCombo,
 																		  this.histogram} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.HideOnClose = true;
             this.Icon = ( (System.Drawing.Icon) ( resources.GetObject( "$this.Icon" ) ) );
             this.MaximizeBox = false;

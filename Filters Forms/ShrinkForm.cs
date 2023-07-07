@@ -11,20 +11,20 @@ namespace IPLab
     /// <summary>
     /// Summary description for ShrinkForm.
     /// </summary>
-    public class ShrinkForm : System.Windows.Forms.Form
+    public class ShrinkForm : Form
     {
         private Shrink filter = new Shrink( );
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox redBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox greenBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox blueBox;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
+        private Label label1;
+        private GroupBox groupBox1;
+        private Label label2;
+        private TextBox redBox;
+        private Label label3;
+        private TextBox greenBox;
+        private Label label4;
+        private TextBox blueBox;
+        private Button okButton;
+        private Button cancelButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -74,22 +74,22 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.redBox = new System.Windows.Forms.TextBox( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.greenBox = new System.Windows.Forms.TextBox( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.blueBox = new System.Windows.Forms.TextBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.label1 = new Label( );
+            this.groupBox1 = new GroupBox( );
+            this.label2 = new Label( );
+            this.redBox = new TextBox( );
+            this.label3 = new Label( );
+            this.greenBox = new TextBox( );
+            this.label4 = new Label( );
+            this.blueBox = new TextBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.groupBox1.SuspendLayout( );
             this.SuspendLayout( );
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.BorderStyle = BorderStyle.Fixed3D;
             this.label1.Location = new System.Drawing.Point( 10, 50 );
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size( 230, 40 );
@@ -100,7 +100,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.blueBox,
 																					this.label4,
 																					this.greenBox,
@@ -165,8 +165,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 53, 125 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 2;
@@ -175,8 +175,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 143, 125 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 3;
@@ -188,16 +188,16 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 271, 158 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShrinkForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Shrink image";
             this.groupBox1.ResumeLayout( false );
             this.ResumeLayout( false );

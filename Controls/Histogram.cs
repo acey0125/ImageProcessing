@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 
@@ -50,7 +50,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for ColorHistogram.
     /// </summary>
-    public class Histogram : System.Windows.Forms.Control
+    public class Histogram : Control
     {
         private Color color = Color.Black;
         private int width = 256;
@@ -181,10 +181,10 @@ namespace IPLab
             // 
             // Histogram
             // 
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler( this.Histogram_MouseUp );
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler( this.Histogram_MouseMove );
+            this.MouseUp += new MouseEventHandler( this.Histogram_MouseUp );
+            this.MouseMove += new MouseEventHandler( this.Histogram_MouseMove );
             this.MouseLeave += new System.EventHandler( this.Histogram_MouseLeave );
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler( this.Histogram_MouseDown );
+            this.MouseDown += new MouseEventHandler( this.Histogram_MouseDown );
 
         }
 
@@ -240,7 +240,7 @@ namespace IPLab
         }
 
         // On mouse down
-        private void Histogram_MouseDown( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void Histogram_MouseDown( object sender, MouseEventArgs e )
         {
             if ( ( allowSelection ) && ( values != null ) )
             {
@@ -258,7 +258,7 @@ namespace IPLab
         }
 
         // On mouse up
-        private void Histogram_MouseUp( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void Histogram_MouseUp( object sender, MouseEventArgs e )
         {
             if ( tracking )
             {
@@ -270,7 +270,7 @@ namespace IPLab
         }
 
         // On mouse move
-        private void Histogram_MouseMove( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void Histogram_MouseMove( object sender, MouseEventArgs e )
         {
             if ( ( allowSelection ) && ( values != null ) )
             {

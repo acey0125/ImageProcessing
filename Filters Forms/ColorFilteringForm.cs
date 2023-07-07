@@ -14,7 +14,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for ColorFilteringForm.
     /// </summary>
-    public class ColorFilteringForm : System.Windows.Forms.Form
+    public class ColorFilteringForm : Form
     {
         private ColorFiltering filter = new ColorFiltering( );
         private IntRange red = new IntRange( 0, 255 );
@@ -22,37 +22,37 @@ namespace IPLab
         private IntRange blue = new IntRange( 0, 255 );
         private byte fillR = 0, fillG = 0, fillB = 0;
 
-        private System.Windows.Forms.GroupBox groupBox3;
+        private GroupBox groupBox3;
         private IPLab.ColorSlider blueSlider;
-        private System.Windows.Forms.TextBox fillBBox;
-        private System.Windows.Forms.TextBox maxBBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox minBBox;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private TextBox fillBBox;
+        private TextBox maxBBox;
+        private Label label8;
+        private TextBox minBBox;
+        private Label label9;
+        private GroupBox groupBox2;
         private IPLab.ColorSlider greenSlider;
-        private System.Windows.Forms.TextBox fillGBox;
-        private System.Windows.Forms.TextBox maxGBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox minGBox;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private TextBox fillGBox;
+        private TextBox maxGBox;
+        private Label label5;
+        private TextBox minGBox;
+        private Label label6;
+        private GroupBox groupBox1;
         private IPLab.ColorSlider redSlider;
-        private System.Windows.Forms.TextBox fillRBox;
-        private System.Windows.Forms.TextBox maxRBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox minRBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private TextBox fillRBox;
+        private TextBox maxRBox;
+        private Label label2;
+        private TextBox minRBox;
+        private Label label1;
+        private GroupBox groupBox4;
+        private Label label10;
+        private Label label3;
+        private Label label4;
+        private GroupBox groupBox5;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox fillTypeCombo;
+        private Button cancelButton;
+        private Button okButton;
+        private Label label7;
+        private ComboBox fillTypeCombo;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -117,37 +117,37 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.groupBox3 = new GroupBox( );
             this.blueSlider = new IPLab.ColorSlider( );
-            this.maxBBox = new System.Windows.Forms.TextBox( );
-            this.label8 = new System.Windows.Forms.Label( );
-            this.minBBox = new System.Windows.Forms.TextBox( );
-            this.label9 = new System.Windows.Forms.Label( );
-            this.fillBBox = new System.Windows.Forms.TextBox( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.maxBBox = new TextBox( );
+            this.label8 = new Label( );
+            this.minBBox = new TextBox( );
+            this.label9 = new Label( );
+            this.fillBBox = new TextBox( );
+            this.groupBox2 = new GroupBox( );
             this.greenSlider = new IPLab.ColorSlider( );
-            this.maxGBox = new System.Windows.Forms.TextBox( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.minGBox = new System.Windows.Forms.TextBox( );
-            this.label6 = new System.Windows.Forms.Label( );
-            this.fillGBox = new System.Windows.Forms.TextBox( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.maxGBox = new TextBox( );
+            this.label5 = new Label( );
+            this.minGBox = new TextBox( );
+            this.label6 = new Label( );
+            this.fillGBox = new TextBox( );
+            this.groupBox1 = new GroupBox( );
             this.redSlider = new IPLab.ColorSlider( );
-            this.maxRBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.minRBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.fillRBox = new System.Windows.Forms.TextBox( );
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.label10 = new System.Windows.Forms.Label( );
-            this.groupBox5 = new System.Windows.Forms.GroupBox( );
+            this.maxRBox = new TextBox( );
+            this.label2 = new Label( );
+            this.minRBox = new TextBox( );
+            this.label1 = new Label( );
+            this.fillRBox = new TextBox( );
+            this.groupBox4 = new GroupBox( );
+            this.label4 = new Label( );
+            this.label3 = new Label( );
+            this.label10 = new Label( );
+            this.groupBox5 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.label7 = new System.Windows.Forms.Label( );
-            this.fillTypeCombo = new System.Windows.Forms.ComboBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.label7 = new Label( );
+            this.fillTypeCombo = new ComboBox( );
             this.groupBox3.SuspendLayout( );
             this.groupBox2.SuspendLayout( );
             this.groupBox1.SuspendLayout( );
@@ -157,7 +157,7 @@ namespace IPLab
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox3.Controls.AddRange( new Control[] {
 																					this.blueSlider,
 																					this.maxBBox,
 																					this.label8,
@@ -226,7 +226,7 @@ namespace IPLab
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox2.Controls.AddRange( new Control[] {
 																					this.greenSlider,
 																					this.maxGBox,
 																					this.label5,
@@ -295,7 +295,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.redSlider,
 																					this.maxRBox,
 																					this.label2,
@@ -364,7 +364,7 @@ namespace IPLab
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox4.Controls.AddRange( new Control[] {
 																					this.label4,
 																					this.label3,
 																					this.label10,
@@ -404,7 +404,7 @@ namespace IPLab
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox5.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox5.Location = new System.Drawing.Point( 300, 10 );
             this.groupBox5.Name = "groupBox5";
@@ -424,8 +424,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 395, 275 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 9;
@@ -433,8 +433,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 310, 275 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 8;
@@ -450,7 +450,7 @@ namespace IPLab
             // 
             // fillTypeCombo
             // 
-            this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fillTypeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.fillTypeCombo.Items.AddRange( new object[] {
 															   "Outside",
 															   "Inside"} );
@@ -466,7 +466,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 479, 308 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.fillTypeCombo,
 																		  this.label7,
 																		  this.cancelButton,
@@ -476,12 +476,12 @@ namespace IPLab
 																		  this.groupBox2,
 																		  this.groupBox1,
 																		  this.groupBox5} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ColorFilteringForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Color Filtering";
             this.groupBox3.ResumeLayout( false );
             this.groupBox2.ResumeLayout( false );

@@ -14,7 +14,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for HSLFilteringForm.
     /// </summary>
-    public class HSLFilteringForm : System.Windows.Forms.Form
+    public class HSLFilteringForm : Form
     {
         private HSLFiltering filter = new HSLFiltering( );
         private IntRange hue = new IntRange( 0, 359 );
@@ -24,38 +24,38 @@ namespace IPLab
         private double fillS = 0, fillL = 0;
 
         private IPLab.HuePicker huePicker;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox maxHBox;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox minSBox;
-        private System.Windows.Forms.TextBox maxSBox;
+        private GroupBox groupBox1;
+        private Label label1;
+        private Label label2;
+        private TextBox maxHBox;
+        private GroupBox groupBox2;
+        private Label label3;
+        private Label label4;
+        private TextBox minSBox;
+        private TextBox maxSBox;
         private IPLab.ColorSlider saturationSlider;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox minLBox;
-        private System.Windows.Forms.TextBox maxLBox;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private GroupBox groupBox3;
+        private Label label5;
+        private Label label6;
+        private TextBox minLBox;
+        private TextBox maxLBox;
+        private GroupBox groupBox5;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox fillHBox;
-        private System.Windows.Forms.CheckBox updateHCheck;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox fillSBox;
-        private System.Windows.Forms.CheckBox updateSCheck;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox fillLBox;
-        private System.Windows.Forms.CheckBox updateLCheck;
-        private System.Windows.Forms.ComboBox fillTypeCombo;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.TextBox minHBox;
+        private GroupBox groupBox4;
+        private Label label7;
+        private TextBox fillHBox;
+        private CheckBox updateHCheck;
+        private Label label8;
+        private TextBox fillSBox;
+        private CheckBox updateSCheck;
+        private Label label9;
+        private TextBox fillLBox;
+        private CheckBox updateLCheck;
+        private ComboBox fillTypeCombo;
+        private Label label10;
+        private Button cancelButton;
+        private Button okButton;
+        private TextBox minHBox;
         private IPLab.ColorSlider luminanceSlider;
         /// <summary>
         /// Required designer variable.
@@ -122,39 +122,39 @@ namespace IPLab
         private void InitializeComponent( )
         {
             this.huePicker = new IPLab.HuePicker( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.maxHBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.minHBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.groupBox1 = new GroupBox( );
+            this.maxHBox = new TextBox( );
+            this.label2 = new Label( );
+            this.minHBox = new TextBox( );
+            this.label1 = new Label( );
+            this.groupBox2 = new GroupBox( );
             this.saturationSlider = new IPLab.ColorSlider( );
-            this.maxSBox = new System.Windows.Forms.TextBox( );
-            this.minSBox = new System.Windows.Forms.TextBox( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.maxSBox = new TextBox( );
+            this.minSBox = new TextBox( );
+            this.label4 = new Label( );
+            this.label3 = new Label( );
+            this.groupBox3 = new GroupBox( );
             this.luminanceSlider = new IPLab.ColorSlider( );
-            this.maxLBox = new System.Windows.Forms.TextBox( );
-            this.minLBox = new System.Windows.Forms.TextBox( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.label6 = new System.Windows.Forms.Label( );
-            this.groupBox5 = new System.Windows.Forms.GroupBox( );
+            this.maxLBox = new TextBox( );
+            this.minLBox = new TextBox( );
+            this.label5 = new Label( );
+            this.label6 = new Label( );
+            this.groupBox5 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
-            this.updateLCheck = new System.Windows.Forms.CheckBox( );
-            this.fillLBox = new System.Windows.Forms.TextBox( );
-            this.label9 = new System.Windows.Forms.Label( );
-            this.updateSCheck = new System.Windows.Forms.CheckBox( );
-            this.fillSBox = new System.Windows.Forms.TextBox( );
-            this.label8 = new System.Windows.Forms.Label( );
-            this.updateHCheck = new System.Windows.Forms.CheckBox( );
-            this.fillHBox = new System.Windows.Forms.TextBox( );
-            this.label7 = new System.Windows.Forms.Label( );
-            this.fillTypeCombo = new System.Windows.Forms.ComboBox( );
-            this.label10 = new System.Windows.Forms.Label( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.groupBox4 = new GroupBox( );
+            this.updateLCheck = new CheckBox( );
+            this.fillLBox = new TextBox( );
+            this.label9 = new Label( );
+            this.updateSCheck = new CheckBox( );
+            this.fillSBox = new TextBox( );
+            this.label8 = new Label( );
+            this.updateHCheck = new CheckBox( );
+            this.fillHBox = new TextBox( );
+            this.label7 = new Label( );
+            this.fillTypeCombo = new ComboBox( );
+            this.label10 = new Label( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             this.groupBox1.SuspendLayout( );
             this.groupBox2.SuspendLayout( );
             this.groupBox3.SuspendLayout( );
@@ -373,7 +373,7 @@ namespace IPLab
             // updateLCheck
             // 
             this.updateLCheck.Checked = true;
-            this.updateLCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.updateLCheck.CheckState = CheckState.Checked;
             this.updateLCheck.Location = new System.Drawing.Point( 125, 70 );
             this.updateLCheck.Name = "updateLCheck";
             this.updateLCheck.Size = new System.Drawing.Size( 14, 24 );
@@ -400,7 +400,7 @@ namespace IPLab
             // updateSCheck
             // 
             this.updateSCheck.Checked = true;
-            this.updateSCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.updateSCheck.CheckState = CheckState.Checked;
             this.updateSCheck.Location = new System.Drawing.Point( 125, 45 );
             this.updateSCheck.Name = "updateSCheck";
             this.updateSCheck.Size = new System.Drawing.Size( 14, 24 );
@@ -427,7 +427,7 @@ namespace IPLab
             // updateHCheck
             // 
             this.updateHCheck.Checked = true;
-            this.updateHCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.updateHCheck.CheckState = CheckState.Checked;
             this.updateHCheck.Location = new System.Drawing.Point( 125, 20 );
             this.updateHCheck.Name = "updateHCheck";
             this.updateHCheck.Size = new System.Drawing.Size( 14, 24 );
@@ -453,7 +453,7 @@ namespace IPLab
             // 
             // fillTypeCombo
             // 
-            this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fillTypeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.fillTypeCombo.Items.AddRange( new object[] {
 															   "Outside",
 															   "Inside"} );
@@ -473,8 +473,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 395, 378 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 12;
@@ -482,8 +482,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 310, 378 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 11;
@@ -504,12 +504,12 @@ namespace IPLab
             this.Controls.Add( this.groupBox3 );
             this.Controls.Add( this.groupBox2 );
             this.Controls.Add( this.groupBox1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HSLFilteringForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "HSL Filtering";
             this.groupBox1.ResumeLayout( false );
             this.groupBox2.ResumeLayout( false );

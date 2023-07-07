@@ -11,22 +11,22 @@ namespace IPLab
     /// <summary>
     /// Summary description for CannyDetectorForm.
     /// </summary>
-    public class CannyDetectorForm : System.Windows.Forms.Form
+    public class CannyDetectorForm : Form
     {
         private CannyEdgeDetector filter = new CannyEdgeDetector( );
-        private System.Windows.Forms.TextBox sigmaBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TrackBar sigmaTrackBar;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private TextBox sigmaBox;
+        private GroupBox groupBox1;
+        private TrackBar sigmaTrackBar;
+        private GroupBox groupBox2;
+        private Label label1;
+        private Label label2;
         private IPLab.ColorSlider thresholdSlider;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private GroupBox groupBox3;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.TextBox highThresholdBox;
-        private System.Windows.Forms.TextBox lowThresholdBox;
+        private Button cancelButton;
+        private Button okButton;
+        private TextBox highThresholdBox;
+        private TextBox lowThresholdBox;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -86,19 +86,19 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.sigmaBox = new System.Windows.Forms.TextBox( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.sigmaTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.sigmaBox = new TextBox( );
+            this.groupBox1 = new GroupBox( );
+            this.sigmaTrackBar = new TrackBar( );
+            this.groupBox2 = new GroupBox( );
             this.thresholdSlider = new IPLab.ColorSlider( );
-            this.highThresholdBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.lowThresholdBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.highThresholdBox = new TextBox( );
+            this.label2 = new Label( );
+            this.lowThresholdBox = new TextBox( );
+            this.label1 = new Label( );
+            this.groupBox3 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).BeginInit( );
             this.groupBox2.SuspendLayout( );
@@ -212,8 +212,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 244, 205 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 13;
@@ -221,8 +221,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 159, 205 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 12;
@@ -239,12 +239,12 @@ namespace IPLab
             this.Controls.Add( this.groupBox3 );
             this.Controls.Add( this.groupBox2 );
             this.Controls.Add( this.groupBox1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CannyDetectorForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Canny Edge Detector";
             this.groupBox1.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).EndInit( );

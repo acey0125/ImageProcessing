@@ -11,21 +11,21 @@ namespace IPLab
     /// <summary>
     /// Summary description for SharpenExForm.
     /// </summary>
-    public class SharpenExForm : System.Windows.Forms.Form
+    public class SharpenExForm : Form
     {
         private SharpenEx filter = new SharpenEx( );
 
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private Button cancelButton;
+        private Button okButton;
+        private GroupBox groupBox3;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.TrackBar sizeTrackBar;
-        private System.Windows.Forms.TextBox sizeBox;
-        private System.Windows.Forms.TextBox sigmaBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TrackBar sigmaTrackBar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private TrackBar sizeTrackBar;
+        private TextBox sizeBox;
+        private TextBox sigmaBox;
+        private Label label2;
+        private TrackBar sigmaTrackBar;
+        private Label label1;
+        private PictureBox pictureBox1;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -83,17 +83,17 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.groupBox3 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.sizeTrackBar = new System.Windows.Forms.TrackBar( );
-            this.sizeBox = new System.Windows.Forms.TextBox( );
-            this.sigmaBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.sigmaTrackBar = new System.Windows.Forms.TrackBar( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
+            this.sizeTrackBar = new TrackBar( );
+            this.sizeBox = new TextBox( );
+            this.sigmaBox = new TextBox( );
+            this.label2 = new Label( );
+            this.sigmaTrackBar = new TrackBar( );
+            this.label1 = new Label( );
+            this.pictureBox1 = new PictureBox( );
             this.groupBox3.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).BeginInit( );
             ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).BeginInit( );
@@ -101,8 +101,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 237, 195 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 24;
@@ -110,8 +110,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 152, 195 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 23;
@@ -192,7 +192,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 178 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 260, 2 );
@@ -215,12 +215,12 @@ namespace IPLab
             this.Controls.Add( this.label2 );
             this.Controls.Add( this.sigmaTrackBar );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SharpenExForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Sharpen";
             this.groupBox3.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).EndInit( );

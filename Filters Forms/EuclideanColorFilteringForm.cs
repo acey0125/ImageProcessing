@@ -10,39 +10,39 @@ namespace IPLab
     /// <summary>
     /// Summary description for EuclideanColorFilteringForm.
     /// </summary>
-    public class EuclideanColorFilteringForm : System.Windows.Forms.Form
+    public class EuclideanColorFilteringForm : Form
     {
         private EuclideanColorFiltering filter = new EuclideanColorFiltering( );
         private byte red = 255, green = 255, blue = 255;
         private byte fillR = 0, fillG = 0, fillB = 0;
         private short radius = 100;
 
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox redBox;
-        private System.Windows.Forms.TextBox greenBox;
-        private System.Windows.Forms.TextBox blueBox;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private GroupBox groupBox4;
+        private Label label4;
+        private Label label3;
+        private Label label10;
+        private TextBox redBox;
+        private TextBox greenBox;
+        private TextBox blueBox;
+        private GroupBox groupBox5;
         private IPLab.FilterPreview filterPreview;
         private IPLab.ColorSlider redSlider;
         private IPLab.ColorSlider greenSlider;
         private IPLab.ColorSlider blueSlider;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox radiusBox;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox fillRBox;
-        private System.Windows.Forms.TextBox fillGBox;
-        private System.Windows.Forms.TextBox fillBBox;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.TrackBar radiusTrackBar;
-        private System.Windows.Forms.ComboBox fillTypeCombo;
-        private System.Windows.Forms.Label label7;
+        private GroupBox groupBox1;
+        private TextBox radiusBox;
+        private GroupBox groupBox2;
+        private Label label1;
+        private Label label2;
+        private Label label5;
+        private TextBox fillRBox;
+        private TextBox fillGBox;
+        private TextBox fillBBox;
+        private Button cancelButton;
+        private Button okButton;
+        private TrackBar radiusTrackBar;
+        private ComboBox fillTypeCombo;
+        private Label label7;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -105,32 +105,32 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
+            this.groupBox4 = new GroupBox( );
             this.blueSlider = new IPLab.ColorSlider( );
             this.greenSlider = new IPLab.ColorSlider( );
             this.redSlider = new IPLab.ColorSlider( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.label10 = new System.Windows.Forms.Label( );
-            this.redBox = new System.Windows.Forms.TextBox( );
-            this.greenBox = new System.Windows.Forms.TextBox( );
-            this.blueBox = new System.Windows.Forms.TextBox( );
-            this.groupBox5 = new System.Windows.Forms.GroupBox( );
+            this.label4 = new Label( );
+            this.label3 = new Label( );
+            this.label10 = new Label( );
+            this.redBox = new TextBox( );
+            this.greenBox = new TextBox( );
+            this.blueBox = new TextBox( );
+            this.groupBox5 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.radiusTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.radiusBox = new System.Windows.Forms.TextBox( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.fillRBox = new System.Windows.Forms.TextBox( );
-            this.fillGBox = new System.Windows.Forms.TextBox( );
-            this.fillBBox = new System.Windows.Forms.TextBox( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.fillTypeCombo = new System.Windows.Forms.ComboBox( );
-            this.label7 = new System.Windows.Forms.Label( );
+            this.radiusTrackBar = new TrackBar( );
+            this.groupBox1 = new GroupBox( );
+            this.radiusBox = new TextBox( );
+            this.groupBox2 = new GroupBox( );
+            this.label1 = new Label( );
+            this.label2 = new Label( );
+            this.label5 = new Label( );
+            this.fillRBox = new TextBox( );
+            this.fillGBox = new TextBox( );
+            this.fillBBox = new TextBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.fillTypeCombo = new ComboBox( );
+            this.label7 = new Label( );
             this.groupBox4.SuspendLayout( );
             this.groupBox5.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.radiusTrackBar ) ).BeginInit( );
@@ -140,7 +140,7 @@ namespace IPLab
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox4.Controls.AddRange( new Control[] {
 																					this.blueSlider,
 																					this.greenSlider,
 																					this.redSlider,
@@ -243,7 +243,7 @@ namespace IPLab
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox5.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox5.Location = new System.Drawing.Point( 300, 10 );
             this.groupBox5.Name = "groupBox5";
@@ -275,7 +275,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.radiusBox,
 																					this.radiusTrackBar} );
             this.groupBox1.Location = new System.Drawing.Point( 10, 135 );
@@ -296,7 +296,7 @@ namespace IPLab
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox2.Controls.AddRange( new Control[] {
 																					this.label1,
 																					this.label2,
 																					this.label5,
@@ -363,8 +363,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 395, 255 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 11;
@@ -372,8 +372,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 310, 255 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 10;
@@ -381,7 +381,7 @@ namespace IPLab
             // 
             // fillTypeCombo
             // 
-            this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fillTypeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.fillTypeCombo.Items.AddRange( new object[] {
 															   "Outside",
 															   "Inside"} );
@@ -405,7 +405,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 479, 288 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.fillTypeCombo,
 																		  this.label7,
 																		  this.cancelButton,
@@ -414,12 +414,12 @@ namespace IPLab
 																		  this.groupBox1,
 																		  this.groupBox5,
 																		  this.groupBox4} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EuclideanColorFilteringForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Euclidean Color Filtering";
             this.groupBox4.ResumeLayout( false );
             this.groupBox5.ResumeLayout( false );

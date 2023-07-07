@@ -12,24 +12,24 @@ namespace IPLab
     /// <summary>
     /// Summary description for RotateForm.
     /// </summary>
-    public class RotateForm : System.Windows.Forms.Form
+    public class RotateForm : Form
     {
         private FilterRotate filter = null;
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox angleBox;
-        private System.Windows.Forms.ComboBox methodCombo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox keepSizeCheck;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox redBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox greenBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox blueBox;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
+        private Label label1;
+        private TextBox angleBox;
+        private ComboBox methodCombo;
+        private Label label3;
+        private CheckBox keepSizeCheck;
+        private GroupBox groupBox1;
+        private Label label2;
+        private TextBox redBox;
+        private Label label4;
+        private TextBox greenBox;
+        private Label label5;
+        private TextBox blueBox;
+        private Button okButton;
+        private Button cancelButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -82,20 +82,20 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.angleBox = new System.Windows.Forms.TextBox( );
-            this.methodCombo = new System.Windows.Forms.ComboBox( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.keepSizeCheck = new System.Windows.Forms.CheckBox( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.redBox = new System.Windows.Forms.TextBox( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.greenBox = new System.Windows.Forms.TextBox( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.blueBox = new System.Windows.Forms.TextBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.label1 = new Label( );
+            this.angleBox = new TextBox( );
+            this.methodCombo = new ComboBox( );
+            this.label3 = new Label( );
+            this.keepSizeCheck = new CheckBox( );
+            this.groupBox1 = new GroupBox( );
+            this.label2 = new Label( );
+            this.redBox = new TextBox( );
+            this.label4 = new Label( );
+            this.greenBox = new TextBox( );
+            this.label5 = new Label( );
+            this.blueBox = new TextBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.groupBox1.SuspendLayout( );
             this.SuspendLayout( );
             // 
@@ -116,7 +116,7 @@ namespace IPLab
             // 
             // methodCombo
             // 
-            this.methodCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.methodCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.methodCombo.Items.AddRange( new object[] {
 															 "Nearest neighbour",
 															 "Bilinear",
@@ -144,7 +144,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.greenBox,
 																					this.label4,
 																					this.redBox,
@@ -208,7 +208,7 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 27, 170 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 6;
@@ -217,8 +217,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 112, 170 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 7;
@@ -230,7 +230,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 214, 205 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox1,
@@ -239,12 +239,12 @@ namespace IPLab
 																		  this.label3,
 																		  this.angleBox,
 																		  this.label1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RotateForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Rotate image";
             this.groupBox1.ResumeLayout( false );
             this.ResumeLayout( false );

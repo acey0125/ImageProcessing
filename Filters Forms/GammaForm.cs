@@ -10,17 +10,17 @@ namespace IPLab
     /// <summary>
     /// Summary description for GammaForm.
     /// </summary>
-    public class GammaForm : System.Windows.Forms.Form
+    public class GammaForm : Form
     {
         private GammaCorrection filter = new GammaCorrection( );
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox gammaBox;
-        private System.Windows.Forms.TrackBar gammaTrackBar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Label label1;
+        private TextBox gammaBox;
+        private TrackBar gammaTrackBar;
+        private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
+        private Button cancelButton;
+        private Button okButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -74,13 +74,13 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.gammaBox = new System.Windows.Forms.TextBox( );
-            this.gammaTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.gammaBox = new TextBox( );
+            this.gammaTrackBar = new TrackBar( );
+            this.groupBox1 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             ( (System.ComponentModel.ISupportInitialize) ( this.gammaTrackBar ) ).BeginInit( );
             this.groupBox1.SuspendLayout( );
             this.SuspendLayout( );
@@ -116,7 +116,7 @@ namespace IPLab
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox1.Location = new System.Drawing.Point( 280, 5 );
             this.groupBox1.Name = "groupBox1";
@@ -135,8 +135,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 145, 143 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 16;
@@ -144,8 +144,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 55, 143 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 15;
@@ -157,19 +157,19 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 449, 178 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox1,
 																		  this.gammaTrackBar,
 																		  this.gammaBox,
 																		  this.label1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GammaForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Gamma Correction";
             ( (System.ComponentModel.ISupportInitialize) ( this.gammaTrackBar ) ).EndInit( );
             this.groupBox1.ResumeLayout( false );

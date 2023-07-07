@@ -10,19 +10,19 @@ namespace IPLab
     /// <summary>
     /// Summary description for ThresholdForm.
     /// </summary>
-    public class ThresholdForm : System.Windows.Forms.Form
+    public class ThresholdForm : Form
     {
         private Threshold filter = new Threshold( );
         private byte threshold = 128;
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox thresholdBox;
+        private Label label1;
+        private TextBox thresholdBox;
         private IPLab.ColorSlider slider;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
+        private PictureBox pictureBox2;
+        private Button okButton;
+        private Button cancelButton;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private GroupBox groupBox1;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -81,14 +81,14 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.thresholdBox = new System.Windows.Forms.TextBox( );
+            this.label1 = new Label( );
+            this.thresholdBox = new TextBox( );
             this.slider = new IPLab.ColorSlider( );
-            this.pictureBox2 = new System.Windows.Forms.PictureBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.pictureBox2 = new PictureBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.groupBox1 = new GroupBox( );
             ( (System.ComponentModel.ISupportInitialize) ( this.pictureBox2 ) ).BeginInit( );
             this.groupBox1.SuspendLayout( );
             this.SuspendLayout( );
@@ -122,7 +122,7 @@ namespace IPLab
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point( 10, 120 );
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size( 258, 2 );
@@ -131,8 +131,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 57, 140 );
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size( 75, 23 );
@@ -141,8 +141,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 147, 140 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size( 75, 23 );
@@ -180,12 +180,12 @@ namespace IPLab
             this.Controls.Add( this.slider );
             this.Controls.Add( this.thresholdBox );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThresholdForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Threshold";
             ( (System.ComponentModel.ISupportInitialize) ( this.pictureBox2 ) ).EndInit( );
             this.groupBox1.ResumeLayout( false );

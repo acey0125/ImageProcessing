@@ -10,18 +10,18 @@ namespace IPLab
     /// <summary>
     /// Summary description for HueModifierForm.
     /// </summary>
-    public class HueModifierForm : System.Windows.Forms.Form
+    public class HueModifierForm : Form
     {
         private HueModifier filter = new HueModifier( );
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private GroupBox groupBox1;
+        private Label label1;
+        private GroupBox groupBox2;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.TextBox hueBox;
+        private TextBox hueBox;
         private IPLab.HuePicker huePicker;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
+        private Button cancelButton;
+        private Button okButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -75,21 +75,21 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.groupBox1 = new GroupBox( );
             this.huePicker = new IPLab.HuePicker( );
-            this.hueBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.hueBox = new TextBox( );
+            this.label1 = new Label( );
+            this.groupBox2 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             this.groupBox1.SuspendLayout( );
             this.groupBox2.SuspendLayout( );
             this.SuspendLayout( );
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox1.Controls.AddRange( new Control[] {
 																					this.huePicker,
 																					this.hueBox,
 																					this.label1} );
@@ -127,7 +127,7 @@ namespace IPLab
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox2.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox2.Location = new System.Drawing.Point( 215, 5 );
             this.groupBox2.Name = "groupBox2";
@@ -147,8 +147,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 300, 205 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 3;
@@ -156,8 +156,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 215, 205 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 2;
@@ -169,17 +169,17 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 384, 238 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox2,
 																		  this.groupBox1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HueModifierForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Hue Modifier";
             this.groupBox1.ResumeLayout( false );
             this.groupBox2.ResumeLayout( false );

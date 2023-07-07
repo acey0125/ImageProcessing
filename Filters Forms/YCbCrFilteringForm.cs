@@ -14,7 +14,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for YCbCrFilteringForm.
     /// </summary>
-    public class YCbCrFilteringForm : System.Windows.Forms.Form
+    public class YCbCrFilteringForm : Form
     {
         private YCbCrFiltering filter = new YCbCrFiltering( );
         private DoubleRange yRange = new DoubleRange( 0, 1 );
@@ -22,37 +22,37 @@ namespace IPLab
         private DoubleRange crRange = new DoubleRange( -0.5, 0.5 );
         private double fillY = 0, fillCb = 0, fillCr = 0;
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox minYBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox maxYBox;
+        private GroupBox groupBox1;
+        private Label label1;
+        private TextBox minYBox;
+        private Label label2;
+        private TextBox maxYBox;
         private IPLab.ColorSlider ySlider;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox minCbBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox maxCbBox;
+        private GroupBox groupBox2;
+        private Label label3;
+        private TextBox minCbBox;
+        private Label label4;
+        private TextBox maxCbBox;
         private IPLab.ColorSlider cbSlider;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private GroupBox groupBox3;
+        private Label label5;
+        private Label label6;
         private IPLab.ColorSlider crSlider;
-        private System.Windows.Forms.TextBox maxCrBox;
-        private System.Windows.Forms.TextBox minCrBox;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox fillYBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox fillCbBox;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox fillCrBox;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private TextBox maxCrBox;
+        private TextBox minCrBox;
+        private GroupBox groupBox4;
+        private Label label7;
+        private TextBox fillYBox;
+        private Label label8;
+        private TextBox fillCbBox;
+        private Label label9;
+        private TextBox fillCrBox;
+        private GroupBox groupBox5;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox fillTypeCombo;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
+        private Label label10;
+        private ComboBox fillTypeCombo;
+        private Button okButton;
+        private Button cancelButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -116,37 +116,37 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.groupBox1 = new GroupBox( );
             this.ySlider = new IPLab.ColorSlider( );
-            this.maxYBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.minYBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.groupBox2 = new System.Windows.Forms.GroupBox( );
+            this.maxYBox = new TextBox( );
+            this.label2 = new Label( );
+            this.minYBox = new TextBox( );
+            this.label1 = new Label( );
+            this.groupBox2 = new GroupBox( );
             this.cbSlider = new IPLab.ColorSlider( );
-            this.maxCbBox = new System.Windows.Forms.TextBox( );
-            this.label4 = new System.Windows.Forms.Label( );
-            this.minCbBox = new System.Windows.Forms.TextBox( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.groupBox3 = new System.Windows.Forms.GroupBox( );
+            this.maxCbBox = new TextBox( );
+            this.label4 = new Label( );
+            this.minCbBox = new TextBox( );
+            this.label3 = new Label( );
+            this.groupBox3 = new GroupBox( );
             this.crSlider = new IPLab.ColorSlider( );
-            this.maxCrBox = new System.Windows.Forms.TextBox( );
-            this.label5 = new System.Windows.Forms.Label( );
-            this.minCrBox = new System.Windows.Forms.TextBox( );
-            this.label6 = new System.Windows.Forms.Label( );
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
-            this.fillCrBox = new System.Windows.Forms.TextBox( );
-            this.label9 = new System.Windows.Forms.Label( );
-            this.fillCbBox = new System.Windows.Forms.TextBox( );
-            this.label8 = new System.Windows.Forms.Label( );
-            this.fillYBox = new System.Windows.Forms.TextBox( );
-            this.label7 = new System.Windows.Forms.Label( );
-            this.groupBox5 = new System.Windows.Forms.GroupBox( );
+            this.maxCrBox = new TextBox( );
+            this.label5 = new Label( );
+            this.minCrBox = new TextBox( );
+            this.label6 = new Label( );
+            this.groupBox4 = new GroupBox( );
+            this.fillCrBox = new TextBox( );
+            this.label9 = new Label( );
+            this.fillCbBox = new TextBox( );
+            this.label8 = new Label( );
+            this.fillYBox = new TextBox( );
+            this.label7 = new Label( );
+            this.groupBox5 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.label10 = new System.Windows.Forms.Label( );
-            this.fillTypeCombo = new System.Windows.Forms.ComboBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
+            this.label10 = new Label( );
+            this.fillTypeCombo = new ComboBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
             this.groupBox1.SuspendLayout( );
             this.groupBox2.SuspendLayout( );
             this.groupBox3.SuspendLayout( );
@@ -420,7 +420,7 @@ namespace IPLab
             // 
             // fillTypeCombo
             // 
-            this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fillTypeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.fillTypeCombo.Items.AddRange( new object[] {
 															   "Outside",
 															   "Inside"} );
@@ -432,8 +432,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 310, 275 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 10;
@@ -441,8 +441,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 395, 275 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 11;
@@ -463,12 +463,12 @@ namespace IPLab
             this.Controls.Add( this.groupBox2 );
             this.Controls.Add( this.groupBox1 );
             this.Controls.Add( this.groupBox3 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "YCbCrFilteringForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "YCbCr Filtering";
             this.groupBox1.ResumeLayout( false );
             this.groupBox2.ResumeLayout( false );

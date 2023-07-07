@@ -10,16 +10,16 @@ namespace IPLab
     /// <summary>
     /// Summary description for BrightnessForm.
     /// </summary>
-    public class BrightnessForm : System.Windows.Forms.Form
+    public class BrightnessForm : Form
     {
         private BrightnessCorrection filter = new BrightnessCorrection( );
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox brightnessBox;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Label label1;
+        private TextBox brightnessBox;
+        private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.TrackBar brightnessTrackBar;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
+        private TrackBar brightnessTrackBar;
+        private Button cancelButton;
+        private Button okButton;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -73,13 +73,13 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.brightnessBox = new System.Windows.Forms.TextBox( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.brightnessBox = new TextBox( );
+            this.groupBox1 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.brightnessTrackBar = new System.Windows.Forms.TrackBar( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
+            this.brightnessTrackBar = new TrackBar( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.brightnessTrackBar ) ).BeginInit( );
             this.SuspendLayout( );
@@ -132,8 +132,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 150, 143 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 18;
@@ -141,8 +141,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 60, 143 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 17;
@@ -160,12 +160,12 @@ namespace IPLab
             this.Controls.Add( this.groupBox1 );
             this.Controls.Add( this.brightnessBox );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BrightnessForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Brightness";
             this.groupBox1.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.brightnessTrackBar ) ).EndInit( );

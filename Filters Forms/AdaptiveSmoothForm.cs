@@ -11,18 +11,18 @@ namespace IPLab
     /// <summary>
     /// Summary description for AdaptiveSmoothForm.
     /// </summary>
-    public class AdaptiveSmoothForm : System.Windows.Forms.Form
+    public class AdaptiveSmoothForm : Form
     {
         private AdaptiveSmooth filter = new AdaptiveSmooth( 1.0 );
         private double factor = 1.0;
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox factorBox;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TrackBar trackBar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Label label1;
+        private TextBox factorBox;
+        private Button cancelButton;
+        private Button okButton;
+        private GroupBox groupBox1;
+        private TrackBar trackBar;
+        private PictureBox pictureBox1;
         private IPLab.FilterPreview filterPreview;
         /// <summary>
         /// Required designer variable.
@@ -77,13 +77,13 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.factorBox = new System.Windows.Forms.TextBox( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.trackBar = new System.Windows.Forms.TrackBar( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
+            this.label1 = new Label( );
+            this.factorBox = new TextBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.groupBox1 = new GroupBox( );
+            this.trackBar = new TrackBar( );
+            this.pictureBox1 = new PictureBox( );
             this.filterPreview = new IPLab.FilterPreview( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.trackBar ) ).BeginInit( );
@@ -108,8 +108,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 120, 160 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 11;
@@ -117,8 +117,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 35, 160 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 10;
@@ -148,7 +148,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 150 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 210, 2 );
@@ -176,12 +176,12 @@ namespace IPLab
             this.Controls.Add( this.pictureBox1 );
             this.Controls.Add( this.factorBox );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AdaptiveSmoothForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Adaptive Smooth";
             this.groupBox1.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.trackBar ) ).EndInit( );

@@ -11,22 +11,22 @@ namespace IPLab
     /// <summary>
     /// Summary description for PixelateForm.
     /// </summary>
-    public class PixelateForm : System.Windows.Forms.Form
+    public class PixelateForm : Form
     {
         private Pixellate filter = new Pixellate( 8 );
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Label label1;
+        private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.TextBox widthBox;
-        private System.Windows.Forms.TrackBar widthTrackBar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox heightBox;
-        private System.Windows.Forms.TrackBar heightTrackBar;
-        private System.Windows.Forms.CheckBox syncCheck;
+        private PictureBox pictureBox1;
+        private Button okButton;
+        private Button cancelButton;
+        private TextBox widthBox;
+        private TrackBar widthTrackBar;
+        private Label label2;
+        private TextBox heightBox;
+        private TrackBar heightTrackBar;
+        private CheckBox syncCheck;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -83,18 +83,18 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.widthBox = new System.Windows.Forms.TextBox( );
-            this.widthTrackBar = new System.Windows.Forms.TrackBar( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.widthBox = new TextBox( );
+            this.widthTrackBar = new TrackBar( );
+            this.groupBox1 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.heightBox = new System.Windows.Forms.TextBox( );
-            this.heightTrackBar = new System.Windows.Forms.TrackBar( );
-            this.syncCheck = new System.Windows.Forms.CheckBox( );
+            this.pictureBox1 = new PictureBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
+            this.label2 = new Label( );
+            this.heightBox = new TextBox( );
+            this.heightTrackBar = new TrackBar( );
+            this.syncCheck = new CheckBox( );
             ( (System.ComponentModel.ISupportInitialize) ( this.widthTrackBar ) ).BeginInit( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.heightTrackBar ) ).BeginInit( );
@@ -151,7 +151,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 182 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 210, 2 );
@@ -160,8 +160,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 124, 195 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 5;
@@ -169,8 +169,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 209, 195 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 6;
@@ -209,7 +209,7 @@ namespace IPLab
             // syncCheck
             // 
             this.syncCheck.Checked = true;
-            this.syncCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.syncCheck.CheckState = CheckState.Checked;
             this.syncCheck.Location = new System.Drawing.Point( 160, 15 );
             this.syncCheck.Name = "syncCheck";
             this.syncCheck.Size = new System.Drawing.Size( 55, 24 );
@@ -233,12 +233,12 @@ namespace IPLab
             this.Controls.Add( this.widthTrackBar );
             this.Controls.Add( this.widthBox );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PixelateForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Pixelate";
             ( (System.ComponentModel.ISupportInitialize) ( this.widthTrackBar ) ).EndInit( );
             this.groupBox1.ResumeLayout( false );

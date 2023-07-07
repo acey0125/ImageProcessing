@@ -23,7 +23,7 @@ namespace IPLab
 	/// <summary>
 	/// Summary description for Form1.
 	/// </summary>
-	public class MainForm : System.Windows.Forms.Form, IDocumentsHost
+	public class MainForm : Form, IDocumentsHost
 	{
 		private static string configFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "app.config");
 		private static string dockManagerConfigFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "DockManager.config");
@@ -35,98 +35,94 @@ namespace IPLab
 
 		private ToolBarManager toolBarManager;
 		private WeifenLuo.WinFormsUI.DockManager dockManager;
-		private System.Windows.Forms.MainMenu mainMenu;
-		private System.Windows.Forms.MenuItem fileItem;
-		private System.Windows.Forms.MenuItem exitFileItem;
-		private System.Windows.Forms.MenuItem OpenItem;
-		private System.Windows.Forms.MenuItem menuItem2;
-		private System.Windows.Forms.MenuItem closeFileItem;
-		private System.Windows.Forms.MenuItem closeAllFileItem;
-		private System.Windows.Forms.MenuItem optionsItem;
-		private System.Windows.Forms.MenuItem openInNewOptionsItem;
-		private System.Windows.Forms.MenuItem viewItem;
-		private System.Windows.Forms.MenuItem windowItem;
-		private System.Windows.Forms.MenuItem helpItem;
-		private System.Windows.Forms.MenuItem histogramViewItem;
-		private System.Windows.Forms.MenuItem redHistogramViewItem;
-		private System.Windows.Forms.MenuItem greenHistogramViewItem;
-		private System.Windows.Forms.MenuItem blueHistogramViewItem;
-		private System.Windows.Forms.StatusBarPanel zoomPanel;
-		private System.Windows.Forms.StatusBarPanel sizePanel;
-		private System.Windows.Forms.StatusBarPanel infoPanel;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.StatusBar statusBar;
-		private System.Windows.Forms.MenuItem rememberOptionsItem;
-		private System.Windows.Forms.MenuItem menuItem1;
-		private System.Windows.Forms.MenuItem reloadFileItem;
-		private System.Windows.Forms.MenuItem menuItem3;
-		private System.Windows.Forms.MenuItem centerViewItem;
-		private System.Windows.Forms.StatusBarPanel selectionPanel;
-		private System.Windows.Forms.OpenFileDialog ofd;
-		private System.Windows.Forms.StatusBarPanel colorPanel;
-		private System.Windows.Forms.ImageList imageList;
-		private System.Windows.Forms.ToolBar mainToolBar;
-		private System.Windows.Forms.ToolBarButton openButton;
-		private System.Windows.Forms.ToolBarButton sep1;
-		private System.Windows.Forms.ToolBarButton histogramButton;
-		private System.Windows.Forms.ToolBar imageToolBar;
-		private System.Windows.Forms.ImageList imageList2;
-		private System.Windows.Forms.ToolBarButton cloneButton;
-		private System.Windows.Forms.ToolBarButton cropButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton1;
-		private System.Windows.Forms.ToolBarButton toolBarButton2;
-		private System.Windows.Forms.ToolBarButton zoomInButton;
-		private System.Windows.Forms.ToolBarButton zoomOutButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton3;
-		private System.Windows.Forms.ToolBarButton fitToScreenButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton4;
-		private System.Windows.Forms.ToolBarButton aboutButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton5;
-		private System.Windows.Forms.ToolBarButton levelsButton;
-		private System.Windows.Forms.ToolBarButton grayscaleButton;
-		private System.Windows.Forms.ToolBarButton thresholdButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton6;
-		private System.Windows.Forms.ToolBarButton morphologyButton;
-		private System.Windows.Forms.ToolBarButton convolutionButton;
-		private System.Windows.Forms.MenuItem mainBarViewItem;
-		private System.Windows.Forms.MenuItem imageBarViewItem;
-		private System.Windows.Forms.MenuItem menuItem7;
-		private System.Windows.Forms.ToolBarButton resizeButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton7;
-		private System.Windows.Forms.ToolBarButton rotateButton;
-		private System.Windows.Forms.StatusBarPanel hslPanel;
-		private System.Windows.Forms.ToolBarButton toolBarButton8;
-		private System.Windows.Forms.ToolBarButton saturationButton;
-		private System.Windows.Forms.ToolBarButton fourierButton;
-		private System.Windows.Forms.MenuItem copyFileItem;
-		private System.Windows.Forms.MenuItem pasteFileItem;
-		private System.Windows.Forms.MenuItem menuItem5;
-		private System.Windows.Forms.MenuItem saveFileItem;
-		private System.Windows.Forms.MenuItem aboutHelpItem;
-		private System.Windows.Forms.SaveFileDialog sfd;
-		private System.Windows.Forms.ToolBarButton pasteButton;
-		private System.Windows.Forms.ToolBarButton saveButton;
-		private System.Windows.Forms.ToolBarButton copyButton;
-		private System.Windows.Forms.ToolBarButton toolBarButton9;
+		private MainMenu mainMenu;
+		private MenuItem fileItem;
+		private MenuItem exitFileItem;
+		private MenuItem OpenItem;
+		private MenuItem menuItem2;
+		private MenuItem closeFileItem;
+		private MenuItem closeAllFileItem;
+		private MenuItem optionsItem;
+		private MenuItem openInNewOptionsItem;
+		private MenuItem viewItem;
+		private MenuItem windowItem;
+		private MenuItem helpItem;
+		private MenuItem histogramViewItem;
+		private MenuItem redHistogramViewItem;
+		private MenuItem greenHistogramViewItem;
+		private MenuItem blueHistogramViewItem;
+		private StatusBarPanel zoomPanel;
+		private StatusBarPanel sizePanel;
+		private StatusBarPanel infoPanel;
+		private Panel panel1;
+		private StatusBar statusBar;
+		private MenuItem rememberOptionsItem;
+		private MenuItem menuItem1;
+		private MenuItem reloadFileItem;
+		private MenuItem menuItem3;
+		private MenuItem centerViewItem;
+		private StatusBarPanel selectionPanel;
+		private OpenFileDialog ofd;
+		private StatusBarPanel colorPanel;
+		private ImageList imageList;
+		private ToolBar mainToolBar;
+		private ToolBarButton openButton;
+		private ToolBarButton sep1;
+		private ToolBarButton histogramButton;
+		private ToolBar imageToolBar;
+		private ImageList imageList2;
+		private ToolBarButton cloneButton;
+		private ToolBarButton cropButton;
+		private ToolBarButton toolBarButton1;
+		private ToolBarButton toolBarButton2;
+		private ToolBarButton zoomInButton;
+		private ToolBarButton zoomOutButton;
+		private ToolBarButton toolBarButton3;
+		private ToolBarButton fitToScreenButton;
+		private ToolBarButton toolBarButton4;
+		private ToolBarButton aboutButton;
+		private ToolBarButton toolBarButton5;
+		private ToolBarButton levelsButton;
+		private ToolBarButton grayscaleButton;
+		private ToolBarButton thresholdButton;
+		private ToolBarButton toolBarButton6;
+		private ToolBarButton morphologyButton;
+		private ToolBarButton convolutionButton;
+		private MenuItem mainBarViewItem;
+		private MenuItem imageBarViewItem;
+		private MenuItem menuItem7;
+		private ToolBarButton resizeButton;
+		private ToolBarButton toolBarButton7;
+		private ToolBarButton rotateButton;
+		private StatusBarPanel hslPanel;
+		private ToolBarButton toolBarButton8;
+		private ToolBarButton saturationButton;
+		private ToolBarButton fourierButton;
+		private MenuItem copyFileItem;
+		private MenuItem pasteFileItem;
+		private MenuItem menuItem5;
+		private MenuItem saveFileItem;
+		private SaveFileDialog sfd;
+		private ToolBarButton pasteButton;
+		private ToolBarButton saveButton;
+		private ToolBarButton copyButton;
+		private ToolBarButton toolBarButton9;
 		private System.Drawing.Printing.PrintDocument printDocument;
-		private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
-		private System.Windows.Forms.MenuItem printPreviewFileItem;
-		private System.Windows.Forms.MenuItem pageSetupFileItem;
-		private System.Windows.Forms.MenuItem printFileItem;
-		private System.Windows.Forms.MenuItem menuItem8;
-		private System.Windows.Forms.PageSetupDialog pageSetupDialog;
-		private System.Windows.Forms.PrintDialog printDialog;
-		private System.Windows.Forms.StatusBarPanel ycbcrPanel;
-		private System.Windows.Forms.MenuItem statisticsViewItem;
+		private PrintPreviewDialog printPreviewDialog;
+		private MenuItem printPreviewFileItem;
+		private MenuItem pageSetupFileItem;
+		private MenuItem printFileItem;
+		private MenuItem menuItem8;
+		private PageSetupDialog pageSetupDialog;
+		private PrintDialog printDialog;
+		private StatusBarPanel ycbcrPanel;
+		private MenuItem statisticsViewItem;
 		private System.ComponentModel.IContainer components;
 
 		public MainForm()
 		{
-			//
-			// Required for Windows Form Designer support
-			//
-			InitializeComponent();
 
+			InitializeComponent();
 			//
 			// TODO: Add any constructor code after InitializeComponent call
 			//
@@ -138,12 +134,12 @@ namespace IPLab
 			// main tool bar
 			mainToolBar.Text = "Main Tool Bar";
 			holder = toolBarManager.AddControl(mainToolBar);
-			holder.AllowedBorders = AllowedBorders.Top | AllowedBorders.Left | AllowedBorders.Right;
+			holder.AllowedBorders = AllowedBorders.Left;
 
 			// image toolbar
 			imageToolBar.Text = "Image Tool Bar";
 			holder = toolBarManager.AddControl(imageToolBar);
-			holder.AllowedBorders = AllowedBorders.Top | AllowedBorders.Left | AllowedBorders.Right;
+			holder.AllowedBorders = AllowedBorders.Left;
 
 			histogramWin.DockStateChanged += new EventHandler(histogram_DockStateChanged);
 			statisticsWin.DockStateChanged += new EventHandler(statistics_DockStateChanged);
@@ -209,7 +205,6 @@ namespace IPLab
             this.rememberOptionsItem = new System.Windows.Forms.MenuItem();
             this.windowItem = new System.Windows.Forms.MenuItem();
             this.helpItem = new System.Windows.Forms.MenuItem();
-            this.aboutHelpItem = new System.Windows.Forms.MenuItem();
             this.statusBar = new System.Windows.Forms.StatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -313,7 +308,7 @@ namespace IPLab
             // 
             this.reloadFileItem.Index = 1;
             this.reloadFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlR;
-            this.reloadFileItem.Text = "&Reload";
+            this.reloadFileItem.Text = "g";
             this.reloadFileItem.Click += new System.EventHandler(this.reloadFileItem_Click);
             // 
             // saveFileItem
@@ -433,14 +428,14 @@ namespace IPLab
             // 
             this.histogramViewItem.Index = 3;
             this.histogramViewItem.Shortcut = System.Windows.Forms.Shortcut.CtrlH;
-            this.histogramViewItem.Text = "&Histogram";
+            this.histogramViewItem.Text = "Histogram";
             this.histogramViewItem.Click += new System.EventHandler(this.histogramViewItem_Click);
             // 
             // statisticsViewItem
             // 
             this.statisticsViewItem.Index = 4;
             this.statisticsViewItem.Shortcut = System.Windows.Forms.Shortcut.CtrlT;
-            this.statisticsViewItem.Text = "&Statistics";
+            this.statisticsViewItem.Text = "Statistics";
             this.statisticsViewItem.Click += new System.EventHandler(this.statisticsViewItem_Click);
             // 
             // redHistogramViewItem
@@ -476,7 +471,7 @@ namespace IPLab
             // 
             this.centerViewItem.Index = 9;
             this.centerViewItem.Shortcut = System.Windows.Forms.Shortcut.F9;
-            this.centerViewItem.Text = "&Center";
+            this.centerViewItem.Text = "Center";
             this.centerViewItem.Click += new System.EventHandler(this.centerViewItem_Click);
             // 
             // optionsItem
@@ -492,13 +487,13 @@ namespace IPLab
             // openInNewOptionsItem
             // 
             this.openInNewOptionsItem.Index = 0;
-            this.openInNewOptionsItem.Text = "Open in &new document on change";
+            this.openInNewOptionsItem.Text = "Open in new document on change";
             this.openInNewOptionsItem.Click += new System.EventHandler(this.openInNewOptionsItem_Click);
             // 
             // rememberOptionsItem
             // 
             this.rememberOptionsItem.Index = 1;
-            this.rememberOptionsItem.Text = "&Remember on change";
+            this.rememberOptionsItem.Text = "Remember on change";
             this.rememberOptionsItem.Click += new System.EventHandler(this.rememberOptionsItem_Click);
             // 
             // windowItem
@@ -506,21 +501,14 @@ namespace IPLab
             this.windowItem.Index = 3;
             this.windowItem.MdiList = true;
             this.windowItem.MergeOrder = 3;
-            this.windowItem.Text = "Window";
+            this.windowItem.Text = "Windows";
             // 
             // helpItem
             // 
             this.helpItem.Index = 4;
-            this.helpItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.aboutHelpItem});
             this.helpItem.MergeOrder = 4;
-            this.helpItem.Text = "Help";
-            // 
-            // aboutHelpItem
-            // 
-            this.aboutHelpItem.Index = 0;
-            this.aboutHelpItem.Text = "About";
-            this.aboutHelpItem.Click += new System.EventHandler(this.aboutHelpItem_Click);
+            this.helpItem.Text = "About";
+            this.helpItem.Click += new System.EventHandler(this.aboutHelpItem_Click);
             // 
             // statusBar
             // 
@@ -553,29 +541,28 @@ namespace IPLab
             // 
             this.selectionPanel.Name = "selectionPanel";
             this.selectionPanel.ToolTipText = "Current point and selection size";
-            this.selectionPanel.Width = 120;
             // 
             // colorPanel
             // 
             this.colorPanel.Name = "colorPanel";
             this.colorPanel.ToolTipText = "Current color";
-            this.colorPanel.Width = 110;
+            this.colorPanel.Width = 135;
             // 
             // hslPanel
             // 
             this.hslPanel.Name = "hslPanel";
-            this.hslPanel.Width = 130;
+            this.hslPanel.Width = 165;
             // 
             // ycbcrPanel
             // 
             this.ycbcrPanel.Name = "ycbcrPanel";
-            this.ycbcrPanel.Width = 145;
+            this.ycbcrPanel.Width = 210;
             // 
             // infoPanel
             // 
             this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Width = 832;
+            this.infoPanel.Width = 727;
             // 
             // panel1
             // 
@@ -890,10 +877,11 @@ namespace IPLab
             // 
             // MainForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+            this.AutoScaleBaseSize = new System.Drawing.Size(7, 19);
             this.ClientSize = new System.Drawing.Size(1504, 960);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Menu = this.mainMenu;
@@ -1061,7 +1049,7 @@ namespace IPLab
 		}
 
 		// Main tool bar clicked
-		private void mainToolBar_ButtonClick(object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
+		private void mainToolBar_ButtonClick(object sender, ToolBarButtonClickEventArgs e)
 		{
 			switch (e.Button.ImageIndex)
 			{
@@ -1621,7 +1609,7 @@ namespace IPLab
 		}
 
 		// On image toolbar clicked
-		private void imageToolBar_ButtonClick(object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
+		private void imageToolBar_ButtonClick(object sender, ToolBarButtonClickEventArgs e)
 		{
 			Content	doc = dockManager.ActiveDocument;
 

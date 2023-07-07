@@ -14,7 +14,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for LevelsLinearForm.
     /// </summary>
-    public class LevelsLinearForm : System.Windows.Forms.Form
+    public class LevelsLinearForm : Form
     {
         private static Color[] colors = new Color[] {
 														Color.FromArgb(192, 0, 0),
@@ -33,24 +33,24 @@ namespace IPLab
 
         private AForge.Imaging.ImageStatistics imgStat;
         private IPLab.Histogram histogram;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox channelCombo;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.TextBox inMinBox;
-        private System.Windows.Forms.TextBox inMaxBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox allCheckBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox outMinBox;
-        private System.Windows.Forms.TextBox outMaxBox;
+        private Label label1;
+        private ComboBox channelCombo;
+        private Button okButton;
+        private Button cancelButton;
+        private TextBox inMinBox;
+        private TextBox inMaxBox;
+        private Label label2;
+        private CheckBox allCheckBox;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label3;
+        private TextBox outMinBox;
+        private TextBox outMaxBox;
         private IPLab.ColorSlider inSlider;
         private IPLab.ColorSlider outSlider;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private GroupBox groupBox4;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private PictureBox pictureBox3;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -121,24 +121,24 @@ namespace IPLab
         private void InitializeComponent( )
         {
             this.histogram = new IPLab.Histogram( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.channelCombo = new System.Windows.Forms.ComboBox( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.inMinBox = new System.Windows.Forms.TextBox( );
-            this.inMaxBox = new System.Windows.Forms.TextBox( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.allCheckBox = new System.Windows.Forms.CheckBox( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.pictureBox2 = new System.Windows.Forms.PictureBox( );
-            this.label3 = new System.Windows.Forms.Label( );
-            this.outMinBox = new System.Windows.Forms.TextBox( );
-            this.outMaxBox = new System.Windows.Forms.TextBox( );
+            this.label1 = new Label( );
+            this.channelCombo = new ComboBox( );
+            this.okButton = new Button( );
+            this.cancelButton = new Button( );
+            this.inMinBox = new TextBox( );
+            this.inMaxBox = new TextBox( );
+            this.label2 = new Label( );
+            this.allCheckBox = new CheckBox( );
+            this.pictureBox1 = new PictureBox( );
+            this.pictureBox2 = new PictureBox( );
+            this.label3 = new Label( );
+            this.outMinBox = new TextBox( );
+            this.outMaxBox = new TextBox( );
             this.inSlider = new IPLab.ColorSlider( );
             this.outSlider = new IPLab.ColorSlider( );
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
+            this.groupBox4 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
-            this.pictureBox3 = new System.Windows.Forms.PictureBox( );
+            this.pictureBox3 = new PictureBox( );
             this.groupBox4.SuspendLayout( );
             this.SuspendLayout( );
             // 
@@ -159,7 +159,7 @@ namespace IPLab
             // 
             // channelCombo
             // 
-            this.channelCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.channelCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.channelCombo.Location = new System.Drawing.Point( 60, 10 );
             this.channelCombo.Name = "channelCombo";
             this.channelCombo.Size = new System.Drawing.Size( 90, 21 );
@@ -168,8 +168,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 295, 300 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 10;
@@ -177,8 +177,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 385, 300 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 11;
@@ -219,7 +219,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 40 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 258, 2 );
@@ -228,7 +228,7 @@ namespace IPLab
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point( 10, 260 );
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size( 258, 2 );
@@ -283,7 +283,7 @@ namespace IPLab
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox4.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox4.Location = new System.Drawing.Point( 290, 10 );
             this.groupBox4.Name = "groupBox4";
@@ -303,7 +303,7 @@ namespace IPLab
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point( 10, 323 );
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size( 258, 2 );
@@ -316,7 +316,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 469, 333 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.groupBox4,
 																		  this.outSlider,
 																		  this.inSlider,
@@ -335,12 +335,12 @@ namespace IPLab
 																		  this.channelCombo,
 																		  this.histogram,
 																		  this.label1} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LevelsLinearForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Levels";
             this.groupBox4.ResumeLayout( false );
             this.ResumeLayout( false );

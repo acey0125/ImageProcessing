@@ -11,17 +11,17 @@ namespace IPLab
     /// <summary>
     /// Summary description for MorphPhorm.
     /// </summary>
-    public class MorphForm : System.Windows.Forms.Form
+    public class MorphForm : Form
     {
         private Morph filter;
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private Button cancelButton;
+        private Button okButton;
+        private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private System.Windows.Forms.TrackBar percentageBar;
+        private TrackBar percentageBar;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -76,12 +76,12 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new System.Windows.Forms.Label( );
-            this.percentageBar = new System.Windows.Forms.TrackBar( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
+            this.label1 = new Label( );
+            this.percentageBar = new TrackBar( );
+            this.pictureBox1 = new PictureBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.groupBox1 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
             ( (System.ComponentModel.ISupportInitialize) ( this.percentageBar ) ).BeginInit( );
             this.SuspendLayout( );
@@ -108,7 +108,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 182 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 210, 2 );
@@ -117,8 +117,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 209, 195 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 13;
@@ -126,8 +126,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 124, 195 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 12;
@@ -162,12 +162,12 @@ namespace IPLab
             this.Controls.Add( this.groupBox1 );
             this.Controls.Add( this.percentageBar );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MorphForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Morphing";
             ( (System.ComponentModel.ISupportInitialize) ( this.percentageBar ) ).EndInit( );
             this.ResumeLayout( false );

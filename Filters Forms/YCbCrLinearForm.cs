@@ -14,7 +14,7 @@ namespace IPLab
     /// <summary>
     /// Summary description for YCbCrLinearForm.
     /// </summary>
-    public class YCbCrLinearForm : System.Windows.Forms.Form
+    public class YCbCrLinearForm : Form
     {
         private YCbCrLinear filter = new YCbCrLinear( );
         private DoubleRange inY = new DoubleRange( 0, 1 );
@@ -25,24 +25,24 @@ namespace IPLab
         private DoubleRange outCr = new DoubleRange( -0.5, 0.5 );
         private AForge.Imaging.ImageStatisticsYCbCr imgStat;
 
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private Button cancelButton;
+        private Button okButton;
+        private GroupBox groupBox4;
         private IPLab.FilterPreview filterPreview;
         private IPLab.ColorSlider outSlider;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox outMaxBox;
-        private System.Windows.Forms.TextBox outMinBox;
-        private System.Windows.Forms.Label label3;
+        private PictureBox pictureBox3;
+        private TextBox outMaxBox;
+        private TextBox outMinBox;
+        private Label label3;
         private IPLab.ColorSlider inSlider;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private PictureBox pictureBox2;
         private IPLab.Histogram histogram;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox inMinBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox inMaxBox;
-        private System.Windows.Forms.ComboBox componentCombo;
+        private Label label2;
+        private TextBox inMinBox;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private TextBox inMaxBox;
+        private ComboBox componentCombo;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -97,31 +97,31 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.groupBox4 = new System.Windows.Forms.GroupBox( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.groupBox4 = new GroupBox( );
             this.filterPreview = new IPLab.FilterPreview( );
             this.outSlider = new IPLab.ColorSlider( );
-            this.pictureBox3 = new System.Windows.Forms.PictureBox( );
-            this.outMaxBox = new System.Windows.Forms.TextBox( );
-            this.outMinBox = new System.Windows.Forms.TextBox( );
-            this.label3 = new System.Windows.Forms.Label( );
+            this.pictureBox3 = new PictureBox( );
+            this.outMaxBox = new TextBox( );
+            this.outMinBox = new TextBox( );
+            this.label3 = new Label( );
             this.inSlider = new IPLab.ColorSlider( );
-            this.pictureBox2 = new System.Windows.Forms.PictureBox( );
+            this.pictureBox2 = new PictureBox( );
             this.histogram = new IPLab.Histogram( );
-            this.label2 = new System.Windows.Forms.Label( );
-            this.inMinBox = new System.Windows.Forms.TextBox( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.label1 = new System.Windows.Forms.Label( );
-            this.inMaxBox = new System.Windows.Forms.TextBox( );
-            this.componentCombo = new System.Windows.Forms.ComboBox( );
+            this.label2 = new Label( );
+            this.inMinBox = new TextBox( );
+            this.pictureBox1 = new PictureBox( );
+            this.label1 = new Label( );
+            this.inMaxBox = new TextBox( );
+            this.componentCombo = new ComboBox( );
             this.groupBox4.SuspendLayout( );
             this.SuspendLayout( );
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 385, 300 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 42;
@@ -129,8 +129,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 295, 300 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 41;
@@ -138,7 +138,7 @@ namespace IPLab
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.groupBox4.Controls.AddRange( new Control[] {
 																					this.filterPreview} );
             this.groupBox4.Location = new System.Drawing.Point( 290, 10 );
             this.groupBox4.Name = "groupBox4";
@@ -167,7 +167,7 @@ namespace IPLab
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point( 10, 323 );
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size( 258, 2 );
@@ -213,7 +213,7 @@ namespace IPLab
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point( 10, 260 );
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size( 258, 2 );
@@ -246,7 +246,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 40 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 258, 2 );
@@ -272,7 +272,7 @@ namespace IPLab
             // 
             // componentCombo
             // 
-            this.componentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.componentCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             this.componentCombo.Items.AddRange( new object[] {
 																"Y Channel",
 																"Cb Channel",
@@ -289,7 +289,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size( 469, 333 );
-            this.Controls.AddRange( new System.Windows.Forms.Control[] {
+            this.Controls.AddRange( new Control[] {
 																		  this.cancelButton,
 																		  this.okButton,
 																		  this.groupBox4,
@@ -307,12 +307,12 @@ namespace IPLab
 																		  this.label1,
 																		  this.inMaxBox,
 																		  this.componentCombo} );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "YCbCrLinearForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "YCbCr Linear Correction";
             this.groupBox4.ResumeLayout( false );
             this.ResumeLayout( false );

@@ -1,6 +1,6 @@
 // Image Processing Lab
 //
-// Copyright © Andrew Kirillov, 2005
+// Copyright ?Andrew Kirillov, 2005
 // andrew.kirillov@gmail.com
 //
 
@@ -18,7 +18,7 @@ namespace IPLab
     /// <summary>
     /// FilterPreview window
     /// </summary>
-    public class FilterPreview : System.Windows.Forms.Control
+    public class FilterPreview : Control
     {
         private Bitmap previewImage;
         private Bitmap image;
@@ -102,9 +102,9 @@ namespace IPLab
         // Initialize control
         private void InitializeComponent( )
         {
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler( this.FilterPreview_MouseUp );
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler( this.FilterPreview_MouseMove );
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler( this.FilterPreview_MouseDown );
+            this.MouseUp += new MouseEventHandler( this.FilterPreview_MouseUp );
+            this.MouseMove += new MouseEventHandler( this.FilterPreview_MouseMove );
+            this.MouseDown += new MouseEventHandler( this.FilterPreview_MouseDown );
         }
 
         // Paint control
@@ -181,7 +181,7 @@ namespace IPLab
         }
 
         // On mouse move
-        private void FilterPreview_MouseMove( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void FilterPreview_MouseMove( object sender, MouseEventArgs e )
         {
             if ( image != null )
             {
@@ -216,7 +216,7 @@ namespace IPLab
         }
 
         // On mouse button down
-        private void FilterPreview_MouseDown( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void FilterPreview_MouseDown( object sender, MouseEventArgs e )
         {
             if ( ( image != null ) && ( e.Button == MouseButtons.Left ) )
             {
@@ -245,7 +245,7 @@ namespace IPLab
         }
 
         // On mouse button up
-        private void FilterPreview_MouseUp( object sender, System.Windows.Forms.MouseEventArgs e )
+        private void FilterPreview_MouseUp( object sender, MouseEventArgs e )
         {
             if ( tracking )
             {

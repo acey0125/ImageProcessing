@@ -11,16 +11,16 @@ namespace IPLab
     /// <summary>
     /// Summary description for OilPaintingForm.
     /// </summary>
-    public class OilPaintingForm : System.Windows.Forms.Form
+    public class OilPaintingForm : Form
     {
         private OilPainting filter = new OilPainting( 7 );
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TrackBar trackBar;
-        private System.Windows.Forms.TextBox sizeBox;
-        private System.Windows.Forms.Label label1;
+        private Button cancelButton;
+        private Button okButton;
+        private PictureBox pictureBox1;
+        private GroupBox groupBox1;
+        private TrackBar trackBar;
+        private TextBox sizeBox;
+        private Label label1;
         private IPLab.FilterPreview filterPreview;
         /// <summary>
         /// Required designer variable.
@@ -74,13 +74,13 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.cancelButton = new System.Windows.Forms.Button( );
-            this.okButton = new System.Windows.Forms.Button( );
-            this.pictureBox1 = new System.Windows.Forms.PictureBox( );
-            this.groupBox1 = new System.Windows.Forms.GroupBox( );
-            this.trackBar = new System.Windows.Forms.TrackBar( );
-            this.sizeBox = new System.Windows.Forms.TextBox( );
-            this.label1 = new System.Windows.Forms.Label( );
+            this.cancelButton = new Button( );
+            this.okButton = new Button( );
+            this.pictureBox1 = new PictureBox( );
+            this.groupBox1 = new GroupBox( );
+            this.trackBar = new TrackBar( );
+            this.sizeBox = new TextBox( );
+            this.label1 = new Label( );
             this.filterPreview = new IPLab.FilterPreview( );
             this.groupBox1.SuspendLayout( );
             ( (System.ComponentModel.ISupportInitialize) ( this.trackBar ) ).BeginInit( );
@@ -88,8 +88,8 @@ namespace IPLab
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.DialogResult = DialogResult.Cancel;
+            this.cancelButton.FlatStyle = FlatStyle.Flat;
             this.cancelButton.Location = new System.Drawing.Point( 120, 160 );
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.TabIndex = 13;
@@ -97,8 +97,8 @@ namespace IPLab
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.DialogResult = DialogResult.OK;
+            this.okButton.FlatStyle = FlatStyle.Flat;
             this.okButton.Location = new System.Drawing.Point( 35, 160 );
             this.okButton.Name = "okButton";
             this.okButton.TabIndex = 12;
@@ -106,7 +106,7 @@ namespace IPLab
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point( 10, 150 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 210, 2 );
@@ -173,12 +173,12 @@ namespace IPLab
             this.Controls.Add( this.trackBar );
             this.Controls.Add( this.sizeBox );
             this.Controls.Add( this.label1 );
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OilPaintingForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Oil Painting";
             this.groupBox1.ResumeLayout( false );
             ( (System.ComponentModel.ISupportInitialize) ( this.trackBar ) ).EndInit( );
