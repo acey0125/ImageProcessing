@@ -615,7 +615,7 @@ namespace IPLab
             this.mainToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.mainToolBar.DropDownArrows = true;
             this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(147, 38);
+            this.mainToolBar.Location = new System.Drawing.Point(70, 75);
             this.mainToolBar.Name = "mainToolBar";
             this.mainToolBar.ShowToolTips = true;
             this.mainToolBar.Size = new System.Drawing.Size(29, 202);
@@ -715,7 +715,7 @@ namespace IPLab
             this.imageToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.imageToolBar.DropDownArrows = true;
             this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(119, 310);
+            this.imageToolBar.Location = new System.Drawing.Point(196, 122);
             this.imageToolBar.Name = "imageToolBar";
             this.imageToolBar.ShowToolTips = true;
             this.imageToolBar.Size = new System.Drawing.Size(430, 26);
