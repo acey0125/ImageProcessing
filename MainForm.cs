@@ -34,7 +34,7 @@ namespace IPLab
 		private ImageStatisticsWindow statisticsWin = new ImageStatisticsWindow();
 
 		private ToolBarManager toolBarManager;
-		private WeifenLuo.WinFormsUI.DockManager dockManager;
+		private DockManager dockManager;
 		private MainMenu mainMenu;
 		private MenuItem fileItem;
 		private MenuItem exitFileItem;
@@ -107,7 +107,7 @@ namespace IPLab
 		private ToolBarButton saveButton;
 		private ToolBarButton copyButton;
 		private ToolBarButton toolBarButton9;
-		private System.Drawing.Printing.PrintDocument printDocument;
+		private PrintDocument printDocument;
 		private PrintPreviewDialog printPreviewDialog;
 		private MenuItem printPreviewFileItem;
 		private MenuItem pageSetupFileItem;
@@ -117,15 +117,12 @@ namespace IPLab
 		private PrintDialog printDialog;
 		private StatusBarPanel ycbcrPanel;
 		private MenuItem statisticsViewItem;
-		private System.ComponentModel.IContainer components;
+        private IContainer components;
 
 		public MainForm()
 		{
 
 			InitializeComponent();
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
 			toolBarManager = new ToolBarManager(this, this);
 
 			// add toolbars
@@ -133,12 +130,13 @@ namespace IPLab
 
 			// main tool bar
 			mainToolBar.Text = "Main Tool Bar";
-			holder = toolBarManager.AddControl(mainToolBar);
-			holder.AllowedBorders = AllowedBorders.Left;
+			holder = toolBarManager.AddControl(mainToolBar, DockStyle.Left);
+            holder.AllowedBorders = AllowedBorders.Left;
+			//mainToolBar.Height = 100;
 
 			// image toolbar
 			imageToolBar.Text = "Image Tool Bar";
-			holder = toolBarManager.AddControl(imageToolBar);
+			holder = toolBarManager.AddControl(imageToolBar, DockStyle.Left);
 			holder.AllowedBorders = AllowedBorders.Left;
 
 			histogramWin.DockStateChanged += new EventHandler(histogram_DockStateChanged);
@@ -301,21 +299,21 @@ namespace IPLab
             // 
             this.OpenItem.Index = 0;
             this.OpenItem.Shortcut = System.Windows.Forms.Shortcut.CtrlO;
-            this.OpenItem.Text = "&Open";
+            this.OpenItem.Text = "Open";
             this.OpenItem.Click += new System.EventHandler(this.OpenItem_Click);
             // 
             // reloadFileItem
             // 
             this.reloadFileItem.Index = 1;
             this.reloadFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlR;
-            this.reloadFileItem.Text = "g";
+            this.reloadFileItem.Text = "Reload";
             this.reloadFileItem.Click += new System.EventHandler(this.reloadFileItem_Click);
             // 
             // saveFileItem
             // 
             this.saveFileItem.Index = 2;
             this.saveFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
-            this.saveFileItem.Text = "&Save";
+            this.saveFileItem.Text = "Save";
             this.saveFileItem.Click += new System.EventHandler(this.saveFileItem_Click);
             // 
             // menuItem1
@@ -327,14 +325,14 @@ namespace IPLab
             // 
             this.copyFileItem.Index = 4;
             this.copyFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlC;
-            this.copyFileItem.Text = "&Copy";
+            this.copyFileItem.Text = "Copy";
             this.copyFileItem.Click += new System.EventHandler(this.copyFileItem_Click);
             // 
             // pasteFileItem
             // 
             this.pasteFileItem.Index = 5;
             this.pasteFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlV;
-            this.pasteFileItem.Text = "&Paste";
+            this.pasteFileItem.Text = "Paste";
             this.pasteFileItem.Click += new System.EventHandler(this.pasteFileItem_Click);
             // 
             // menuItem5
@@ -346,7 +344,7 @@ namespace IPLab
             // 
             this.closeFileItem.Index = 7;
             this.closeFileItem.Shortcut = System.Windows.Forms.Shortcut.CtrlF4;
-            this.closeFileItem.Text = "C&lose";
+            this.closeFileItem.Text = "Close";
             this.closeFileItem.Click += new System.EventHandler(this.closeFileItem_Click);
             // 
             // closeAllFileItem
@@ -363,13 +361,13 @@ namespace IPLab
             // pageSetupFileItem
             // 
             this.pageSetupFileItem.Index = 10;
-            this.pageSetupFileItem.Text = "Page Setup";
+            this.pageSetupFileItem.Text = "PrintSettings";
             this.pageSetupFileItem.Click += new System.EventHandler(this.pageSetupFileItem_Click);
             // 
             // printFileItem
             // 
             this.printFileItem.Index = 11;
-            this.printFileItem.Text = "&Print";
+            this.printFileItem.Text = "Print";
             this.printFileItem.Click += new System.EventHandler(this.printFileItem_Click);
             // 
             // printPreviewFileItem
@@ -386,7 +384,7 @@ namespace IPLab
             // exitFileItem
             // 
             this.exitFileItem.Index = 14;
-            this.exitFileItem.Text = "E&xit";
+            this.exitFileItem.Text = "Exit";
             this.exitFileItem.Click += new System.EventHandler(this.exitFileItem_Click);
             // 
             // viewItem
@@ -512,7 +510,7 @@ namespace IPLab
             // 
             // statusBar
             // 
-            this.statusBar.Location = new System.Drawing.Point(0, 937);
+            this.statusBar.Location = new System.Drawing.Point(0, 914);
             this.statusBar.Name = "statusBar";
             this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
             this.zoomPanel,
@@ -523,7 +521,7 @@ namespace IPLab
             this.ycbcrPanel,
             this.infoPanel});
             this.statusBar.ShowPanels = true;
-            this.statusBar.Size = new System.Drawing.Size(1504, 23);
+            this.statusBar.Size = new System.Drawing.Size(1504, 46);
             this.statusBar.TabIndex = 1;
             // 
             // zoomPanel
@@ -562,7 +560,7 @@ namespace IPLab
             // 
             this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Width = 727;
+            this.infoPanel.Width = 711;
             // 
             // panel1
             // 
@@ -570,23 +568,25 @@ namespace IPLab
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1504, 937);
+            this.panel1.Size = new System.Drawing.Size(1504, 914);
             this.panel1.TabIndex = 2;
             // 
             // dockManager
             // 
             this.dockManager.ActiveAutoHideContent = null;
+            this.dockManager.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.dockManager.Controls.Add(this.mainToolBar);
             this.dockManager.Controls.Add(this.imageToolBar);
             this.dockManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockManager.Location = new System.Drawing.Point(0, 0);
             this.dockManager.Name = "dockManager";
-            this.dockManager.Size = new System.Drawing.Size(1504, 937);
+            this.dockManager.Size = new System.Drawing.Size(1504, 914);
             this.dockManager.TabIndex = 2;
             this.dockManager.ActiveDocumentChanged += new System.EventHandler(this.dockManager_ActiveDocumentChanged);
             // 
             // mainToolBar
             // 
+            this.mainToolBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainToolBar.Appearance = System.Windows.Forms.ToolBarAppearance.Flat;
             this.mainToolBar.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
             this.openButton,
@@ -598,14 +598,14 @@ namespace IPLab
             this.histogramButton,
             this.toolBarButton4,
             this.aboutButton});
-            this.mainToolBar.Divider = false;
             this.mainToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.mainToolBar.DropDownArrows = true;
+            this.mainToolBar.Font = new System.Drawing.Font("ËÎÌו", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(78, 75);
+            this.mainToolBar.Location = new System.Drawing.Point(92, 434);
             this.mainToolBar.Name = "mainToolBar";
             this.mainToolBar.ShowToolTips = true;
-            this.mainToolBar.Size = new System.Drawing.Size(29, 202);
+            this.mainToolBar.Size = new System.Drawing.Size(804, 28);
             this.mainToolBar.TabIndex = 2;
             this.mainToolBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.mainToolBar_ButtonClick);
             // 
@@ -673,7 +673,7 @@ namespace IPLab
             // 
             // imageToolBar
             // 
-            this.imageToolBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.imageToolBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imageToolBar.Appearance = System.Windows.Forms.ToolBarAppearance.Flat;
             this.imageToolBar.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
             this.cloneButton,
@@ -697,16 +697,18 @@ namespace IPLab
             this.toolBarButton8,
             this.saturationButton,
             this.fourierButton});
-            this.imageToolBar.ButtonSize = new System.Drawing.Size(23, 25);
-            this.imageToolBar.Divider = false;
+            this.imageToolBar.ButtonSize = new System.Drawing.Size(23, 22);
             this.imageToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.imageToolBar.DropDownArrows = true;
+            this.imageToolBar.Enabled = false;
+            this.imageToolBar.Font = new System.Drawing.Font("ËÎÌו", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(210, 75);
+            this.imageToolBar.Location = new System.Drawing.Point(46, 230);
             this.imageToolBar.Name = "imageToolBar";
             this.imageToolBar.ShowToolTips = true;
-            this.imageToolBar.Size = new System.Drawing.Size(430, 26);
+            this.imageToolBar.Size = new System.Drawing.Size(804, 28);
             this.imageToolBar.TabIndex = 3;
+            this.imageToolBar.UseWaitCursor = true;
             this.imageToolBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.imageToolBar_ButtonClick);
             // 
             // cloneButton
@@ -877,7 +879,7 @@ namespace IPLab
             // 
             // MainForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(7, 19);
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
             this.ClientSize = new System.Drawing.Size(1504, 960);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar);
@@ -980,17 +982,6 @@ namespace IPLab
 						images.Add(img);
 					}
 				}
-			}
-
-			SelectImageForm form = new SelectImageForm();
-
-			form.Description = text;
-			form.ImageNames = names;
-
-			// allow user to select an image
-			if ((form.ShowDialog() == DialogResult.OK) && (form.SelectedItem != -1))
-			{
-				return (Bitmap) images[form.SelectedItem];
 			}
 
 			return null;
@@ -1715,5 +1706,10 @@ namespace IPLab
 				e.Graphics.DrawImage(image, e.MarginBounds.Left, e.MarginBounds.Top, width, height);
 			}
 		}
-	}
+
+        private void optionsItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

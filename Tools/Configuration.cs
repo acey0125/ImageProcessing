@@ -1,8 +1,3 @@
-// Image Processing Lab
-//
-// Copyright ?Andrew Kirillov, 2005
-// andrew.kirillov@gmail.com
-//
 
 namespace IPLab
 {

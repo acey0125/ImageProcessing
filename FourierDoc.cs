@@ -36,11 +36,7 @@ namespace IPLab
         private MenuItem menuItem1;
         private MenuItem frequencyFilterFourierItem;
         private MenuItem undoFourierItem;
-
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.Container components = null;
+        private IContainer components;
 
         // Image property
         public Bitmap Image
@@ -110,35 +106,37 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.mainMenu = new MainMenu( );
-            this.fourierItem = new MenuItem( );
-            this.backwardFourierItem = new MenuItem( );
-            this.menuItem1 = new MenuItem( );
-            this.frequencyFilterFourierItem = new MenuItem( );
-            this.undoFourierItem = new MenuItem( );
+            this.components = new System.ComponentModel.Container();
+            this.mainMenu = new System.Windows.Forms.MainMenu(this.components);
+            this.fourierItem = new System.Windows.Forms.MenuItem();
+            this.backwardFourierItem = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.frequencyFilterFourierItem = new System.Windows.Forms.MenuItem();
+            this.undoFourierItem = new System.Windows.Forms.MenuItem();
+            this.SuspendLayout();
             // 
             // mainMenu
             // 
-            this.mainMenu.MenuItems.AddRange( new MenuItem[] {
-																					 this.fourierItem} );
+            this.mainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.fourierItem});
             // 
             // fourierItem
             // 
             this.fourierItem.Index = 0;
-            this.fourierItem.MenuItems.AddRange( new MenuItem[] {
-																						this.backwardFourierItem,
-																						this.menuItem1,
-																						this.frequencyFilterFourierItem,
-																						this.undoFourierItem} );
+            this.fourierItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.backwardFourierItem,
+            this.menuItem1,
+            this.frequencyFilterFourierItem,
+            this.undoFourierItem});
             this.fourierItem.MergeOrder = 1;
             this.fourierItem.Text = "Fourier";
-            this.fourierItem.Popup += new System.EventHandler( this.fourierItem_Popup );
+            this.fourierItem.Popup += new System.EventHandler(this.fourierItem_Popup);
             // 
             // backwardFourierItem
             // 
             this.backwardFourierItem.Index = 0;
-            this.backwardFourierItem.Text = "&Backward Transformation";
-            this.backwardFourierItem.Click += new System.EventHandler( this.backwardFourierItem_Click );
+            this.backwardFourierItem.Text = "Backward Transformation";
+            this.backwardFourierItem.Click += new System.EventHandler(this.backwardFourierItem_Click);
             // 
             // menuItem1
             // 
@@ -149,23 +147,25 @@ namespace IPLab
             // 
             this.frequencyFilterFourierItem.Index = 2;
             this.frequencyFilterFourierItem.Text = "Frequency Filter";
-            this.frequencyFilterFourierItem.Click += new System.EventHandler( this.frequencyFilterFourierItem_Click );
+            this.frequencyFilterFourierItem.Click += new System.EventHandler(this.frequencyFilterFourierItem_Click);
             // 
             // undoFourierItem
             // 
             this.undoFourierItem.Index = 3;
-            this.undoFourierItem.Shortcut = Shortcut.CtrlZ;
-            this.undoFourierItem.Text = "&Undo";
-            this.undoFourierItem.Click += new System.EventHandler( this.undoFourierItem_Click );
+            this.undoFourierItem.Shortcut = System.Windows.Forms.Shortcut.CtrlZ;
+            this.undoFourierItem.Text = "Undo";
+            this.undoFourierItem.Click += new System.EventHandler(this.undoFourierItem_Click);
             // 
             // FourierDoc
             // 
             this.AllowedStates = WeifenLuo.WinFormsUI.ContentStates.Document;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
-            this.ClientSize = new System.Drawing.Size( 576, 453 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ClientSize = new System.Drawing.Size(576, 453);
             this.Menu = this.mainMenu;
             this.Name = "FourierDoc";
             this.Text = "Fourier";
+            this.ResumeLayout(false);
 
         }
         #endregion

@@ -92,228 +92,249 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            System.Resources.ResourceManager resources = new System.Resources.ResourceManager( typeof( HistogramWindow ) );
-            this.histogram = new IPLab.Histogram( );
-            this.label1 = new Label( );
-            this.channelCombo = new ComboBox( );
-            this.label2 = new Label( );
-            this.meanLabel = new Label( );
-            this.label3 = new Label( );
-            this.stdDevLabel = new Label( );
-            this.label4 = new Label( );
-            this.medianLabel = new Label( );
-            this.label5 = new Label( );
-            this.label6 = new Label( );
-            this.label7 = new Label( );
-            this.levelLabel = new Label( );
-            this.countLabel = new Label( );
-            this.percentileLabel = new Label( );
-            this.label8 = new Label( );
-            this.label9 = new Label( );
-            this.minLabel = new Label( );
-            this.maxLabel = new Label( );
-            this.logCheck = new CheckBox( );
-            this.SuspendLayout( );
-            // 
-            // histogram
-            // 
-            this.histogram.AllowSelection = true;
-            this.histogram.Location = new System.Drawing.Point( 5, 30 );
-            this.histogram.Name = "histogram";
-            this.histogram.Size = new System.Drawing.Size( 258, 162 );
-            this.histogram.TabIndex = 0;
-            this.histogram.PositionChanged += new IPLab.Histogram.HistogramEventHandler( this.histogram_PositionChanged );
-            this.histogram.SelectionChanged += new IPLab.Histogram.HistogramEventHandler( this.histogram_SelectionChanged );
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistogramWindow));
+            this.label1 = new System.Windows.Forms.Label();
+            this.channelCombo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.meanLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.stdDevLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.medianLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.levelLabel = new System.Windows.Forms.Label();
+            this.countLabel = new System.Windows.Forms.Label();
+            this.percentileLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.minLabel = new System.Windows.Forms.Label();
+            this.maxLabel = new System.Windows.Forms.Label();
+            this.logCheck = new System.Windows.Forms.CheckBox();
+            this.histogram = new IPLab.Histogram();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 5, 9 );
+            this.label1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(13, 363);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 51, 16 );
+            this.label1.Size = new System.Drawing.Size(223, 35);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Channel:";
+            this.label1.Text = "ColorChannel:";
             // 
             // channelCombo
             // 
-            this.channelCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.channelCombo.Location = new System.Drawing.Point( 60, 5 );
+            this.channelCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.channelCombo.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.channelCombo.Location = new System.Drawing.Point(283, 355);
             this.channelCombo.Name = "channelCombo";
-            this.channelCombo.Size = new System.Drawing.Size( 130, 21 );
+            this.channelCombo.Size = new System.Drawing.Size(338, 40);
             this.channelCombo.TabIndex = 3;
-            this.channelCombo.SelectedIndexChanged += new System.EventHandler( this.channelCombo_SelectedIndexChanged );
+            this.channelCombo.SelectedIndexChanged += new System.EventHandler(this.channelCombo_SelectedIndexChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 5, 195 );
+            this.label2.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(15, 474);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 37, 12 );
+            this.label2.Size = new System.Drawing.Size(96, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mean:";
             // 
             // meanLabel
             // 
-            this.meanLabel.Location = new System.Drawing.Point( 50, 195 );
+            this.meanLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.meanLabel.Location = new System.Drawing.Point(132, 474);
             this.meanLabel.Name = "meanLabel";
-            this.meanLabel.Size = new System.Drawing.Size( 40, 14 );
+            this.meanLabel.Size = new System.Drawing.Size(104, 30);
             this.meanLabel.TabIndex = 5;
             this.meanLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point( 5, 215 );
+            this.label3.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(15, 517);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 47, 12 );
+            this.label3.Size = new System.Drawing.Size(122, 26);
             this.label3.TabIndex = 6;
             this.label3.Text = "Std Dev:";
             // 
             // stdDevLabel
             // 
-            this.stdDevLabel.Location = new System.Drawing.Point( 50, 215 );
+            this.stdDevLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.stdDevLabel.Location = new System.Drawing.Point(132, 517);
             this.stdDevLabel.Name = "stdDevLabel";
-            this.stdDevLabel.Size = new System.Drawing.Size( 40, 14 );
+            this.stdDevLabel.Size = new System.Drawing.Size(104, 30);
             this.stdDevLabel.TabIndex = 7;
             this.stdDevLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point( 5, 235 );
+            this.label4.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(15, 560);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size( 47, 12 );
+            this.label4.Size = new System.Drawing.Size(122, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Median:";
             // 
             // medianLabel
             // 
-            this.medianLabel.Location = new System.Drawing.Point( 50, 235 );
+            this.medianLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.medianLabel.Location = new System.Drawing.Point(132, 560);
             this.medianLabel.Name = "medianLabel";
-            this.medianLabel.Size = new System.Drawing.Size( 40, 14 );
+            this.medianLabel.Size = new System.Drawing.Size(104, 30);
             this.medianLabel.TabIndex = 9;
             this.medianLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point( 125, 195 );
+            this.label5.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(327, 474);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size( 44, 13 );
+            this.label5.Size = new System.Drawing.Size(114, 28);
             this.label5.TabIndex = 10;
             this.label5.Text = "Level:";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point( 125, 215 );
+            this.label6.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(327, 517);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size( 53, 15 );
+            this.label6.Size = new System.Drawing.Size(138, 32);
             this.label6.TabIndex = 11;
             this.label6.Text = "Count:";
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point( 125, 235 );
+            this.label7.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(327, 560);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size( 59, 16 );
+            this.label7.Size = new System.Drawing.Size(153, 35);
             this.label7.TabIndex = 12;
             this.label7.Text = "Percentile:";
             // 
             // levelLabel
             // 
-            this.levelLabel.Location = new System.Drawing.Point( 190, 195 );
+            this.levelLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.levelLabel.Location = new System.Drawing.Point(496, 474);
             this.levelLabel.Name = "levelLabel";
-            this.levelLabel.Size = new System.Drawing.Size( 60, 15 );
+            this.levelLabel.Size = new System.Drawing.Size(156, 32);
             this.levelLabel.TabIndex = 13;
             // 
             // countLabel
             // 
-            this.countLabel.Location = new System.Drawing.Point( 190, 215 );
+            this.countLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.countLabel.Location = new System.Drawing.Point(496, 517);
             this.countLabel.Name = "countLabel";
-            this.countLabel.Size = new System.Drawing.Size( 60, 15 );
+            this.countLabel.Size = new System.Drawing.Size(156, 32);
             this.countLabel.TabIndex = 14;
             // 
             // percentileLabel
             // 
-            this.percentileLabel.Location = new System.Drawing.Point( 190, 235 );
+            this.percentileLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.percentileLabel.Location = new System.Drawing.Point(496, 560);
             this.percentileLabel.Name = "percentileLabel";
-            this.percentileLabel.Size = new System.Drawing.Size( 60, 15 );
+            this.percentileLabel.Size = new System.Drawing.Size(156, 32);
             this.percentileLabel.TabIndex = 15;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point( 5, 255 );
+            this.label8.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Location = new System.Drawing.Point(15, 603);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size( 30, 14 );
+            this.label8.Size = new System.Drawing.Size(78, 30);
             this.label8.TabIndex = 16;
             this.label8.Text = "Min:";
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point( 5, 275 );
+            this.label9.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(15, 646);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size( 30, 14 );
+            this.label9.Size = new System.Drawing.Size(96, 30);
             this.label9.TabIndex = 17;
             this.label9.Text = "Max:";
             // 
             // minLabel
             // 
-            this.minLabel.Location = new System.Drawing.Point( 50, 255 );
+            this.minLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.minLabel.Location = new System.Drawing.Point(132, 603);
             this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size( 40, 14 );
+            this.minLabel.Size = new System.Drawing.Size(104, 30);
             this.minLabel.TabIndex = 18;
             this.minLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // maxLabel
             // 
-            this.maxLabel.Location = new System.Drawing.Point( 50, 275 );
+            this.maxLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.maxLabel.Location = new System.Drawing.Point(132, 646);
             this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size( 40, 14 );
+            this.maxLabel.Size = new System.Drawing.Size(104, 30);
             this.maxLabel.TabIndex = 19;
             this.maxLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // logCheck
             // 
-            this.logCheck.Location = new System.Drawing.Point( 210, 10 );
+            this.logCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logCheck.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.logCheck.Location = new System.Drawing.Point(12, 404);
             this.logCheck.Name = "logCheck";
-            this.logCheck.Size = new System.Drawing.Size( 50, 16 );
+            this.logCheck.Size = new System.Drawing.Size(296, 34);
             this.logCheck.TabIndex = 20;
-            this.logCheck.Text = "Log";
-            this.logCheck.CheckedChanged += new System.EventHandler( this.logCheck_CheckedChanged );
+            this.logCheck.Text = "Logarithmization:";
+            this.logCheck.CheckedChanged += new System.EventHandler(this.logCheck_CheckedChanged);
+            // 
+            // histogram
+            // 
+            this.histogram.AllowSelection = true;
+            this.histogram.Dock = System.Windows.Forms.DockStyle.Top;
+            this.histogram.Location = new System.Drawing.Point(0, 0);
+            this.histogram.Name = "histogram";
+            this.histogram.Size = new System.Drawing.Size(809, 349);
+            this.histogram.TabIndex = 0;
+            this.histogram.PositionChanged += new IPLab.Histogram.HistogramEventHandler(this.histogram_PositionChanged);
+            this.histogram.SelectionChanged += new IPLab.Histogram.HistogramEventHandler(this.histogram_SelectionChanged);
             // 
             // HistogramWindow
             // 
-            this.AllowedStates = ( ( WeifenLuo.WinFormsUI.ContentStates.Float | WeifenLuo.WinFormsUI.ContentStates.DockLeft )
-                | WeifenLuo.WinFormsUI.ContentStates.DockRight );
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
-            this.ClientSize = new System.Drawing.Size( 270, 341 );
-            this.Controls.AddRange( new Control[] {
-																		  this.logCheck,
-																		  this.maxLabel,
-																		  this.minLabel,
-																		  this.label9,
-																		  this.label8,
-																		  this.percentileLabel,
-																		  this.countLabel,
-																		  this.levelLabel,
-																		  this.label7,
-																		  this.label6,
-																		  this.label5,
-																		  this.medianLabel,
-																		  this.label4,
-																		  this.stdDevLabel,
-																		  this.label3,
-																		  this.meanLabel,
-																		  this.label2,
-																		  this.label1,
-																		  this.channelCombo,
-																		  this.histogram} );
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.AllowedStates = ((WeifenLuo.WinFormsUI.ContentStates)(((WeifenLuo.WinFormsUI.ContentStates.Float | WeifenLuo.WinFormsUI.ContentStates.DockLeft) 
+            | WeifenLuo.WinFormsUI.ContentStates.DockRight)));
+            this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ClientSize = new System.Drawing.Size(809, 837);
+            this.Controls.Add(this.logCheck);
+            this.Controls.Add(this.maxLabel);
+            this.Controls.Add(this.minLabel);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.percentileLabel);
+            this.Controls.Add(this.countLabel);
+            this.Controls.Add(this.levelLabel);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.medianLabel);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.stdDevLabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.meanLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.channelCombo);
+            this.Controls.Add(this.histogram);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HideOnClose = true;
-            this.Icon = ( (System.Drawing.Icon) ( resources.GetObject( "$this.Icon" ) ) );
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size( 276, 280 );
+            this.MinimumSize = new System.Drawing.Size(718, 603);
             this.Name = "HistogramWindow";
             this.ShowHint = WeifenLuo.WinFormsUI.DockState.DockRight;
             this.ShowInTaskbar = false;
             this.Text = "Histogram";
-            this.ResumeLayout( false );
+            this.ResumeLayout(false);
 
         }
         #endregion
