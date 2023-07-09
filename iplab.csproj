@@ -126,6 +126,9 @@
     <Compile Include="Controls\ColorSlider.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\CustomStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\FilterPreview.cs">
       <SubType>Component</SubType>
     </Compile>

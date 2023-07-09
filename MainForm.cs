@@ -20,10 +20,9 @@ using AForge.Imaging;
 
 namespace IPLab
 {
-	/// <summary>
-	/// Summary description for Form1.
-	/// </summary>
-	public class MainForm : Form, IDocumentsHost
+   
+
+    public class MainForm : Form, IDocumentsHost
 	{
 		private static string configFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "app.config");
 		private static string dockManagerConfigFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "DockManager.config");
@@ -55,7 +54,7 @@ namespace IPLab
 		private StatusBarPanel sizePanel;
 		private StatusBarPanel infoPanel;
 		private Panel panel1;
-		private StatusBar statusBar;
+		private Controls.CustomStatusBar statusBar;
 		private MenuItem rememberOptionsItem;
 		private MenuItem menuItem1;
 		private MenuItem reloadFileItem;
@@ -117,6 +116,9 @@ namespace IPLab
 		private PrintDialog printDialog;
 		private StatusBarPanel ycbcrPanel;
 		private MenuItem statisticsViewItem;
+        private Panel panel2;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel3;
         private IContainer components;
 
 		public MainForm()
@@ -203,14 +205,6 @@ namespace IPLab
             this.rememberOptionsItem = new System.Windows.Forms.MenuItem();
             this.windowItem = new System.Windows.Forms.MenuItem();
             this.helpItem = new System.Windows.Forms.MenuItem();
-            this.statusBar = new System.Windows.Forms.StatusBar();
-            this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
-            this.sizePanel = new System.Windows.Forms.StatusBarPanel();
-            this.selectionPanel = new System.Windows.Forms.StatusBarPanel();
-            this.colorPanel = new System.Windows.Forms.StatusBarPanel();
-            this.hslPanel = new System.Windows.Forms.StatusBarPanel();
-            this.ycbcrPanel = new System.Windows.Forms.StatusBarPanel();
-            this.infoPanel = new System.Windows.Forms.StatusBarPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dockManager = new WeifenLuo.WinFormsUI.DockManager();
             this.mainToolBar = new System.Windows.Forms.ToolBar();
@@ -247,12 +241,27 @@ namespace IPLab
             this.saturationButton = new System.Windows.Forms.ToolBarButton();
             this.fourierButton = new System.Windows.Forms.ToolBarButton();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
             this.printDialog = new System.Windows.Forms.PrintDialog();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.statusBar = new IPLab.Controls.CustomStatusBar();
+            this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
+            this.sizePanel = new System.Windows.Forms.StatusBarPanel();
+            this.selectionPanel = new System.Windows.Forms.StatusBarPanel();
+            this.colorPanel = new System.Windows.Forms.StatusBarPanel();
+            this.hslPanel = new System.Windows.Forms.StatusBarPanel();
+            this.ycbcrPanel = new System.Windows.Forms.StatusBarPanel();
+            this.infoPanel = new System.Windows.Forms.StatusBarPanel();
+            this.panel1.SuspendLayout();
+            this.dockManager.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).BeginInit();
@@ -260,8 +269,6 @@ namespace IPLab
             ((System.ComponentModel.ISupportInitialize)(this.hslPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ycbcrPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoPanel)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.dockManager.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu
@@ -508,67 +515,13 @@ namespace IPLab
             this.helpItem.Text = "About";
             this.helpItem.Click += new System.EventHandler(this.aboutHelpItem_Click);
             // 
-            // statusBar
-            // 
-            this.statusBar.Location = new System.Drawing.Point(0, 914);
-            this.statusBar.Name = "statusBar";
-            this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
-            this.zoomPanel,
-            this.sizePanel,
-            this.selectionPanel,
-            this.colorPanel,
-            this.hslPanel,
-            this.ycbcrPanel,
-            this.infoPanel});
-            this.statusBar.ShowPanels = true;
-            this.statusBar.Size = new System.Drawing.Size(1504, 46);
-            this.statusBar.TabIndex = 1;
-            // 
-            // zoomPanel
-            // 
-            this.zoomPanel.Name = "zoomPanel";
-            this.zoomPanel.ToolTipText = "Zoom coefficient";
-            this.zoomPanel.Width = 50;
-            // 
-            // sizePanel
-            // 
-            this.sizePanel.Name = "sizePanel";
-            this.sizePanel.ToolTipText = "Image size";
-            // 
-            // selectionPanel
-            // 
-            this.selectionPanel.Name = "selectionPanel";
-            this.selectionPanel.ToolTipText = "Current point and selection size";
-            // 
-            // colorPanel
-            // 
-            this.colorPanel.Name = "colorPanel";
-            this.colorPanel.ToolTipText = "Current color";
-            this.colorPanel.Width = 135;
-            // 
-            // hslPanel
-            // 
-            this.hslPanel.Name = "hslPanel";
-            this.hslPanel.Width = 165;
-            // 
-            // ycbcrPanel
-            // 
-            this.ycbcrPanel.Name = "ycbcrPanel";
-            this.ycbcrPanel.Width = 210;
-            // 
-            // infoPanel
-            // 
-            this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
-            this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Width = 711;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.dockManager);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(153, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1504, 914);
+            this.panel1.Size = new System.Drawing.Size(1348, 1110);
             this.panel1.TabIndex = 2;
             // 
             // dockManager
@@ -580,7 +533,7 @@ namespace IPLab
             this.dockManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockManager.Location = new System.Drawing.Point(0, 0);
             this.dockManager.Name = "dockManager";
-            this.dockManager.Size = new System.Drawing.Size(1504, 914);
+            this.dockManager.Size = new System.Drawing.Size(1348, 1110);
             this.dockManager.TabIndex = 2;
             this.dockManager.ActiveDocumentChanged += new System.EventHandler(this.dockManager_ActiveDocumentChanged);
             // 
@@ -602,7 +555,7 @@ namespace IPLab
             this.mainToolBar.DropDownArrows = true;
             this.mainToolBar.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(92, 434);
+            this.mainToolBar.Location = new System.Drawing.Point(154, 533);
             this.mainToolBar.Name = "mainToolBar";
             this.mainToolBar.ShowToolTips = true;
             this.mainToolBar.Size = new System.Drawing.Size(804, 28);
@@ -700,15 +653,13 @@ namespace IPLab
             this.imageToolBar.ButtonSize = new System.Drawing.Size(23, 22);
             this.imageToolBar.Dock = System.Windows.Forms.DockStyle.None;
             this.imageToolBar.DropDownArrows = true;
-            this.imageToolBar.Enabled = false;
             this.imageToolBar.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(46, 230);
+            this.imageToolBar.Location = new System.Drawing.Point(36, 313);
             this.imageToolBar.Name = "imageToolBar";
             this.imageToolBar.ShowToolTips = true;
             this.imageToolBar.Size = new System.Drawing.Size(804, 28);
             this.imageToolBar.TabIndex = 3;
-            this.imageToolBar.UseWaitCursor = true;
             this.imageToolBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.imageToolBar_ButtonClick);
             // 
             // cloneButton
@@ -851,6 +802,15 @@ namespace IPLab
             this.imageList2.Images.SetKeyName(13, "");
             this.imageList2.Images.SetKeyName(14, "");
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(144, 1110);
+            this.panel2.TabIndex = 4;
+            // 
             // ofd
             // 
             this.ofd.Filter = "Image files (*.jpg,*.png,*.tif,*.bmp,*.gif)|*.jpg;*.png;*.tif;*.bmp;*.gif|JPG fil" +
@@ -877,12 +837,95 @@ namespace IPLab
             this.printPreviewDialog.Name = "printPreviewDialog";
             this.printPreviewDialog.Visible = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1504, 1105);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.statusBar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 1105);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1504, 50);
+            this.panel3.TabIndex = 6;
+            // 
+            // statusBar
+            // 
+            this.statusBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusBar.Location = new System.Drawing.Point(0, 0);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
+            this.zoomPanel,
+            this.sizePanel,
+            this.selectionPanel,
+            this.colorPanel,
+            this.hslPanel,
+            this.ycbcrPanel,
+            this.infoPanel});
+            this.statusBar.ShowPanels = true;
+            this.statusBar.Size = new System.Drawing.Size(1504, 50);
+            this.statusBar.TabIndex = 1;
+            // 
+            // zoomPanel
+            // 
+            this.zoomPanel.Name = "zoomPanel";
+            this.zoomPanel.ToolTipText = "Zoom coefficient";
+            this.zoomPanel.Width = 50;
+            // 
+            // sizePanel
+            // 
+            this.sizePanel.Name = "sizePanel";
+            this.sizePanel.ToolTipText = "Image size";
+            // 
+            // selectionPanel
+            // 
+            this.selectionPanel.Name = "selectionPanel";
+            this.selectionPanel.ToolTipText = "Current point and selection size";
+            // 
+            // colorPanel
+            // 
+            this.colorPanel.Name = "colorPanel";
+            this.colorPanel.ToolTipText = "Current color";
+            this.colorPanel.Width = 135;
+            // 
+            // hslPanel
+            // 
+            this.hslPanel.Name = "hslPanel";
+            this.hslPanel.Width = 185;
+            // 
+            // ycbcrPanel
+            // 
+            this.ycbcrPanel.Name = "ycbcrPanel";
+            this.ycbcrPanel.Width = 230;
+            // 
+            // infoPanel
+            // 
+            this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
+            this.infoPanel.Name = "infoPanel";
+            this.infoPanel.Width = 671;
+            // 
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
-            this.ClientSize = new System.Drawing.Size(1504, 960);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.statusBar);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1504, 1155);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panel3);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -892,6 +935,11 @@ namespace IPLab
             this.Text = "Image Processing Lab";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.MainForm_Closing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.panel1.ResumeLayout(false);
+            this.dockManager.ResumeLayout(false);
+            this.dockManager.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).EndInit();
@@ -899,10 +947,8 @@ namespace IPLab
             ((System.ComponentModel.ISupportInitialize)(this.hslPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ycbcrPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoPanel)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.dockManager.ResumeLayout(false);
-            this.dockManager.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
@@ -1147,6 +1193,7 @@ namespace IPLab
 				if (imgDoc != null)
 				{
 					imgDoc.Show(dockManager);
+					imgDoc.FitToScreen();
 					imgDoc.Focus();
 
 					// set events

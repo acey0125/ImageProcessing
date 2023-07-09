@@ -1798,7 +1798,7 @@ namespace IPLab
         }
 
         // Fit to size
-        private void FitToScreen( )
+        public void FitToScreen( )
         {
             Rectangle rc = ClientRectangle;
 
