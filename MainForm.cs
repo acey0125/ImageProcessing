@@ -309,35 +309,14 @@ namespace IPLab
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelComplex = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.ComplexButton = new System.Windows.Forms.Button();
             this.panelBasic = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.BasicButton = new System.Windows.Forms.Button();
             this.panelSize = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.SizeButton = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.ViewButton = new System.Windows.Forms.Button();
             this.filePanel = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.fileButton = new System.Windows.Forms.Button();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.sfd = new System.Windows.Forms.SaveFileDialog();
@@ -347,7 +326,6 @@ namespace IPLab
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.statusBar = new IPLab.Controls.CustomStatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -356,6 +334,28 @@ namespace IPLab
             this.hslPanel = new System.Windows.Forms.StatusBarPanel();
             this.ycbcrPanel = new System.Windows.Forms.StatusBarPanel();
             this.infoPanel = new System.Windows.Forms.StatusBarPanel();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.dockManager.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -623,9 +623,9 @@ namespace IPLab
             // 
             this.panel1.Controls.Add(this.dockManager);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(171, 3);
+            this.panel1.Location = new System.Drawing.Point(169, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1513, 1175);
+            this.panel1.Size = new System.Drawing.Size(1491, 1175);
             this.panel1.TabIndex = 2;
             // 
             // dockManager
@@ -637,7 +637,7 @@ namespace IPLab
             this.dockManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockManager.Location = new System.Drawing.Point(0, 0);
             this.dockManager.Name = "dockManager";
-            this.dockManager.Size = new System.Drawing.Size(1513, 1175);
+            this.dockManager.Size = new System.Drawing.Size(1491, 1175);
             this.dockManager.TabIndex = 2;
             this.dockManager.ActiveDocumentChanged += new System.EventHandler(this.dockManager_ActiveDocumentChanged);
             // 
@@ -659,7 +659,7 @@ namespace IPLab
             this.mainToolBar.DropDownArrows = true;
             this.mainToolBar.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(162, 492);
+            this.mainToolBar.Location = new System.Drawing.Point(151, 492);
             this.mainToolBar.Name = "mainToolBar";
             this.mainToolBar.ShowToolTips = true;
             this.mainToolBar.Size = new System.Drawing.Size(804, 28);
@@ -759,7 +759,7 @@ namespace IPLab
             this.imageToolBar.DropDownArrows = true;
             this.imageToolBar.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(258, 321);
+            this.imageToolBar.Location = new System.Drawing.Point(247, 321);
             this.imageToolBar.Name = "imageToolBar";
             this.imageToolBar.ShowToolTips = true;
             this.imageToolBar.Size = new System.Drawing.Size(804, 28);
@@ -923,7 +923,7 @@ namespace IPLab
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(162, 1175);
+            this.panel2.Size = new System.Drawing.Size(160, 1175);
             this.panel2.TabIndex = 4;
             // 
             // panelComplex
@@ -938,120 +938,8 @@ namespace IPLab
             this.panelComplex.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelComplex.Location = new System.Drawing.Point(0, 825);
             this.panelComplex.Name = "panelComplex";
-            this.panelComplex.Size = new System.Drawing.Size(162, 292);
+            this.panelComplex.Size = new System.Drawing.Size(160, 292);
             this.panelComplex.TabIndex = 9;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.Azure;
-            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(0, 246);
-            this.button22.Name = "button22";
-            this.button22.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button22.Size = new System.Drawing.Size(162, 41);
-            this.button22.TabIndex = 6;
-            this.button22.Text = "Fourier";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Azure;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Location = new System.Drawing.Point(0, 205);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(162, 41);
-            this.button21.TabIndex = 5;
-            this.button21.Text = "Saturation";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Azure;
-            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Location = new System.Drawing.Point(0, 164);
-            this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(162, 41);
-            this.button20.TabIndex = 4;
-            this.button20.Text = "Convolution";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.Azure;
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Location = new System.Drawing.Point(0, 123);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(162, 41);
-            this.button19.TabIndex = 3;
-            this.button19.Text = "Morphology";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.Azure;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(0, 82);
-            this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(162, 41);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "Threshold";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.Azure;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(0, 41);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(162, 41);
-            this.button17.TabIndex = 1;
-            this.button17.Text = "Grayscale";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.Azure;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(0, 0);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(162, 41);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "Levels";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // ComplexButton
             // 
@@ -1062,7 +950,7 @@ namespace IPLab
             this.ComplexButton.Location = new System.Drawing.Point(0, 784);
             this.ComplexButton.Name = "ComplexButton";
             this.ComplexButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ComplexButton.Size = new System.Drawing.Size(162, 41);
+            this.ComplexButton.Size = new System.Drawing.Size(160, 41);
             this.ComplexButton.TabIndex = 8;
             this.ComplexButton.Text = "Complex";
             this.ComplexButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1078,72 +966,8 @@ namespace IPLab
             this.panelBasic.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBasic.Location = new System.Drawing.Point(0, 617);
             this.panelBasic.Name = "panelBasic";
-            this.panelBasic.Size = new System.Drawing.Size(162, 167);
+            this.panelBasic.Size = new System.Drawing.Size(160, 167);
             this.panelBasic.TabIndex = 7;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.Azure;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(0, 123);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(162, 41);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Rotate";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.Azure;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(0, 82);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(162, 41);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Resize";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.Azure;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(0, 41);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(162, 41);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Crop";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Azure;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(162, 41);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Clone";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // BasicButton
             // 
@@ -1154,7 +978,7 @@ namespace IPLab
             this.BasicButton.Location = new System.Drawing.Point(0, 576);
             this.BasicButton.Name = "BasicButton";
             this.BasicButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.BasicButton.Size = new System.Drawing.Size(162, 41);
+            this.BasicButton.Size = new System.Drawing.Size(160, 41);
             this.BasicButton.TabIndex = 6;
             this.BasicButton.Text = "Basic";
             this.BasicButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1170,72 +994,8 @@ namespace IPLab
             this.panelSize.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSize.Location = new System.Drawing.Point(0, 410);
             this.panelSize.Name = "panelSize";
-            this.panelSize.Size = new System.Drawing.Size(162, 166);
+            this.panelSize.Size = new System.Drawing.Size(160, 166);
             this.panelSize.TabIndex = 5;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Azure;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(0, 123);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(162, 41);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "FitToSize";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Azure;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(0, 82);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(162, 41);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "ZoomOriginal";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Azure;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(0, 41);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(162, 41);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "ZoomOut";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Azure;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(162, 41);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "ZoomIn";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // SizeButton
             // 
@@ -1246,7 +1006,7 @@ namespace IPLab
             this.SizeButton.Location = new System.Drawing.Point(0, 369);
             this.SizeButton.Name = "SizeButton";
             this.SizeButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.SizeButton.Size = new System.Drawing.Size(162, 41);
+            this.SizeButton.Size = new System.Drawing.Size(160, 41);
             this.SizeButton.TabIndex = 4;
             this.SizeButton.Text = "Size";
             this.SizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1261,56 +1021,8 @@ namespace IPLab
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ViewPanel.Location = new System.Drawing.Point(0, 247);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(162, 122);
+            this.ViewPanel.Size = new System.Drawing.Size(160, 122);
             this.ViewPanel.TabIndex = 3;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Azure;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 82);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(162, 41);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "About";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Azure;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 41);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(162, 41);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Statistics";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(162, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Histogram";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ViewButton
             // 
@@ -1321,7 +1033,7 @@ namespace IPLab
             this.ViewButton.Location = new System.Drawing.Point(0, 206);
             this.ViewButton.Name = "ViewButton";
             this.ViewButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ViewButton.Size = new System.Drawing.Size(162, 41);
+            this.ViewButton.Size = new System.Drawing.Size(160, 41);
             this.ViewButton.TabIndex = 2;
             this.ViewButton.Text = "Views";
             this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1337,56 +1049,8 @@ namespace IPLab
             this.filePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.filePanel.Location = new System.Drawing.Point(0, 41);
             this.filePanel.Name = "filePanel";
-            this.filePanel.Size = new System.Drawing.Size(162, 165);
+            this.filePanel.Size = new System.Drawing.Size(160, 165);
             this.filePanel.TabIndex = 1;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Azure;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 123);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(162, 41);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Paste";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 82);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(162, 41);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Copy";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 41);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(162, 41);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // fileButton
             // 
@@ -1397,7 +1061,7 @@ namespace IPLab
             this.fileButton.Location = new System.Drawing.Point(0, 0);
             this.fileButton.Name = "fileButton";
             this.fileButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.fileButton.Size = new System.Drawing.Size(162, 41);
+            this.fileButton.Size = new System.Drawing.Size(160, 41);
             this.fileButton.TabIndex = 0;
             this.fileButton.Text = "File";
             this.fileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1444,36 +1108,17 @@ namespace IPLab
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1687, 1061);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 1155);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.statusBar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1061);
+            this.panel3.Location = new System.Drawing.Point(0, 1155);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1687, 50);
+            this.panel3.Size = new System.Drawing.Size(1663, 50);
             this.panel3.TabIndex = 6;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::IPLab.Properties.Resources.打开;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(162, 41);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Open";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // statusBar
             // 
@@ -1489,7 +1134,7 @@ namespace IPLab
             this.ycbcrPanel,
             this.infoPanel});
             this.statusBar.ShowPanels = true;
-            this.statusBar.Size = new System.Drawing.Size(1687, 50);
+            this.statusBar.Size = new System.Drawing.Size(1663, 50);
             this.statusBar.TabIndex = 1;
             // 
             // zoomPanel
@@ -1528,13 +1173,388 @@ namespace IPLab
             // 
             this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Width = 854;
+            this.infoPanel.Width = 830;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.Azure;
+            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Image = global::IPLab.Properties.Resources._9022973_wave_sine_duotone_icon;
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(0, 246);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(160, 41);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "Fourier";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Azure;
+            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Image = global::IPLab.Properties.Resources._1041639_light_saturation_icon;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(0, 205);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(160, 41);
+            this.button21.TabIndex = 5;
+            this.button21.Text = "Saturation";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.Azure;
+            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Image = global::IPLab.Properties.Resources._4879884_circle_round_spinner_icon;
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.Location = new System.Drawing.Point(0, 164);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(160, 41);
+            this.button20.TabIndex = 4;
+            this.button20.Text = "Convolution";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Azure;
+            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Image = global::IPLab.Properties.Resources._9081517_vector_triangle_icon;
+            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button19.Location = new System.Drawing.Point(0, 123);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(160, 41);
+            this.button19.TabIndex = 3;
+            this.button19.Text = "Morphology";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.Azure;
+            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Image = global::IPLab.Properties.Resources._9043657_threshold_icon;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(0, 82);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(160, 41);
+            this.button18.TabIndex = 2;
+            this.button18.Text = "Threshold";
+            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Azure;
+            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Image = global::IPLab.Properties.Resources._9042834_menu_scale_icon;
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(0, 41);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(160, 41);
+            this.button17.TabIndex = 1;
+            this.button17.Text = "Grayscale";
+            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Azure;
+            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Image = global::IPLab.Properties.Resources._8201378_adjust_settings_levels_ui_icon;
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(0, 0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(160, 41);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "Levels";
+            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Azure;
+            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Image = global::IPLab.Properties.Resources._8665088_arrow_rotate_right_icon;
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(0, 123);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(160, 41);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Rotate";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Azure;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Image = global::IPLab.Properties.Resources._9035906_resize_sharp_icon;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(0, 82);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(160, 41);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Resize";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Azure;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Image = global::IPLab.Properties.Resources._352293_crop_icon;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(0, 41);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(160, 41);
+            this.button13.TabIndex = 1;
+            this.button13.Text = "Crop";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Azure;
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Image = global::IPLab.Properties.Resources._8723058_copy_clone_icon;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(0, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(160, 41);
+            this.button12.TabIndex = 0;
+            this.button12.Text = "Clone";
+            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Azure;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Image = global::IPLab.Properties.Resources._8550621_normal_size_full_screen_resize_icon;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(0, 123);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(160, 41);
+            this.button11.TabIndex = 3;
+            this.button11.Text = "FitToSize";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Azure;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Image = global::IPLab.Properties.Resources._326690_magnify_search_zoom_icon;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(0, 82);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(160, 41);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "Original";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Azure;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = global::IPLab.Properties.Resources._1110958_essential_out_plus_round_set_icon;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(0, 41);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(160, 41);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "ZoomOut";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Azure;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::IPLab.Properties.Resources._1110960_essential_in_minus_round_set_icon;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(160, 41);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "ZoomIn";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Azure;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::IPLab.Properties.Resources._8207898_about_info_information_help_ui_icon;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(0, 82);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(160, 41);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "About";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Azure;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = global::IPLab.Properties.Resources._353433_chart_pie_analytics_statistics_icon;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 41);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(160, 41);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Statistics";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::IPLab.Properties.Resources._9069626_chart_histogram_icon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 41);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Histogram";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Azure;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::IPLab.Properties.Resources._8665765_paste_icon;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(0, 123);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 41);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Paste";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Azure;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = global::IPLab.Properties.Resources._326595_content_copy_duplicate_icon;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 82);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 41);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Copy";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Azure;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::IPLab.Properties.Resources._8666542_save_icon;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 41);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(160, 41);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Save";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Azure;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::IPLab.Properties.Resources._8530619_folder_open_icon;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(160, 41);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Open";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 37);
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1687, 1111);
+            this.ClientSize = new System.Drawing.Size(1663, 1205);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;

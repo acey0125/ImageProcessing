@@ -118,10 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1041639_light_saturation_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1041639_light_saturation_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8201378_adjust_settings_levels_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8201378_adjust_settings_levels_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9035906_resize_sharp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9035906_resize_sharp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1110960_essential_in_minus_round_set_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1110960_essential_in_minus_round_set_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8665088_arrow_rotate_right_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8665088_arrow_rotate_right_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6971204_id_voter_validation_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6971204_id_voter_validation_icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="打开" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\打开.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="352293_crop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\352293_crop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9069626_chart_histogram_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9069626_chart_histogram_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9043657_threshold_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9043657_threshold_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9042834_menu_scale_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9042834_menu_scale_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8665765_paste_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8665765_paste_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="353433_chart_pie_analytics_statistics_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\353433_chart_pie_analytics_statistics_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9081517_vector_triangle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9081517_vector_triangle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8723058_copy_clone_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8723058_copy_clone_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="直方图" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\直方图.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8666542_save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8666542_save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4879884_circle_round_spinner_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4879884_circle_round_spinner_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6971204_id_voter_validation_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6971204_id_voter_validation_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="326595_content_copy_duplicate_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\326595_content_copy_duplicate_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="直方图1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\直方图.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1110958_essential_out_plus_round_set_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1110958_essential_out_plus_round_set_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8530619_folder_open_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8530619_folder_open_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8207898_about_info_information_help_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8207898_about_info_information_help_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="326690_magnify_search_zoom_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\326690_magnify_search_zoom_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8550621_normal_size_full_screen_resize_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8550621_normal_size_full_screen_resize_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9022973_wave_sine_duotone_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9022973_wave_sine_duotone_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

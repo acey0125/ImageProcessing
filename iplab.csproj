@@ -391,6 +391,84 @@
   <ItemGroup>
     <None Include="Resources\打开.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\直方图.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6971204_id_voter_validation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6971204_id_voter_validation_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\直方图.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1110960_essential_in_minus_round_set_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1110958_essential_out_plus_round_set_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326690_magnify_search_zoom_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8550621_normal_size_full_screen_resize_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9069626_chart_histogram_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\353433_chart_pie_analytics_statistics_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8207898_about_info_information_help_ui_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8530619_folder_open_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8666542_save_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326595_content_copy_duplicate_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8665765_paste_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8723058_copy_clone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352293_crop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9035906_resize_sharp_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8665088_arrow_rotate_right_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8201378_adjust_settings_levels_ui_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9042834_menu_scale_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9043657_threshold_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9081517_vector_triangle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4879884_circle_round_spinner_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1041639_light_saturation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9022973_wave_sine_duotone_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

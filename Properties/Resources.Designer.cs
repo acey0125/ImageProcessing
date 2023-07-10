@@ -63,6 +63,246 @@ namespace IPLab.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _1041639_light_saturation_icon {
+            get {
+                object obj = ResourceManager.GetObject("1041639_light_saturation_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _1110958_essential_out_plus_round_set_icon {
+            get {
+                object obj = ResourceManager.GetObject("1110958_essential_out_plus_round_set_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _1110960_essential_in_minus_round_set_icon {
+            get {
+                object obj = ResourceManager.GetObject("1110960_essential_in_minus_round_set_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _326595_content_copy_duplicate_icon {
+            get {
+                object obj = ResourceManager.GetObject("326595_content_copy_duplicate_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _326690_magnify_search_zoom_icon {
+            get {
+                object obj = ResourceManager.GetObject("326690_magnify_search_zoom_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _352293_crop_icon {
+            get {
+                object obj = ResourceManager.GetObject("352293_crop_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _353433_chart_pie_analytics_statistics_icon {
+            get {
+                object obj = ResourceManager.GetObject("353433_chart_pie_analytics_statistics_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _4879884_circle_round_spinner_icon {
+            get {
+                object obj = ResourceManager.GetObject("4879884_circle_round_spinner_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _6971204_id_voter_validation_icon {
+            get {
+                object obj = ResourceManager.GetObject("6971204_id_voter_validation_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _6971204_id_voter_validation_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("6971204_id_voter_validation_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8201378_adjust_settings_levels_ui_icon {
+            get {
+                object obj = ResourceManager.GetObject("8201378_adjust_settings_levels_ui_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8207898_about_info_information_help_ui_icon {
+            get {
+                object obj = ResourceManager.GetObject("8207898_about_info_information_help_ui_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8530619_folder_open_icon {
+            get {
+                object obj = ResourceManager.GetObject("8530619_folder_open_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8550621_normal_size_full_screen_resize_icon {
+            get {
+                object obj = ResourceManager.GetObject("8550621_normal_size_full_screen_resize_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8665088_arrow_rotate_right_icon {
+            get {
+                object obj = ResourceManager.GetObject("8665088_arrow_rotate_right_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8665765_paste_icon {
+            get {
+                object obj = ResourceManager.GetObject("8665765_paste_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8666542_save_icon {
+            get {
+                object obj = ResourceManager.GetObject("8666542_save_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8723058_copy_clone_icon {
+            get {
+                object obj = ResourceManager.GetObject("8723058_copy_clone_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9022973_wave_sine_duotone_icon {
+            get {
+                object obj = ResourceManager.GetObject("9022973_wave_sine_duotone_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9035906_resize_sharp_icon {
+            get {
+                object obj = ResourceManager.GetObject("9035906_resize_sharp_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9042834_menu_scale_icon {
+            get {
+                object obj = ResourceManager.GetObject("9042834_menu_scale_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9043657_threshold_icon {
+            get {
+                object obj = ResourceManager.GetObject("9043657_threshold_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9069626_chart_histogram_icon {
+            get {
+                object obj = ResourceManager.GetObject("9069626_chart_histogram_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _9081517_vector_triangle_icon {
+            get {
+                object obj = ResourceManager.GetObject("9081517_vector_triangle_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -76,6 +316,26 @@ namespace IPLab.Properties {
         internal static System.Drawing.Bitmap 打开 {
             get {
                 object obj = ResourceManager.GetObject("打开", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 直方图 {
+            get {
+                object obj = ResourceManager.GetObject("直方图", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 直方图1 {
+            get {
+                object obj = ResourceManager.GetObject("直方图1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
