@@ -47,9 +47,6 @@ namespace IPLab
 		private MenuItem windowItem;
 		private MenuItem helpItem;
 		private MenuItem histogramViewItem;
-		private MenuItem redHistogramViewItem;
-		private MenuItem greenHistogramViewItem;
-		private MenuItem blueHistogramViewItem;
 		private StatusBarPanel zoomPanel;
 		private StatusBarPanel sizePanel;
 		private StatusBarPanel infoPanel;
@@ -64,48 +61,13 @@ namespace IPLab
 		private OpenFileDialog ofd;
 		private StatusBarPanel colorPanel;
 		private ImageList imageList;
-		private ToolBar mainToolBar;
-		private ToolBarButton openButton;
-		private ToolBarButton sep1;
-		private ToolBarButton histogramButton;
-		private ToolBar imageToolBar;
 		private ImageList imageList2;
-		private ToolBarButton cloneButton;
-		private ToolBarButton cropButton;
-		private ToolBarButton toolBarButton1;
-		private ToolBarButton toolBarButton2;
-		private ToolBarButton zoomInButton;
-		private ToolBarButton zoomOutButton;
-		private ToolBarButton toolBarButton3;
-		private ToolBarButton fitToScreenButton;
-		private ToolBarButton toolBarButton4;
-		private ToolBarButton aboutButton;
-		private ToolBarButton toolBarButton5;
-		private ToolBarButton levelsButton;
-		private ToolBarButton grayscaleButton;
-		private ToolBarButton thresholdButton;
-		private ToolBarButton toolBarButton6;
-		private ToolBarButton morphologyButton;
-		private ToolBarButton convolutionButton;
-		private MenuItem mainBarViewItem;
-		private MenuItem imageBarViewItem;
-		private MenuItem menuItem7;
-		private ToolBarButton resizeButton;
-		private ToolBarButton toolBarButton7;
-		private ToolBarButton rotateButton;
 		private StatusBarPanel hslPanel;
-		private ToolBarButton toolBarButton8;
-		private ToolBarButton saturationButton;
-		private ToolBarButton fourierButton;
 		private MenuItem copyFileItem;
 		private MenuItem pasteFileItem;
 		private MenuItem menuItem5;
 		private MenuItem saveFileItem;
 		private SaveFileDialog sfd;
-		private ToolBarButton pasteButton;
-		private ToolBarButton saveButton;
-		private ToolBarButton copyButton;
-		private ToolBarButton toolBarButton9;
 		private PrintDocument printDocument;
 		private PrintPreviewDialog printPreviewDialog;
 		private MenuItem printPreviewFileItem;
@@ -151,6 +113,9 @@ namespace IPLab
         private Button button7;
         private Button button6;
         private Button button22;
+        private Panel panel4;
+        private PictureBox pictureBox1;
+        private Panel panel5;
         private IContainer components;
 
 		public MainForm()
@@ -160,19 +125,6 @@ namespace IPLab
             customizeDesing();
 			toolBarManager = new ToolBarManager(this, this);
 
-			// add toolbars
-			ToolBarDockHolder holder;
-
-			// main tool bar
-			mainToolBar.Text = "Main Tool Bar";
-			holder = toolBarManager.AddControl(mainToolBar, DockStyle.Left);
-            holder.AllowedBorders = AllowedBorders.Left;
-			//mainToolBar.Height = 100;
-
-			// image toolbar
-			imageToolBar.Text = "Image Tool Bar";
-			holder = toolBarManager.AddControl(imageToolBar, DockStyle.Left);
-			holder.AllowedBorders = AllowedBorders.Left;
 
 			histogramWin.DockStateChanged += new EventHandler(histogram_DockStateChanged);
 			statisticsWin.DockStateChanged += new EventHandler(statistics_DockStateChanged);
@@ -256,14 +208,8 @@ namespace IPLab
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.exitFileItem = new System.Windows.Forms.MenuItem();
             this.viewItem = new System.Windows.Forms.MenuItem();
-            this.mainBarViewItem = new System.Windows.Forms.MenuItem();
-            this.imageBarViewItem = new System.Windows.Forms.MenuItem();
-            this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.histogramViewItem = new System.Windows.Forms.MenuItem();
             this.statisticsViewItem = new System.Windows.Forms.MenuItem();
-            this.redHistogramViewItem = new System.Windows.Forms.MenuItem();
-            this.greenHistogramViewItem = new System.Windows.Forms.MenuItem();
-            this.blueHistogramViewItem = new System.Windows.Forms.MenuItem();
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.centerViewItem = new System.Windows.Forms.MenuItem();
             this.optionsItem = new System.Windows.Forms.MenuItem();
@@ -273,51 +219,8 @@ namespace IPLab
             this.helpItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dockManager = new WeifenLuo.WinFormsUI.DockManager();
-            this.mainToolBar = new System.Windows.Forms.ToolBar();
-            this.openButton = new System.Windows.Forms.ToolBarButton();
-            this.saveButton = new System.Windows.Forms.ToolBarButton();
-            this.sep1 = new System.Windows.Forms.ToolBarButton();
-            this.copyButton = new System.Windows.Forms.ToolBarButton();
-            this.pasteButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton9 = new System.Windows.Forms.ToolBarButton();
-            this.histogramButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton4 = new System.Windows.Forms.ToolBarButton();
-            this.aboutButton = new System.Windows.Forms.ToolBarButton();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.imageToolBar = new System.Windows.Forms.ToolBar();
-            this.cloneButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton1 = new System.Windows.Forms.ToolBarButton();
-            this.cropButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton2 = new System.Windows.Forms.ToolBarButton();
-            this.zoomInButton = new System.Windows.Forms.ToolBarButton();
-            this.zoomOutButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton3 = new System.Windows.Forms.ToolBarButton();
-            this.fitToScreenButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton5 = new System.Windows.Forms.ToolBarButton();
-            this.resizeButton = new System.Windows.Forms.ToolBarButton();
-            this.rotateButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton7 = new System.Windows.Forms.ToolBarButton();
-            this.levelsButton = new System.Windows.Forms.ToolBarButton();
-            this.grayscaleButton = new System.Windows.Forms.ToolBarButton();
-            this.thresholdButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton6 = new System.Windows.Forms.ToolBarButton();
-            this.morphologyButton = new System.Windows.Forms.ToolBarButton();
-            this.convolutionButton = new System.Windows.Forms.ToolBarButton();
-            this.toolBarButton8 = new System.Windows.Forms.ToolBarButton();
-            this.saturationButton = new System.Windows.Forms.ToolBarButton();
-            this.fourierButton = new System.Windows.Forms.ToolBarButton();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelComplex = new System.Windows.Forms.Panel();
-            this.ComplexButton = new System.Windows.Forms.Button();
-            this.panelBasic = new System.Windows.Forms.Panel();
-            this.BasicButton = new System.Windows.Forms.Button();
-            this.panelSize = new System.Windows.Forms.Panel();
-            this.SizeButton = new System.Windows.Forms.Button();
-            this.ViewPanel = new System.Windows.Forms.Panel();
-            this.ViewButton = new System.Windows.Forms.Button();
-            this.filePanel = new System.Windows.Forms.Panel();
-            this.fileButton = new System.Windows.Forms.Button();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
@@ -326,6 +229,42 @@ namespace IPLab
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelComplex = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.ComplexButton = new System.Windows.Forms.Button();
+            this.panelBasic = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.BasicButton = new System.Windows.Forms.Button();
+            this.panelSize = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.SizeButton = new System.Windows.Forms.Button();
+            this.ViewPanel = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ViewButton = new System.Windows.Forms.Button();
+            this.filePanel = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.fileButton = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusBar = new IPLab.Controls.CustomStatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -334,38 +273,17 @@ namespace IPLab
             this.hslPanel = new System.Windows.Forms.StatusBarPanel();
             this.ycbcrPanel = new System.Windows.Forms.StatusBarPanel();
             this.infoPanel = new System.Windows.Forms.StatusBarPanel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.dockManager.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelComplex.SuspendLayout();
             this.panelBasic.SuspendLayout();
             this.panelSize.SuspendLayout();
             this.ViewPanel.SuspendLayout();
             this.filePanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).BeginInit();
@@ -502,83 +420,36 @@ namespace IPLab
             // 
             this.viewItem.Index = 1;
             this.viewItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.mainBarViewItem,
-            this.imageBarViewItem,
-            this.menuItem7,
             this.histogramViewItem,
             this.statisticsViewItem,
-            this.redHistogramViewItem,
-            this.greenHistogramViewItem,
-            this.blueHistogramViewItem,
             this.menuItem3,
             this.centerViewItem});
             this.viewItem.MergeOrder = 1;
             this.viewItem.Text = "View";
             this.viewItem.Popup += new System.EventHandler(this.viewItem_Popup);
             // 
-            // mainBarViewItem
-            // 
-            this.mainBarViewItem.Index = 0;
-            this.mainBarViewItem.Text = "Main tool bar";
-            this.mainBarViewItem.Click += new System.EventHandler(this.mainBarViewItem_Click);
-            // 
-            // imageBarViewItem
-            // 
-            this.imageBarViewItem.Index = 1;
-            this.imageBarViewItem.Text = "Image tool bar";
-            this.imageBarViewItem.Click += new System.EventHandler(this.imageBarViewItem_Click);
-            // 
-            // menuItem7
-            // 
-            this.menuItem7.Index = 2;
-            this.menuItem7.Text = "-";
-            // 
             // histogramViewItem
             // 
-            this.histogramViewItem.Index = 3;
+            this.histogramViewItem.Index = 0;
             this.histogramViewItem.Shortcut = System.Windows.Forms.Shortcut.CtrlH;
             this.histogramViewItem.Text = "Histogram";
             this.histogramViewItem.Click += new System.EventHandler(this.histogramViewItem_Click);
             // 
             // statisticsViewItem
             // 
-            this.statisticsViewItem.Index = 4;
+            this.statisticsViewItem.Index = 1;
             this.statisticsViewItem.Shortcut = System.Windows.Forms.Shortcut.CtrlT;
             this.statisticsViewItem.Text = "Statistics";
             this.statisticsViewItem.Click += new System.EventHandler(this.statisticsViewItem_Click);
             // 
-            // redHistogramViewItem
-            // 
-            this.redHistogramViewItem.Index = 5;
-            this.redHistogramViewItem.Shortcut = System.Windows.Forms.Shortcut.Ctrl1;
-            this.redHistogramViewItem.Text = "R";
-            this.redHistogramViewItem.Visible = false;
-            this.redHistogramViewItem.Click += new System.EventHandler(this.redHistogramViewItem_Click);
-            // 
-            // greenHistogramViewItem
-            // 
-            this.greenHistogramViewItem.Index = 6;
-            this.greenHistogramViewItem.Shortcut = System.Windows.Forms.Shortcut.Ctrl2;
-            this.greenHistogramViewItem.Text = "G";
-            this.greenHistogramViewItem.Visible = false;
-            this.greenHistogramViewItem.Click += new System.EventHandler(this.greenHistogramViewItem_Click);
-            // 
-            // blueHistogramViewItem
-            // 
-            this.blueHistogramViewItem.Index = 7;
-            this.blueHistogramViewItem.Shortcut = System.Windows.Forms.Shortcut.Ctrl3;
-            this.blueHistogramViewItem.Text = "B";
-            this.blueHistogramViewItem.Visible = false;
-            this.blueHistogramViewItem.Click += new System.EventHandler(this.blueHistogramViewItem_Click);
-            // 
             // menuItem3
             // 
-            this.menuItem3.Index = 8;
+            this.menuItem3.Index = 2;
             this.menuItem3.Text = "-";
             // 
             // centerViewItem
             // 
-            this.centerViewItem.Index = 9;
+            this.centerViewItem.Index = 3;
             this.centerViewItem.Shortcut = System.Windows.Forms.Shortcut.F9;
             this.centerViewItem.Text = "Center";
             this.centerViewItem.Click += new System.EventHandler(this.centerViewItem_Click);
@@ -596,13 +467,13 @@ namespace IPLab
             // openInNewOptionsItem
             // 
             this.openInNewOptionsItem.Index = 0;
-            this.openInNewOptionsItem.Text = "Open in new document on change";
+            this.openInNewOptionsItem.Text = "ChangeOnNew";
             this.openInNewOptionsItem.Click += new System.EventHandler(this.openInNewOptionsItem_Click);
             // 
             // rememberOptionsItem
             // 
             this.rememberOptionsItem.Index = 1;
-            this.rememberOptionsItem.Text = "Remember on change";
+            this.rememberOptionsItem.Text = "RememberChange";
             this.rememberOptionsItem.Click += new System.EventHandler(this.rememberOptionsItem_Click);
             // 
             // windowItem
@@ -623,99 +494,21 @@ namespace IPLab
             // 
             this.panel1.Controls.Add(this.dockManager);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(169, 3);
+            this.panel1.Location = new System.Drawing.Point(252, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1491, 1175);
+            this.panel1.Size = new System.Drawing.Size(1408, 1244);
             this.panel1.TabIndex = 2;
             // 
             // dockManager
             // 
             this.dockManager.ActiveAutoHideContent = null;
             this.dockManager.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.dockManager.Controls.Add(this.mainToolBar);
-            this.dockManager.Controls.Add(this.imageToolBar);
             this.dockManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockManager.Location = new System.Drawing.Point(0, 0);
             this.dockManager.Name = "dockManager";
-            this.dockManager.Size = new System.Drawing.Size(1491, 1175);
+            this.dockManager.Size = new System.Drawing.Size(1408, 1244);
             this.dockManager.TabIndex = 2;
             this.dockManager.ActiveDocumentChanged += new System.EventHandler(this.dockManager_ActiveDocumentChanged);
-            // 
-            // mainToolBar
-            // 
-            this.mainToolBar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mainToolBar.Appearance = System.Windows.Forms.ToolBarAppearance.Flat;
-            this.mainToolBar.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
-            this.openButton,
-            this.saveButton,
-            this.sep1,
-            this.copyButton,
-            this.pasteButton,
-            this.toolBarButton9,
-            this.histogramButton,
-            this.toolBarButton4,
-            this.aboutButton});
-            this.mainToolBar.Dock = System.Windows.Forms.DockStyle.None;
-            this.mainToolBar.DropDownArrows = true;
-            this.mainToolBar.Font = new System.Drawing.Font("ËÎÌו", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainToolBar.ImageList = this.imageList;
-            this.mainToolBar.Location = new System.Drawing.Point(151, 492);
-            this.mainToolBar.Name = "mainToolBar";
-            this.mainToolBar.ShowToolTips = true;
-            this.mainToolBar.Size = new System.Drawing.Size(804, 28);
-            this.mainToolBar.TabIndex = 2;
-            this.mainToolBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.mainToolBar_ButtonClick);
-            // 
-            // openButton
-            // 
-            this.openButton.ImageIndex = 0;
-            this.openButton.Name = "openButton";
-            this.openButton.ToolTipText = "Open an image ";
-            // 
-            // saveButton
-            // 
-            this.saveButton.ImageIndex = 1;
-            this.saveButton.Name = "saveButton";
-            this.saveButton.ToolTipText = "Save";
-            // 
-            // sep1
-            // 
-            this.sep1.Name = "sep1";
-            this.sep1.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // copyButton
-            // 
-            this.copyButton.ImageIndex = 2;
-            this.copyButton.Name = "copyButton";
-            this.copyButton.ToolTipText = "Copy to clipboard";
-            // 
-            // pasteButton
-            // 
-            this.pasteButton.ImageIndex = 3;
-            this.pasteButton.Name = "pasteButton";
-            this.pasteButton.ToolTipText = "Paste from clipboard";
-            // 
-            // toolBarButton9
-            // 
-            this.toolBarButton9.Name = "toolBarButton9";
-            this.toolBarButton9.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // histogramButton
-            // 
-            this.histogramButton.ImageIndex = 4;
-            this.histogramButton.Name = "histogramButton";
-            this.histogramButton.ToolTipText = "Show histogram";
-            // 
-            // toolBarButton4
-            // 
-            this.toolBarButton4.Name = "toolBarButton4";
-            this.toolBarButton4.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // aboutButton
-            // 
-            this.aboutButton.ImageIndex = 5;
-            this.aboutButton.Name = "aboutButton";
-            this.aboutButton.ToolTipText = "About";
             // 
             // imageList
             // 
@@ -727,164 +520,6 @@ namespace IPLab
             this.imageList.Images.SetKeyName(3, "");
             this.imageList.Images.SetKeyName(4, "");
             this.imageList.Images.SetKeyName(5, "");
-            // 
-            // imageToolBar
-            // 
-            this.imageToolBar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imageToolBar.Appearance = System.Windows.Forms.ToolBarAppearance.Flat;
-            this.imageToolBar.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
-            this.cloneButton,
-            this.toolBarButton1,
-            this.cropButton,
-            this.toolBarButton2,
-            this.zoomInButton,
-            this.zoomOutButton,
-            this.toolBarButton3,
-            this.fitToScreenButton,
-            this.toolBarButton5,
-            this.resizeButton,
-            this.rotateButton,
-            this.toolBarButton7,
-            this.levelsButton,
-            this.grayscaleButton,
-            this.thresholdButton,
-            this.toolBarButton6,
-            this.morphologyButton,
-            this.convolutionButton,
-            this.toolBarButton8,
-            this.saturationButton,
-            this.fourierButton});
-            this.imageToolBar.ButtonSize = new System.Drawing.Size(23, 22);
-            this.imageToolBar.Dock = System.Windows.Forms.DockStyle.None;
-            this.imageToolBar.DropDownArrows = true;
-            this.imageToolBar.Font = new System.Drawing.Font("ËÎÌו", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.imageToolBar.ImageList = this.imageList2;
-            this.imageToolBar.Location = new System.Drawing.Point(247, 321);
-            this.imageToolBar.Name = "imageToolBar";
-            this.imageToolBar.ShowToolTips = true;
-            this.imageToolBar.Size = new System.Drawing.Size(804, 28);
-            this.imageToolBar.TabIndex = 3;
-            this.imageToolBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.imageToolBar_ButtonClick);
-            // 
-            // cloneButton
-            // 
-            this.cloneButton.ImageIndex = 0;
-            this.cloneButton.Name = "cloneButton";
-            this.cloneButton.ToolTipText = "Clone the image";
-            // 
-            // toolBarButton1
-            // 
-            this.toolBarButton1.Name = "toolBarButton1";
-            this.toolBarButton1.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // cropButton
-            // 
-            this.cropButton.ImageIndex = 1;
-            this.cropButton.Name = "cropButton";
-            this.cropButton.ToolTipText = "Crop image";
-            // 
-            // toolBarButton2
-            // 
-            this.toolBarButton2.Name = "toolBarButton2";
-            this.toolBarButton2.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // zoomInButton
-            // 
-            this.zoomInButton.ImageIndex = 2;
-            this.zoomInButton.Name = "zoomInButton";
-            this.zoomInButton.ToolTipText = "Zoom In";
-            // 
-            // zoomOutButton
-            // 
-            this.zoomOutButton.ImageIndex = 3;
-            this.zoomOutButton.Name = "zoomOutButton";
-            this.zoomOutButton.ToolTipText = "Zoom out";
-            // 
-            // toolBarButton3
-            // 
-            this.toolBarButton3.ImageIndex = 4;
-            this.toolBarButton3.Name = "toolBarButton3";
-            this.toolBarButton3.ToolTipText = "Original size";
-            // 
-            // fitToScreenButton
-            // 
-            this.fitToScreenButton.ImageIndex = 5;
-            this.fitToScreenButton.Name = "fitToScreenButton";
-            this.fitToScreenButton.ToolTipText = "Fit to window size";
-            // 
-            // toolBarButton5
-            // 
-            this.toolBarButton5.Name = "toolBarButton5";
-            this.toolBarButton5.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // resizeButton
-            // 
-            this.resizeButton.ImageIndex = 11;
-            this.resizeButton.Name = "resizeButton";
-            this.resizeButton.ToolTipText = "Resize the image";
-            // 
-            // rotateButton
-            // 
-            this.rotateButton.ImageIndex = 12;
-            this.rotateButton.Name = "rotateButton";
-            this.rotateButton.ToolTipText = "Rotate the image";
-            // 
-            // toolBarButton7
-            // 
-            this.toolBarButton7.Name = "toolBarButton7";
-            this.toolBarButton7.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // levelsButton
-            // 
-            this.levelsButton.ImageIndex = 6;
-            this.levelsButton.Name = "levelsButton";
-            this.levelsButton.ToolTipText = "Levels correction";
-            // 
-            // grayscaleButton
-            // 
-            this.grayscaleButton.ImageIndex = 7;
-            this.grayscaleButton.Name = "grayscaleButton";
-            this.grayscaleButton.ToolTipText = "Grayscale";
-            // 
-            // thresholdButton
-            // 
-            this.thresholdButton.ImageIndex = 8;
-            this.thresholdButton.Name = "thresholdButton";
-            this.thresholdButton.ToolTipText = "Threshold";
-            // 
-            // toolBarButton6
-            // 
-            this.toolBarButton6.Name = "toolBarButton6";
-            this.toolBarButton6.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // morphologyButton
-            // 
-            this.morphologyButton.ImageIndex = 9;
-            this.morphologyButton.Name = "morphologyButton";
-            this.morphologyButton.ToolTipText = "Custom morphology operator";
-            // 
-            // convolutionButton
-            // 
-            this.convolutionButton.ImageIndex = 10;
-            this.convolutionButton.Name = "convolutionButton";
-            this.convolutionButton.ToolTipText = "Custom convolution operator";
-            // 
-            // toolBarButton8
-            // 
-            this.toolBarButton8.Name = "toolBarButton8";
-            this.toolBarButton8.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
-            // 
-            // saturationButton
-            // 
-            this.saturationButton.ImageIndex = 13;
-            this.saturationButton.Name = "saturationButton";
-            this.saturationButton.ToolTipText = "Saturation (HSL)";
-            // 
-            // fourierButton
-            // 
-            this.fourierButton.ImageIndex = 14;
-            this.fourierButton.Name = "fourierButton";
-            this.fourierButton.ToolTipText = "Fourier Transformation";
             // 
             // imageList2
             // 
@@ -905,168 +540,6 @@ namespace IPLab
             this.imageList2.Images.SetKeyName(12, "");
             this.imageList2.Images.SetKeyName(13, "");
             this.imageList2.Images.SetKeyName(14, "");
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.panel2.Controls.Add(this.panelComplex);
-            this.panel2.Controls.Add(this.ComplexButton);
-            this.panel2.Controls.Add(this.panelBasic);
-            this.panel2.Controls.Add(this.BasicButton);
-            this.panel2.Controls.Add(this.panelSize);
-            this.panel2.Controls.Add(this.SizeButton);
-            this.panel2.Controls.Add(this.ViewPanel);
-            this.panel2.Controls.Add(this.ViewButton);
-            this.panel2.Controls.Add(this.filePanel);
-            this.panel2.Controls.Add(this.fileButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 1175);
-            this.panel2.TabIndex = 4;
-            // 
-            // panelComplex
-            // 
-            this.panelComplex.Controls.Add(this.button22);
-            this.panelComplex.Controls.Add(this.button21);
-            this.panelComplex.Controls.Add(this.button20);
-            this.panelComplex.Controls.Add(this.button19);
-            this.panelComplex.Controls.Add(this.button18);
-            this.panelComplex.Controls.Add(this.button17);
-            this.panelComplex.Controls.Add(this.button16);
-            this.panelComplex.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelComplex.Location = new System.Drawing.Point(0, 825);
-            this.panelComplex.Name = "panelComplex";
-            this.panelComplex.Size = new System.Drawing.Size(160, 292);
-            this.panelComplex.TabIndex = 9;
-            // 
-            // ComplexButton
-            // 
-            this.ComplexButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ComplexButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ComplexButton.FlatAppearance.BorderSize = 0;
-            this.ComplexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComplexButton.Location = new System.Drawing.Point(0, 784);
-            this.ComplexButton.Name = "ComplexButton";
-            this.ComplexButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ComplexButton.Size = new System.Drawing.Size(160, 41);
-            this.ComplexButton.TabIndex = 8;
-            this.ComplexButton.Text = "Complex";
-            this.ComplexButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ComplexButton.UseVisualStyleBackColor = false;
-            this.ComplexButton.Click += new System.EventHandler(this.ComplexButton_Click);
-            // 
-            // panelBasic
-            // 
-            this.panelBasic.Controls.Add(this.button15);
-            this.panelBasic.Controls.Add(this.button14);
-            this.panelBasic.Controls.Add(this.button13);
-            this.panelBasic.Controls.Add(this.button12);
-            this.panelBasic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBasic.Location = new System.Drawing.Point(0, 617);
-            this.panelBasic.Name = "panelBasic";
-            this.panelBasic.Size = new System.Drawing.Size(160, 167);
-            this.panelBasic.TabIndex = 7;
-            // 
-            // BasicButton
-            // 
-            this.BasicButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BasicButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BasicButton.FlatAppearance.BorderSize = 0;
-            this.BasicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BasicButton.Location = new System.Drawing.Point(0, 576);
-            this.BasicButton.Name = "BasicButton";
-            this.BasicButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.BasicButton.Size = new System.Drawing.Size(160, 41);
-            this.BasicButton.TabIndex = 6;
-            this.BasicButton.Text = "Basic";
-            this.BasicButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BasicButton.UseVisualStyleBackColor = false;
-            this.BasicButton.Click += new System.EventHandler(this.BasicButton_Click);
-            // 
-            // panelSize
-            // 
-            this.panelSize.Controls.Add(this.button11);
-            this.panelSize.Controls.Add(this.button10);
-            this.panelSize.Controls.Add(this.button9);
-            this.panelSize.Controls.Add(this.button8);
-            this.panelSize.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSize.Location = new System.Drawing.Point(0, 410);
-            this.panelSize.Name = "panelSize";
-            this.panelSize.Size = new System.Drawing.Size(160, 166);
-            this.panelSize.TabIndex = 5;
-            // 
-            // SizeButton
-            // 
-            this.SizeButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.SizeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SizeButton.FlatAppearance.BorderSize = 0;
-            this.SizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SizeButton.Location = new System.Drawing.Point(0, 369);
-            this.SizeButton.Name = "SizeButton";
-            this.SizeButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.SizeButton.Size = new System.Drawing.Size(160, 41);
-            this.SizeButton.TabIndex = 4;
-            this.SizeButton.Text = "Size";
-            this.SizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SizeButton.UseVisualStyleBackColor = false;
-            this.SizeButton.Click += new System.EventHandler(this.SizeButton_Click);
-            // 
-            // ViewPanel
-            // 
-            this.ViewPanel.Controls.Add(this.button7);
-            this.ViewPanel.Controls.Add(this.button6);
-            this.ViewPanel.Controls.Add(this.button1);
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ViewPanel.Location = new System.Drawing.Point(0, 247);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(160, 122);
-            this.ViewPanel.TabIndex = 3;
-            // 
-            // ViewButton
-            // 
-            this.ViewButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ViewButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ViewButton.FlatAppearance.BorderSize = 0;
-            this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewButton.Location = new System.Drawing.Point(0, 206);
-            this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ViewButton.Size = new System.Drawing.Size(160, 41);
-            this.ViewButton.TabIndex = 2;
-            this.ViewButton.Text = "Views";
-            this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ViewButton.UseVisualStyleBackColor = false;
-            this.ViewButton.Click += new System.EventHandler(this.ViewButton_Click);
-            // 
-            // filePanel
-            // 
-            this.filePanel.Controls.Add(this.button5);
-            this.filePanel.Controls.Add(this.button4);
-            this.filePanel.Controls.Add(this.button3);
-            this.filePanel.Controls.Add(this.button2);
-            this.filePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.filePanel.Location = new System.Drawing.Point(0, 41);
-            this.filePanel.Name = "filePanel";
-            this.filePanel.Size = new System.Drawing.Size(160, 165);
-            this.filePanel.TabIndex = 1;
-            // 
-            // fileButton
-            // 
-            this.fileButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.fileButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.fileButton.FlatAppearance.BorderSize = 0;
-            this.fileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fileButton.Location = new System.Drawing.Point(0, 0);
-            this.fileButton.Name = "fileButton";
-            this.fileButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.fileButton.Size = new System.Drawing.Size(160, 41);
-            this.fileButton.TabIndex = 0;
-            this.fileButton.Text = "File";
-            this.fileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.fileButton.UseVisualStyleBackColor = false;
-            this.fileButton.Click += new System.EventHandler(this.fileButton_Click);
             // 
             // ofd
             // 
@@ -1099,8 +572,8 @@ namespace IPLab
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1108,17 +581,586 @@ namespace IPLab
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 1155);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 890);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.statusBar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1155);
+            this.panel3.Location = new System.Drawing.Point(0, 890);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1663, 50);
             this.panel3.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panel2.BackgroundImage = global::IPLab.Properties.Resources.OIP1;
+            this.panel2.Controls.Add(this.panelComplex);
+            this.panel2.Controls.Add(this.ComplexButton);
+            this.panel2.Controls.Add(this.panelBasic);
+            this.panel2.Controls.Add(this.BasicButton);
+            this.panel2.Controls.Add(this.panelSize);
+            this.panel2.Controls.Add(this.SizeButton);
+            this.panel2.Controls.Add(this.ViewPanel);
+            this.panel2.Controls.Add(this.ViewButton);
+            this.panel2.Controls.Add(this.filePanel);
+            this.panel2.Controls.Add(this.fileButton);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(243, 1244);
+            this.panel2.TabIndex = 4;
+            // 
+            // panelComplex
+            // 
+            this.panelComplex.Controls.Add(this.panel5);
+            this.panelComplex.Controls.Add(this.button22);
+            this.panelComplex.Controls.Add(this.button21);
+            this.panelComplex.Controls.Add(this.button20);
+            this.panelComplex.Controls.Add(this.button19);
+            this.panelComplex.Controls.Add(this.button18);
+            this.panelComplex.Controls.Add(this.button17);
+            this.panelComplex.Controls.Add(this.button16);
+            this.panelComplex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelComplex.Location = new System.Drawing.Point(0, 1012);
+            this.panelComplex.Name = "panelComplex";
+            this.panelComplex.Size = new System.Drawing.Size(209, 292);
+            this.panelComplex.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 287);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(209, 5);
+            this.panel5.TabIndex = 2;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.Azure;
+            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Image = global::IPLab.Properties.Resources._9022973_wave_sine_duotone_icon;
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(0, 246);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(209, 41);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "Fourier";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Azure;
+            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Image = global::IPLab.Properties.Resources._1041639_light_saturation_icon;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(0, 205);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(209, 41);
+            this.button21.TabIndex = 5;
+            this.button21.Text = "Saturation";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.Azure;
+            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Image = global::IPLab.Properties.Resources._4879884_circle_round_spinner_icon;
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.Location = new System.Drawing.Point(0, 164);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(209, 41);
+            this.button20.TabIndex = 4;
+            this.button20.Text = "Convolution";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Azure;
+            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Image = global::IPLab.Properties.Resources._9081517_vector_triangle_icon;
+            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button19.Location = new System.Drawing.Point(0, 123);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(209, 41);
+            this.button19.TabIndex = 3;
+            this.button19.Text = "Morphology";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.Azure;
+            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Image = global::IPLab.Properties.Resources._9043657_threshold_icon;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(0, 82);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(209, 41);
+            this.button18.TabIndex = 2;
+            this.button18.Text = "Threshold";
+            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Azure;
+            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Image = global::IPLab.Properties.Resources._9042834_menu_scale_icon;
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(0, 41);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(209, 41);
+            this.button17.TabIndex = 1;
+            this.button17.Text = "Grayscale";
+            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Azure;
+            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Image = global::IPLab.Properties.Resources._8201378_adjust_settings_levels_ui_icon;
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(0, 0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(209, 41);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "Levels";
+            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // ComplexButton
+            // 
+            this.ComplexButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ComplexButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ComplexButton.FlatAppearance.BorderSize = 0;
+            this.ComplexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComplexButton.Location = new System.Drawing.Point(0, 971);
+            this.ComplexButton.Name = "ComplexButton";
+            this.ComplexButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ComplexButton.Size = new System.Drawing.Size(209, 41);
+            this.ComplexButton.TabIndex = 8;
+            this.ComplexButton.Text = "Complex";
+            this.ComplexButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComplexButton.UseVisualStyleBackColor = false;
+            this.ComplexButton.Click += new System.EventHandler(this.ComplexButton_Click);
+            // 
+            // panelBasic
+            // 
+            this.panelBasic.Controls.Add(this.button15);
+            this.panelBasic.Controls.Add(this.button14);
+            this.panelBasic.Controls.Add(this.button13);
+            this.panelBasic.Controls.Add(this.button12);
+            this.panelBasic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBasic.Location = new System.Drawing.Point(0, 804);
+            this.panelBasic.Name = "panelBasic";
+            this.panelBasic.Size = new System.Drawing.Size(209, 167);
+            this.panelBasic.TabIndex = 7;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Azure;
+            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Image = global::IPLab.Properties.Resources._8665088_arrow_rotate_right_icon;
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(0, 123);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(209, 41);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Rotate";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Azure;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Image = global::IPLab.Properties.Resources._9035906_resize_sharp_icon;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(0, 82);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(209, 41);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Resize";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Azure;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Image = global::IPLab.Properties.Resources._352293_crop_icon;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(0, 41);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(209, 41);
+            this.button13.TabIndex = 1;
+            this.button13.Text = "Crop";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Azure;
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Image = global::IPLab.Properties.Resources._8723058_copy_clone_icon;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(0, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(209, 41);
+            this.button12.TabIndex = 0;
+            this.button12.Text = "Clone";
+            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // BasicButton
+            // 
+            this.BasicButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BasicButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BasicButton.FlatAppearance.BorderSize = 0;
+            this.BasicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BasicButton.Location = new System.Drawing.Point(0, 763);
+            this.BasicButton.Name = "BasicButton";
+            this.BasicButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.BasicButton.Size = new System.Drawing.Size(209, 41);
+            this.BasicButton.TabIndex = 6;
+            this.BasicButton.Text = "Basic";
+            this.BasicButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BasicButton.UseVisualStyleBackColor = false;
+            this.BasicButton.Click += new System.EventHandler(this.BasicButton_Click);
+            // 
+            // panelSize
+            // 
+            this.panelSize.Controls.Add(this.button11);
+            this.panelSize.Controls.Add(this.button10);
+            this.panelSize.Controls.Add(this.button9);
+            this.panelSize.Controls.Add(this.button8);
+            this.panelSize.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSize.Location = new System.Drawing.Point(0, 597);
+            this.panelSize.Name = "panelSize";
+            this.panelSize.Size = new System.Drawing.Size(209, 166);
+            this.panelSize.TabIndex = 5;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Azure;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Image = global::IPLab.Properties.Resources._8550621_normal_size_full_screen_resize_icon;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(0, 123);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(209, 41);
+            this.button11.TabIndex = 3;
+            this.button11.Text = "FitToSize";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Azure;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Image = global::IPLab.Properties.Resources._326690_magnify_search_zoom_icon;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(0, 82);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(209, 41);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "Original";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Azure;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = global::IPLab.Properties.Resources._1110958_essential_out_plus_round_set_icon;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(0, 41);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(209, 41);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "ZoomOut";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Azure;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::IPLab.Properties.Resources._1110960_essential_in_minus_round_set_icon;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(209, 41);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "ZoomIn";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // SizeButton
+            // 
+            this.SizeButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.SizeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SizeButton.FlatAppearance.BorderSize = 0;
+            this.SizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SizeButton.Location = new System.Drawing.Point(0, 556);
+            this.SizeButton.Name = "SizeButton";
+            this.SizeButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.SizeButton.Size = new System.Drawing.Size(209, 41);
+            this.SizeButton.TabIndex = 4;
+            this.SizeButton.Text = "Size";
+            this.SizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SizeButton.UseVisualStyleBackColor = false;
+            this.SizeButton.Click += new System.EventHandler(this.SizeButton_Click);
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.Controls.Add(this.button7);
+            this.ViewPanel.Controls.Add(this.button6);
+            this.ViewPanel.Controls.Add(this.button1);
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ViewPanel.Location = new System.Drawing.Point(0, 434);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(209, 122);
+            this.ViewPanel.TabIndex = 3;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Azure;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::IPLab.Properties.Resources._8207898_about_info_information_help_ui_icon;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(0, 82);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(209, 41);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "About";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Azure;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = global::IPLab.Properties.Resources._353433_chart_pie_analytics_statistics_icon;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 41);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(209, 41);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Statistics";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::IPLab.Properties.Resources._9069626_chart_histogram_icon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(209, 41);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Histogram";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ViewButton
+            // 
+            this.ViewButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ViewButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ViewButton.FlatAppearance.BorderSize = 0;
+            this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewButton.Location = new System.Drawing.Point(0, 393);
+            this.ViewButton.Name = "ViewButton";
+            this.ViewButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ViewButton.Size = new System.Drawing.Size(209, 41);
+            this.ViewButton.TabIndex = 2;
+            this.ViewButton.Text = "Views";
+            this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ViewButton.UseVisualStyleBackColor = false;
+            this.ViewButton.Click += new System.EventHandler(this.ViewButton_Click);
+            // 
+            // filePanel
+            // 
+            this.filePanel.Controls.Add(this.button5);
+            this.filePanel.Controls.Add(this.button4);
+            this.filePanel.Controls.Add(this.button3);
+            this.filePanel.Controls.Add(this.button2);
+            this.filePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.filePanel.Location = new System.Drawing.Point(0, 228);
+            this.filePanel.Name = "filePanel";
+            this.filePanel.Size = new System.Drawing.Size(209, 165);
+            this.filePanel.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Azure;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::IPLab.Properties.Resources._8665765_paste_icon;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(0, 123);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(209, 41);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Paste";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Azure;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = global::IPLab.Properties.Resources._326595_content_copy_duplicate_icon;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 82);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(209, 41);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Copy";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Azure;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::IPLab.Properties.Resources._8666542_save_icon;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 41);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(209, 41);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Save";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Azure;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::IPLab.Properties.Resources._8530619_folder_open_icon;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(209, 41);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Open";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // fileButton
+            // 
+            this.fileButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.fileButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.fileButton.FlatAppearance.BorderSize = 0;
+            this.fileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fileButton.Location = new System.Drawing.Point(0, 187);
+            this.fileButton.Name = "fileButton";
+            this.fileButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.fileButton.Size = new System.Drawing.Size(209, 41);
+            this.fileButton.TabIndex = 0;
+            this.fileButton.Text = "File";
+            this.fileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fileButton.UseVisualStyleBackColor = false;
+            this.fileButton.Click += new System.EventHandler(this.fileButton_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(209, 187);
+            this.panel4.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::IPLab.Properties.Resources.app;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(209, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // statusBar
             // 
@@ -1175,386 +1217,11 @@ namespace IPLab
             this.infoPanel.Name = "infoPanel";
             this.infoPanel.Width = 830;
             // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.Azure;
-            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Image = global::IPLab.Properties.Resources._9022973_wave_sine_duotone_icon;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(0, 246);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(160, 41);
-            this.button22.TabIndex = 6;
-            this.button22.Text = "Fourier";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Azure;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Image = global::IPLab.Properties.Resources._1041639_light_saturation_icon;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 205);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(160, 41);
-            this.button21.TabIndex = 5;
-            this.button21.Text = "Saturation";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Azure;
-            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Image = global::IPLab.Properties.Resources._4879884_circle_round_spinner_icon;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 164);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(160, 41);
-            this.button20.TabIndex = 4;
-            this.button20.Text = "Convolution";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.Azure;
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Image = global::IPLab.Properties.Resources._9081517_vector_triangle_icon;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 123);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(160, 41);
-            this.button19.TabIndex = 3;
-            this.button19.Text = "Morphology";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.Azure;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Image = global::IPLab.Properties.Resources._9043657_threshold_icon;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 82);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(160, 41);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "Threshold";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.Azure;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Image = global::IPLab.Properties.Resources._9042834_menu_scale_icon;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(0, 41);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(160, 41);
-            this.button17.TabIndex = 1;
-            this.button17.Text = "Grayscale";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.Azure;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Image = global::IPLab.Properties.Resources._8201378_adjust_settings_levels_ui_icon;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(0, 0);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(160, 41);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "Levels";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.Azure;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Image = global::IPLab.Properties.Resources._8665088_arrow_rotate_right_icon;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(0, 123);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(160, 41);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Rotate";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.Azure;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Image = global::IPLab.Properties.Resources._9035906_resize_sharp_icon;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(0, 82);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(160, 41);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Resize";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.Azure;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Image = global::IPLab.Properties.Resources._352293_crop_icon;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(0, 41);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(160, 41);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Crop";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Azure;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Image = global::IPLab.Properties.Resources._8723058_copy_clone_icon;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(160, 41);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Clone";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Azure;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = global::IPLab.Properties.Resources._8550621_normal_size_full_screen_resize_icon;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 123);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(160, 41);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "FitToSize";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Azure;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = global::IPLab.Properties.Resources._326690_magnify_search_zoom_icon;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 82);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(160, 41);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Original";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Azure;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = global::IPLab.Properties.Resources._1110958_essential_out_plus_round_set_icon;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 41);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(160, 41);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "ZoomOut";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Azure;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = global::IPLab.Properties.Resources._1110960_essential_in_minus_round_set_icon;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(160, 41);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "ZoomIn";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Azure;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = global::IPLab.Properties.Resources._8207898_about_info_information_help_ui_icon;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 82);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(160, 41);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "About";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Azure;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = global::IPLab.Properties.Resources._353433_chart_pie_analytics_statistics_icon;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 41);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 41);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Statistics";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::IPLab.Properties.Resources._9069626_chart_histogram_icon;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Histogram";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Azure;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::IPLab.Properties.Resources._8665765_paste_icon;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 123);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 41);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Paste";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::IPLab.Properties.Resources._326595_content_copy_duplicate_icon;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 82);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 41);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Copy";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::IPLab.Properties.Resources._8666542_save_icon;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 41);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 41);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::IPLab.Properties.Resources._8530619_folder_open_icon;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(160, 41);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Open";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 37);
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1663, 1205);
+            this.ClientSize = new System.Drawing.Size(1663, 940);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
@@ -1568,16 +1235,16 @@ namespace IPLab
             this.Closing += new System.ComponentModel.CancelEventHandler(this.MainForm_Closing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
-            this.dockManager.ResumeLayout(false);
-            this.dockManager.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panelComplex.ResumeLayout(false);
             this.panelBasic.ResumeLayout(false);
             this.panelSize.ResumeLayout(false);
             this.ViewPanel.ResumeLayout(false);
             this.filePanel.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).EndInit();
@@ -1846,7 +1513,6 @@ namespace IPLab
 			config.histogramVisible = show;
 
 			histogramViewItem.Checked = show;
-			histogramButton.Pushed = show;
 
 			if (show)
 			{
@@ -2104,14 +1770,6 @@ namespace IPLab
 		private void viewItem_Popup(object sender, System.EventArgs e)
 		{
 			centerViewItem.Enabled = ((dockManager.ActiveDocument != null) && (dockManager.ActiveDocument is ImageDoc));
-
-			ToolBarDockHolder holder;
-			// Main tool bar
-			holder = toolBarManager.GetHolder(mainToolBar);
-			mainBarViewItem.Checked = holder.Visible;
-			// Image tool bar
-			holder = toolBarManager.GetHolder(imageToolBar);
-			imageBarViewItem.Checked = holder.Visible;
 		}
 
 		// On "View->Histogram" - show histogram
@@ -2310,19 +1968,6 @@ namespace IPLab
 			}
 		}
 
-		// On "View->Main Tool bar" menu item click
-		private void mainBarViewItem_Click(object sender, System.EventArgs e)
-		{
-			ToolBarDockHolder holder = toolBarManager.GetHolder(mainToolBar);
-			toolBarManager.ShowControl(mainToolBar, !holder.Visible);
-		}
-
-		// On "View->Image Tool bar" menu item click
-		private void imageBarViewItem_Click(object sender, System.EventArgs e)
-		{
-			ToolBarDockHolder holder = toolBarManager.GetHolder(imageToolBar);
-			toolBarManager.ShowControl(imageToolBar, !holder.Visible);
-		}
 
 		// Histogram docking state changed
 		private void histogram_DockStateChanged(object sender, System.EventArgs e)
@@ -2336,7 +1981,6 @@ namespace IPLab
 
 				// update menu & tool bar
 				histogramViewItem.Checked = visible;
-				histogramButton.Pushed = visible;
 			}
 		}
 
@@ -2679,6 +2323,11 @@ namespace IPLab
                 }
             }
             hideSubMenu();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            About();
         }
     }
 }

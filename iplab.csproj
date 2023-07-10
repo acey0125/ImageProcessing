@@ -469,6 +469,18 @@
   <ItemGroup>
     <None Include="Resources\9022973_wave_sine_duotone_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-C %281%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

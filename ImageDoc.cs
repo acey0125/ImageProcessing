@@ -1455,7 +1455,8 @@ namespace IPLab
             // 
             this.AllowedStates = WeifenLuo.WinFormsUI.ContentStates.Document;
             this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
-            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(528, 417);
             this.Menu = this.mainMenu;
             this.Name = "ImageDoc";
