@@ -185,7 +185,6 @@ namespace IPLab
         private MenuItem levelsFiltersItem;
         private MenuItem medianFiltersItem;
         private MenuItem gammaFiltersItem;
-        private MenuItem menuItem25;
         private MenuItem fourierFiltersItem;
         private System.ComponentModel.IContainer components;
 
@@ -435,7 +434,6 @@ namespace IPLab
             this.levelsFiltersItem = new System.Windows.Forms.MenuItem();
             this.medianFiltersItem = new System.Windows.Forms.MenuItem();
             this.gammaFiltersItem = new System.Windows.Forms.MenuItem();
-            this.menuItem25 = new System.Windows.Forms.MenuItem();
             this.fourierFiltersItem = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
@@ -655,7 +653,6 @@ namespace IPLab
             this.levelsFiltersItem,
             this.medianFiltersItem,
             this.gammaFiltersItem,
-            this.menuItem25,
             this.fourierFiltersItem});
             this.filtersItem.MergeOrder = 1;
             this.filtersItem.Text = "Filters";
@@ -1440,14 +1437,9 @@ namespace IPLab
             this.gammaFiltersItem.Text = "&Gamma Correction";
             this.gammaFiltersItem.Click += new System.EventHandler(this.gammaFiltersItem_Click);
             // 
-            // menuItem25
-            // 
-            this.menuItem25.Index = 16;
-            this.menuItem25.Text = "-";
-            // 
             // fourierFiltersItem
             // 
-            this.fourierFiltersItem.Index = 17;
+            this.fourierFiltersItem.Index = 16;
             this.fourierFiltersItem.Text = "&Fourier Transformation";
             this.fourierFiltersItem.Click += new System.EventHandler(this.fourierFiltersItem_Click);
             // 
@@ -1455,7 +1447,7 @@ namespace IPLab
             // 
             this.AllowedStates = WeifenLuo.WinFormsUI.ContentStates.Document;
             this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(528, 417);
             this.Menu = this.mainMenu;

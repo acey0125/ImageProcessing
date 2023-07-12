@@ -41,8 +41,6 @@ namespace IPLab
         private TextBox inMaxBox;
         private Label label2;
         private CheckBox allCheckBox;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Label label3;
         private TextBox outMinBox;
         private TextBox outMaxBox;
@@ -50,7 +48,8 @@ namespace IPLab
         private IPLab.ColorSlider outSlider;
         private GroupBox groupBox4;
         private IPLab.FilterPreview filterPreview;
-        private PictureBox pictureBox3;
+        private GroupBox groupBox1;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -120,174 +119,156 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.histogram = new IPLab.Histogram( );
-            this.label1 = new Label( );
-            this.channelCombo = new ComboBox( );
-            this.okButton = new Button( );
-            this.cancelButton = new Button( );
-            this.inMinBox = new TextBox( );
-            this.inMaxBox = new TextBox( );
-            this.label2 = new Label( );
-            this.allCheckBox = new CheckBox( );
-            this.pictureBox1 = new PictureBox( );
-            this.pictureBox2 = new PictureBox( );
-            this.label3 = new Label( );
-            this.outMinBox = new TextBox( );
-            this.outMaxBox = new TextBox( );
-            this.inSlider = new IPLab.ColorSlider( );
-            this.outSlider = new IPLab.ColorSlider( );
-            this.groupBox4 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.pictureBox3 = new PictureBox( );
-            this.groupBox4.SuspendLayout( );
-            this.SuspendLayout( );
+            this.histogram = new IPLab.Histogram();
+            this.label1 = new System.Windows.Forms.Label();
+            this.channelCombo = new System.Windows.Forms.ComboBox();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.inMinBox = new System.Windows.Forms.TextBox();
+            this.inMaxBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.allCheckBox = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.outMinBox = new System.Windows.Forms.TextBox();
+            this.outMaxBox = new System.Windows.Forms.TextBox();
+            this.inSlider = new IPLab.ColorSlider();
+            this.outSlider = new IPLab.ColorSlider();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // histogram
             // 
-            this.histogram.Location = new System.Drawing.Point( 10, 75 );
+            this.histogram.Location = new System.Drawing.Point(73, 296);
             this.histogram.Name = "histogram";
-            this.histogram.Size = new System.Drawing.Size( 258, 162 );
+            this.histogram.Size = new System.Drawing.Size(620, 320);
             this.histogram.TabIndex = 7;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 15 );
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 51, 16 );
+            this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "&Channel:";
+            this.label1.Text = "Channel:";
             // 
             // channelCombo
             // 
-            this.channelCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.channelCombo.Location = new System.Drawing.Point( 60, 10 );
+            this.channelCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.channelCombo.Location = new System.Drawing.Point(278, 75);
             this.channelCombo.Name = "channelCombo";
-            this.channelCombo.Size = new System.Drawing.Size( 90, 21 );
+            this.channelCombo.Size = new System.Drawing.Size(234, 40);
             this.channelCombo.TabIndex = 2;
-            this.channelCombo.SelectedIndexChanged += new System.EventHandler( this.channelCombo_SelectedIndexChanged );
+            this.channelCombo.SelectedIndexChanged += new System.EventHandler(this.channelCombo_SelectedIndexChanged);
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 295, 300 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(485, 950);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 50);
             this.okButton.TabIndex = 10;
             this.okButton.Text = "Ok";
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 385, 300 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(894, 950);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 50);
             this.cancelButton.TabIndex = 11;
             this.cancelButton.Text = "Cancel";
             // 
             // inMinBox
             // 
-            this.inMinBox.Location = new System.Drawing.Point( 80, 50 );
+            this.inMinBox.Location = new System.Drawing.Point(278, 229);
             this.inMinBox.Name = "inMinBox";
-            this.inMinBox.Size = new System.Drawing.Size( 50, 20 );
+            this.inMinBox.Size = new System.Drawing.Size(130, 45);
             this.inMinBox.TabIndex = 5;
-            this.inMinBox.Text = "";
-            this.inMinBox.TextChanged += new System.EventHandler( this.inMinBox_TextChanged );
+            this.inMinBox.TextChanged += new System.EventHandler(this.inMinBox_TextChanged);
             // 
             // inMaxBox
             // 
-            this.inMaxBox.Location = new System.Drawing.Point( 140, 50 );
+            this.inMaxBox.Location = new System.Drawing.Point(473, 229);
             this.inMaxBox.Name = "inMaxBox";
-            this.inMaxBox.Size = new System.Drawing.Size( 50, 20 );
+            this.inMaxBox.Size = new System.Drawing.Size(130, 45);
             this.inMaxBox.TabIndex = 6;
-            this.inMaxBox.Text = "";
-            this.inMaxBox.TextChanged += new System.EventHandler( this.inMaxBox_TextChanged );
+            this.inMaxBox.TextChanged += new System.EventHandler(this.inMaxBox_TextChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 10, 53 );
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 237);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 65, 17 );
+            this.label2.Size = new System.Drawing.Size(183, 32);
             this.label2.TabIndex = 4;
-            this.label2.Text = "&Input levels:";
+            this.label2.Text = "Input levels:";
             // 
             // allCheckBox
             // 
-            this.allCheckBox.Location = new System.Drawing.Point( 165, 10 );
+            this.allCheckBox.Location = new System.Drawing.Point(278, 137);
             this.allCheckBox.Name = "allCheckBox";
+            this.allCheckBox.Size = new System.Drawing.Size(270, 51);
             this.allCheckBox.TabIndex = 3;
-            this.allCheckBox.Text = "&Sync channels";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point( 10, 40 );
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point( 10, 260 );
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.allCheckBox.Text = "Sync channels";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point( 10, 273 );
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 718);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 73, 17 );
+            this.label3.Size = new System.Drawing.Size(207, 32);
             this.label3.TabIndex = 7;
-            this.label3.Text = "&Output levels:";
+            this.label3.Text = "Output levels:";
             // 
             // outMinBox
             // 
-            this.outMinBox.Location = new System.Drawing.Point( 80, 270 );
+            this.outMinBox.Location = new System.Drawing.Point(278, 715);
             this.outMinBox.Name = "outMinBox";
-            this.outMinBox.Size = new System.Drawing.Size( 50, 20 );
+            this.outMinBox.Size = new System.Drawing.Size(130, 45);
             this.outMinBox.TabIndex = 8;
-            this.outMinBox.Text = "";
-            this.outMinBox.TextChanged += new System.EventHandler( this.outMinBox_TextChanged );
+            this.outMinBox.TextChanged += new System.EventHandler(this.outMinBox_TextChanged);
             // 
             // outMaxBox
             // 
-            this.outMaxBox.Location = new System.Drawing.Point( 140, 270 );
+            this.outMaxBox.Location = new System.Drawing.Point(473, 715);
             this.outMaxBox.Name = "outMaxBox";
-            this.outMaxBox.Size = new System.Drawing.Size( 50, 20 );
+            this.outMaxBox.Size = new System.Drawing.Size(130, 45);
             this.outMaxBox.TabIndex = 9;
-            this.outMaxBox.Text = "";
-            this.outMaxBox.TextChanged += new System.EventHandler( this.outMaxBox_TextChanged );
+            this.outMaxBox.TextChanged += new System.EventHandler(this.outMaxBox_TextChanged);
             // 
             // inSlider
             // 
-            this.inSlider.Location = new System.Drawing.Point( 8, 232 );
+            this.inSlider.Location = new System.Drawing.Point(51, 667);
             this.inSlider.Max = 253;
             this.inSlider.Min = 2;
             this.inSlider.Name = "inSlider";
-            this.inSlider.Size = new System.Drawing.Size( 262, 20 );
+            this.inSlider.Size = new System.Drawing.Size(681, 43);
             this.inSlider.TabIndex = 15;
             this.inSlider.TabStop = false;
-            this.inSlider.ValuesChanged += new System.EventHandler( this.inSlider_ValuesChanged );
+            this.inSlider.ValuesChanged += new System.EventHandler(this.inSlider_ValuesChanged);
             // 
             // outSlider
             // 
-            this.outSlider.Location = new System.Drawing.Point( 8, 295 );
+            this.outSlider.Location = new System.Drawing.Point(51, 798);
             this.outSlider.Name = "outSlider";
-            this.outSlider.Size = new System.Drawing.Size( 262, 20 );
+            this.outSlider.Size = new System.Drawing.Size(681, 43);
             this.outSlider.TabIndex = 16;
             this.outSlider.TabStop = false;
-            this.outSlider.ValuesChanged += new System.EventHandler( this.outSlider_ValuesChanged );
+            this.outSlider.ValuesChanged += new System.EventHandler(this.outSlider_ValuesChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new Control[] {
-																					this.filterPreview} );
-            this.groupBox4.Location = new System.Drawing.Point( 290, 10 );
+            this.groupBox4.Controls.Add(this.filterPreview);
+            this.groupBox4.Location = new System.Drawing.Point(812, 32);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox4.Size = new System.Drawing.Size(772, 841);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Preview";
@@ -295,55 +276,60 @@ namespace IPLab
             // filterPreview
             // 
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(24, 36);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(730, 785);
             this.filterPreview.TabIndex = 0;
             this.filterPreview.TabStop = false;
             // 
-            // pictureBox3
+            // groupBox1
             // 
-            this.pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point( 10, 323 );
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.allCheckBox);
+            this.groupBox1.Controls.Add(this.inSlider);
+            this.groupBox1.Controls.Add(this.inMaxBox);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.channelCombo);
+            this.groupBox1.Controls.Add(this.inMinBox);
+            this.groupBox1.Controls.Add(this.outSlider);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.outMinBox);
+            this.groupBox1.Controls.Add(this.outMaxBox);
+            this.groupBox1.Controls.Add(this.histogram);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(770, 905);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "SelectLevel";
             // 
             // LevelsLinearForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 469, 333 );
-            this.Controls.AddRange( new Control[] {
-																		  this.groupBox4,
-																		  this.outSlider,
-																		  this.inSlider,
-																		  this.pictureBox3,
-																		  this.outMaxBox,
-																		  this.outMinBox,
-																		  this.label3,
-																		  this.pictureBox2,
-																		  this.pictureBox1,
-																		  this.allCheckBox,
-																		  this.label2,
-																		  this.inMaxBox,
-																		  this.inMinBox,
-																		  this.cancelButton,
-																		  this.okButton,
-																		  this.channelCombo,
-																		  this.histogram,
-																		  this.label1} );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1681, 1046);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LevelsLinearForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Levels";
-            this.groupBox4.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion

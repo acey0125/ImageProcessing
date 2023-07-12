@@ -228,7 +228,6 @@ namespace IPLab
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelComplex = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -265,6 +264,7 @@ namespace IPLab
             this.fileButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.statusBar = new IPLab.Controls.CustomStatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -275,7 +275,6 @@ namespace IPLab
             this.infoPanel = new System.Windows.Forms.StatusBarPanel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelComplex.SuspendLayout();
             this.panelBasic.SuspendLayout();
@@ -284,6 +283,7 @@ namespace IPLab
             this.filePanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).BeginInit();
@@ -581,17 +581,8 @@ namespace IPLab
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 890);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 770);
             this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.statusBar);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 890);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1663, 50);
-            this.panel3.TabIndex = 6;
             // 
             // panel2
             // 
@@ -626,7 +617,7 @@ namespace IPLab
             this.panelComplex.Controls.Add(this.button17);
             this.panelComplex.Controls.Add(this.button16);
             this.panelComplex.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelComplex.Location = new System.Drawing.Point(0, 1012);
+            this.panelComplex.Location = new System.Drawing.Point(0, 1067);
             this.panelComplex.Name = "panelComplex";
             this.panelComplex.Size = new System.Drawing.Size(209, 292);
             this.panelComplex.TabIndex = 9;
@@ -760,14 +751,16 @@ namespace IPLab
             // 
             // ComplexButton
             // 
+            this.ComplexButton.AutoSize = true;
             this.ComplexButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ComplexButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.ComplexButton.FlatAppearance.BorderSize = 0;
             this.ComplexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComplexButton.Location = new System.Drawing.Point(0, 971);
+            this.ComplexButton.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ComplexButton.Location = new System.Drawing.Point(0, 1015);
             this.ComplexButton.Name = "ComplexButton";
             this.ComplexButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ComplexButton.Size = new System.Drawing.Size(209, 41);
+            this.ComplexButton.Size = new System.Drawing.Size(209, 52);
             this.ComplexButton.TabIndex = 8;
             this.ComplexButton.Text = "Complex";
             this.ComplexButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -781,7 +774,7 @@ namespace IPLab
             this.panelBasic.Controls.Add(this.button13);
             this.panelBasic.Controls.Add(this.button12);
             this.panelBasic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBasic.Location = new System.Drawing.Point(0, 804);
+            this.panelBasic.Location = new System.Drawing.Point(0, 848);
             this.panelBasic.Name = "panelBasic";
             this.panelBasic.Size = new System.Drawing.Size(209, 167);
             this.panelBasic.TabIndex = 7;
@@ -856,14 +849,16 @@ namespace IPLab
             // 
             // BasicButton
             // 
+            this.BasicButton.AutoSize = true;
             this.BasicButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BasicButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.BasicButton.FlatAppearance.BorderSize = 0;
             this.BasicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BasicButton.Location = new System.Drawing.Point(0, 763);
+            this.BasicButton.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BasicButton.Location = new System.Drawing.Point(0, 796);
             this.BasicButton.Name = "BasicButton";
             this.BasicButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.BasicButton.Size = new System.Drawing.Size(209, 41);
+            this.BasicButton.Size = new System.Drawing.Size(209, 52);
             this.BasicButton.TabIndex = 6;
             this.BasicButton.Text = "Basic";
             this.BasicButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -877,7 +872,7 @@ namespace IPLab
             this.panelSize.Controls.Add(this.button9);
             this.panelSize.Controls.Add(this.button8);
             this.panelSize.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSize.Location = new System.Drawing.Point(0, 597);
+            this.panelSize.Location = new System.Drawing.Point(0, 630);
             this.panelSize.Name = "panelSize";
             this.panelSize.Size = new System.Drawing.Size(209, 166);
             this.panelSize.TabIndex = 5;
@@ -952,14 +947,16 @@ namespace IPLab
             // 
             // SizeButton
             // 
+            this.SizeButton.AutoSize = true;
             this.SizeButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.SizeButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.SizeButton.FlatAppearance.BorderSize = 0;
             this.SizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SizeButton.Location = new System.Drawing.Point(0, 556);
+            this.SizeButton.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SizeButton.Location = new System.Drawing.Point(0, 578);
             this.SizeButton.Name = "SizeButton";
             this.SizeButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.SizeButton.Size = new System.Drawing.Size(209, 41);
+            this.SizeButton.Size = new System.Drawing.Size(209, 52);
             this.SizeButton.TabIndex = 4;
             this.SizeButton.Text = "Size";
             this.SizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -972,7 +969,7 @@ namespace IPLab
             this.ViewPanel.Controls.Add(this.button6);
             this.ViewPanel.Controls.Add(this.button1);
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ViewPanel.Location = new System.Drawing.Point(0, 434);
+            this.ViewPanel.Location = new System.Drawing.Point(0, 456);
             this.ViewPanel.Name = "ViewPanel";
             this.ViewPanel.Size = new System.Drawing.Size(209, 122);
             this.ViewPanel.TabIndex = 3;
@@ -1030,14 +1027,16 @@ namespace IPLab
             // 
             // ViewButton
             // 
+            this.ViewButton.AutoSize = true;
             this.ViewButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ViewButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.ViewButton.FlatAppearance.BorderSize = 0;
             this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewButton.Location = new System.Drawing.Point(0, 393);
+            this.ViewButton.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ViewButton.Location = new System.Drawing.Point(0, 404);
             this.ViewButton.Name = "ViewButton";
             this.ViewButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.ViewButton.Size = new System.Drawing.Size(209, 41);
+            this.ViewButton.Size = new System.Drawing.Size(209, 52);
             this.ViewButton.TabIndex = 2;
             this.ViewButton.Text = "Views";
             this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1051,7 +1050,7 @@ namespace IPLab
             this.filePanel.Controls.Add(this.button3);
             this.filePanel.Controls.Add(this.button2);
             this.filePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.filePanel.Location = new System.Drawing.Point(0, 228);
+            this.filePanel.Location = new System.Drawing.Point(0, 239);
             this.filePanel.Name = "filePanel";
             this.filePanel.Size = new System.Drawing.Size(209, 165);
             this.filePanel.TabIndex = 1;
@@ -1127,14 +1126,16 @@ namespace IPLab
             // 
             // fileButton
             // 
+            this.fileButton.AutoSize = true;
             this.fileButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.fileButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.fileButton.FlatAppearance.BorderSize = 0;
             this.fileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fileButton.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.fileButton.Location = new System.Drawing.Point(0, 187);
             this.fileButton.Name = "fileButton";
             this.fileButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.fileButton.Size = new System.Drawing.Size(209, 41);
+            this.fileButton.Size = new System.Drawing.Size(209, 52);
             this.fileButton.TabIndex = 0;
             this.fileButton.Text = "File";
             this.fileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1162,9 +1163,19 @@ namespace IPLab
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.statusBar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 770);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1663, 50);
+            this.panel3.TabIndex = 6;
+            // 
             // statusBar
             // 
             this.statusBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusBar.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.statusBar.Location = new System.Drawing.Point(0, 0);
             this.statusBar.Name = "statusBar";
             this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
@@ -1221,7 +1232,7 @@ namespace IPLab
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 37);
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1663, 940);
+            this.ClientSize = new System.Drawing.Size(1663, 820);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
@@ -1236,8 +1247,8 @@ namespace IPLab
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panelComplex.ResumeLayout(false);
             this.panelBasic.ResumeLayout(false);
             this.panelSize.ResumeLayout(false);
@@ -1245,6 +1256,7 @@ namespace IPLab
             this.filePanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).EndInit();
