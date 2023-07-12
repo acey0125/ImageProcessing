@@ -90,127 +90,128 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new GroupBox( );
-            this.maxTrackBar = new TrackBar( );
-            this.maxBox = new TextBox( );
-            this.label2 = new Label( );
-            this.minTrackBar = new TrackBar( );
-            this.minBox = new TextBox( );
-            this.label1 = new Label( );
-            this.okButton = new Button( );
-            this.cancelButton = new Button( );
-            this.groupBox1.SuspendLayout( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.maxTrackBar ) ).BeginInit( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.minTrackBar ) ).BeginInit( );
-            this.SuspendLayout( );
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maxTrackBar = new System.Windows.Forms.TrackBar();
+            this.maxBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.minTrackBar = new System.Windows.Forms.TrackBar();
+            this.minBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minTrackBar)).BeginInit();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new Control[] {
-																					this.maxTrackBar,
-																					this.maxBox,
-																					this.label2,
-																					this.minTrackBar,
-																					this.minBox,
-																					this.label1} );
-            this.groupBox1.Location = new System.Drawing.Point( 10, 5 );
+            this.groupBox1.Controls.Add(this.maxTrackBar);
+            this.groupBox1.Controls.Add(this.maxBox);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.minTrackBar);
+            this.groupBox1.Controls.Add(this.minBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(26, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 360, 120 );
+            this.groupBox1.Size = new System.Drawing.Size(1169, 511);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Remove frequencies outside the range";
             // 
             // maxTrackBar
             // 
-            this.maxTrackBar.Location = new System.Drawing.Point( 100, 70 );
+            this.maxTrackBar.Location = new System.Drawing.Point(330, 286);
             this.maxTrackBar.Name = "maxTrackBar";
-            this.maxTrackBar.Size = new System.Drawing.Size( 250, 42 );
+            this.maxTrackBar.Size = new System.Drawing.Size(650, 90);
             this.maxTrackBar.TabIndex = 5;
             this.maxTrackBar.TickFrequency = 10;
-            this.maxTrackBar.ValueChanged += new System.EventHandler( this.maxTrackBar_ValueChanged );
+            this.maxTrackBar.ValueChanged += new System.EventHandler(this.maxTrackBar_ValueChanged);
             // 
             // maxBox
             // 
-            this.maxBox.Location = new System.Drawing.Point( 40, 70 );
+            this.maxBox.Location = new System.Drawing.Point(174, 286);
             this.maxBox.Name = "maxBox";
-            this.maxBox.Size = new System.Drawing.Size( 50, 20 );
+            this.maxBox.Size = new System.Drawing.Size(130, 45);
             this.maxBox.TabIndex = 4;
-            this.maxBox.Text = "";
-            this.maxBox.TextChanged += new System.EventHandler( this.maxBox_TextChanged );
+            this.maxBox.TextChanged += new System.EventHandler(this.maxBox_TextChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 10, 73 );
+            this.label2.Location = new System.Drawing.Point(96, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 30, 15 );
+            this.label2.Size = new System.Drawing.Size(78, 33);
             this.label2.TabIndex = 3;
             this.label2.Text = "&Max:";
             // 
             // minTrackBar
             // 
-            this.minTrackBar.Location = new System.Drawing.Point( 100, 20 );
+            this.minTrackBar.Location = new System.Drawing.Point(330, 178);
             this.minTrackBar.Name = "minTrackBar";
-            this.minTrackBar.Size = new System.Drawing.Size( 250, 42 );
+            this.minTrackBar.Size = new System.Drawing.Size(650, 90);
             this.minTrackBar.TabIndex = 2;
             this.minTrackBar.TickFrequency = 10;
-            this.minTrackBar.ValueChanged += new System.EventHandler( this.minTrackBar_ValueChanged );
+            this.minTrackBar.ValueChanged += new System.EventHandler(this.minTrackBar_ValueChanged);
             // 
             // minBox
             // 
-            this.minBox.Location = new System.Drawing.Point( 40, 20 );
+            this.minBox.Location = new System.Drawing.Point(174, 178);
             this.minBox.Name = "minBox";
-            this.minBox.Size = new System.Drawing.Size( 50, 20 );
+            this.minBox.Size = new System.Drawing.Size(130, 45);
             this.minBox.TabIndex = 1;
-            this.minBox.Text = "";
-            this.minBox.TextChanged += new System.EventHandler( this.minBox_TextChanged );
+            this.minBox.TextChanged += new System.EventHandler(this.minBox_TextChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 23 );
+            this.label1.Location = new System.Drawing.Point(96, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 30, 15 );
+            this.label1.Size = new System.Drawing.Size(78, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "&Min:";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 109, 135 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(356, 543);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 49);
             this.okButton.TabIndex = 1;
             this.okButton.Text = "&Ok";
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 194, 135 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(666, 543);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 2;
             this.cancelButton.Text = "&Cancel";
             // 
             // FrequencyFilter
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 379, 168 );
-            this.Controls.AddRange( new Control[] {
-																		  this.cancelButton,
-																		  this.okButton,
-																		  this.groupBox1} );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1229, 684);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrequencyFilter";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frequency Filter";
-            this.groupBox1.ResumeLayout( false );
-            ( (System.ComponentModel.ISupportInitialize) ( this.maxTrackBar ) ).EndInit( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.minTrackBar ) ).EndInit( );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.maxTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minTrackBar)).EndInit();
+            this.ResumeLayout(false);
 
         }
         #endregion

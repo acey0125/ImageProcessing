@@ -132,150 +132,162 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new GroupBox( );
-            this.legendLabel = new Label( );
-            this.loadButton = new Button( );
-            this.saveButton = new Button( );
-            this.grid = new IPLab.GridArrayInt( );
-            this.sizeCombo = new ComboBox( );
-            this.label1 = new Label( );
-            this.label2 = new Label( );
-            this.operatorCombo = new ComboBox( );
-            this.OkButton = new Button( );
-            this.cancelButton = new Button( );
-            this.ofd = new OpenFileDialog( );
-            this.sfd = new SaveFileDialog( );
-            this.groupBox2 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.groupBox1.SuspendLayout( );
-            this.groupBox2.SuspendLayout( );
-            this.SuspendLayout( );
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.legendLabel = new System.Windows.Forms.Label();
+            this.loadButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.grid = new IPLab.GridArrayInt();
+            this.sizeCombo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.operatorCombo = new System.Windows.Forms.ComboBox();
+            this.OkButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.sfd = new System.Windows.Forms.SaveFileDialog();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
-                | AnchorStyles.Left )
-                | AnchorStyles.Right );
-            this.groupBox1.Controls.AddRange( new Control[] {
-																					this.legendLabel,
-																					this.loadButton,
-																					this.saveButton,
-																					this.grid} );
-            this.groupBox1.Location = new System.Drawing.Point( 10, 10 );
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.legendLabel);
+            this.groupBox1.Controls.Add(this.loadButton);
+            this.groupBox1.Controls.Add(this.saveButton);
+            this.groupBox1.Controls.Add(this.grid);
+            this.groupBox1.Location = new System.Drawing.Point(26, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 425, 375 );
+            this.groupBox1.Size = new System.Drawing.Size(759, 857);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Structuring Element";
             // 
             // legendLabel
             // 
-            this.legendLabel.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Left );
+            this.legendLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.legendLabel.BackColor = System.Drawing.Color.White;
-            this.legendLabel.BorderStyle = BorderStyle.FixedSingle;
-            this.legendLabel.Location = new System.Drawing.Point( 10, 345 );
+            this.legendLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.legendLabel.Location = new System.Drawing.Point(26, 798);
             this.legendLabel.Name = "legendLabel";
-            this.legendLabel.Size = new System.Drawing.Size( 240, 18 );
+            this.legendLabel.Size = new System.Drawing.Size(624, 39);
             this.legendLabel.TabIndex = 4;
             this.legendLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // loadButton
             // 
-            this.loadButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.loadButton.FlatStyle = FlatStyle.Flat;
-            this.loadButton.Location = new System.Drawing.Point( 340, 345 );
+            this.loadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.loadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadButton.Location = new System.Drawing.Point(538, 793);
             this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(195, 50);
             this.loadButton.TabIndex = 2;
             this.loadButton.TabStop = false;
             this.loadButton.Text = "&Load";
-            this.loadButton.Click += new System.EventHandler( this.loadButton_Click );
+            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
             // saveButton
             // 
-            this.saveButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.saveButton.FlatStyle = FlatStyle.Flat;
-            this.saveButton.Location = new System.Drawing.Point( 255, 345 );
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Location = new System.Drawing.Point(317, 793);
             this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(195, 50);
             this.saveButton.TabIndex = 3;
             this.saveButton.TabStop = false;
             this.saveButton.Text = "&Save";
-            this.saveButton.Click += new System.EventHandler( this.saveButton_Click );
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // grid
             // 
-            this.grid.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
-                | AnchorStyles.Left )
-                | AnchorStyles.Right );
+            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.AutoSizeMinHeight = 10;
             this.grid.AutoSizeMinWidth = 10;
             this.grid.AutoStretchColumnsToFitWidth = false;
             this.grid.AutoStretchRowsToFitHeight = false;
-            this.grid.BorderStyle = BorderStyle.FixedSingle;
+            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.grid.ContextMenuStyle = SourceGrid2.ContextMenuStyle.None;
             this.grid.CustomSort = false;
             this.grid.GridToolTipActive = true;
-            this.grid.Location = new System.Drawing.Point( 10, 20 );
+            this.grid.Location = new System.Drawing.Point(26, 43);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size( 405, 315 );
-            this.grid.SpecialKeys = SourceGrid2.GridSpecialKeys.Default;
+            this.grid.Size = new System.Drawing.Size(707, 729);
+            this.grid.SpecialKeys = ((SourceGrid2.GridSpecialKeys)(((((((((((SourceGrid2.GridSpecialKeys.Ctrl_C | SourceGrid2.GridSpecialKeys.Ctrl_V) 
+            | SourceGrid2.GridSpecialKeys.Ctrl_X) 
+            | SourceGrid2.GridSpecialKeys.Delete) 
+            | SourceGrid2.GridSpecialKeys.Arrows) 
+            | SourceGrid2.GridSpecialKeys.Tab) 
+            | SourceGrid2.GridSpecialKeys.PageDownUp) 
+            | SourceGrid2.GridSpecialKeys.Enter) 
+            | SourceGrid2.GridSpecialKeys.Escape) 
+            | SourceGrid2.GridSpecialKeys.Control) 
+            | SourceGrid2.GridSpecialKeys.Shift)));
             this.grid.TabIndex = 0;
-            this.grid.ValueChanged += new IPLab.GridArrayInt.GridEventHandler( this.grid_ValueChanged );
+            this.grid.ValueChanged += new IPLab.GridArrayInt.GridEventHandler(this.grid_ValueChanged);
             // 
             // sizeCombo
             // 
-            this.sizeCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.sizeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.sizeCombo.Location = new System.Drawing.Point( 450, 30 );
+            this.sizeCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sizeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sizeCombo.Location = new System.Drawing.Point(824, 65);
             this.sizeCombo.Name = "sizeCombo";
-            this.sizeCombo.Size = new System.Drawing.Size( 170, 21 );
+            this.sizeCombo.Size = new System.Drawing.Size(442, 40);
             this.sizeCombo.TabIndex = 1;
-            this.sizeCombo.SelectedIndexChanged += new System.EventHandler( this.sizeCombo_SelectedIndexChanged );
+            this.sizeCombo.SelectedIndexChanged += new System.EventHandler(this.sizeCombo_SelectedIndexChanged);
             // 
             // label1
             // 
-            this.label1.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.label1.Location = new System.Drawing.Point( 450, 15 );
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Location = new System.Drawing.Point(824, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 132, 15 );
+            this.label1.Size = new System.Drawing.Size(343, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Structuring element size:";
             // 
             // label2
             // 
-            this.label2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.label2.Location = new System.Drawing.Point( 450, 60 );
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Location = new System.Drawing.Point(824, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 120, 15 );
+            this.label2.Size = new System.Drawing.Size(312, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Morpology operator:";
             // 
             // operatorCombo
             // 
-            this.operatorCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.operatorCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.operatorCombo.Location = new System.Drawing.Point( 450, 75 );
+            this.operatorCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.operatorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.operatorCombo.Location = new System.Drawing.Point(824, 162);
             this.operatorCombo.Name = "operatorCombo";
-            this.operatorCombo.Size = new System.Drawing.Size( 170, 21 );
+            this.operatorCombo.Size = new System.Drawing.Size(442, 40);
             this.operatorCombo.TabIndex = 3;
-            this.operatorCombo.SelectedIndexChanged += new System.EventHandler( this.operatorCombo_SelectedIndexChanged );
+            this.operatorCombo.SelectedIndexChanged += new System.EventHandler(this.operatorCombo_SelectedIndexChanged);
             // 
             // OkButton
             // 
-            this.OkButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.OkButton.DialogResult = DialogResult.OK;
-            this.OkButton.FlatStyle = FlatStyle.Flat;
-            this.OkButton.Location = new System.Drawing.Point( 460, 355 );
+            this.OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.OkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OkButton.Location = new System.Drawing.Point(814, 830);
             this.OkButton.Name = "OkButton";
+            this.OkButton.Size = new System.Drawing.Size(195, 49);
             this.OkButton.TabIndex = 4;
             this.OkButton.Text = "Ok";
             // 
             // cancelButton
             // 
-            this.cancelButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 545, 355 );
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(1062, 830);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 5;
             this.cancelButton.Text = "Cancel";
             // 
@@ -294,46 +306,47 @@ namespace IPLab
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.groupBox2.Controls.AddRange( new Control[] {
-																					this.filterPreview} );
-            this.groupBox2.Location = new System.Drawing.Point( 450, 105 );
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.filterPreview);
+            this.groupBox2.Location = new System.Drawing.Point(814, 226);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox2.Size = new System.Drawing.Size(458, 568);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Preview";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(452, 524);
             this.filterPreview.TabIndex = 8;
             // 
             // MathMorphologyForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 627, 396 );
-            this.Controls.AddRange( new Control[] {
-																		  this.groupBox2,
-																		  this.cancelButton,
-																		  this.OkButton,
-																		  this.operatorCombo,
-																		  this.label2,
-																		  this.label1,
-																		  this.sizeCombo,
-																		  this.groupBox1} );
-            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.ClientSize = new System.Drawing.Size(1284, 903);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.OkButton);
+            this.Controls.Add(this.operatorCombo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.sizeCombo);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "MathMorphologyForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mathematical Morphology";
-            this.groupBox1.ResumeLayout( false );
-            this.groupBox2.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
 
         }
         #endregion

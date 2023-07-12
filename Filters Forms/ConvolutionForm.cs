@@ -99,141 +99,153 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.cancelButton = new Button( );
-            this.okButton = new Button( );
-            this.operatorCombo = new ComboBox( );
-            this.label2 = new Label( );
-            this.sizeCombo = new ComboBox( );
-            this.groupBox1 = new GroupBox( );
-            this.loadButton = new Button( );
-            this.saveButton = new Button( );
-            this.grid = new IPLab.GridArrayInt( );
-            this.label1 = new Label( );
-            this.sfd = new SaveFileDialog( );
-            this.ofd = new OpenFileDialog( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.groupBox2 = new GroupBox( );
-            this.groupBox1.SuspendLayout( );
-            this.groupBox2.SuspendLayout( );
-            this.SuspendLayout( );
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            this.operatorCombo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sizeCombo = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.loadButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.grid = new IPLab.GridArrayInt();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sfd = new System.Windows.Forms.SaveFileDialog();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // cancelButton
             // 
-            this.cancelButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 545, 355 );
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(1273, 946);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 5;
             this.cancelButton.Text = "Cancel";
             // 
             // okButton
             // 
-            this.okButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 460, 355 );
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(1052, 946);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 49);
             this.okButton.TabIndex = 4;
             this.okButton.Text = "Ok";
             // 
             // operatorCombo
             // 
-            this.operatorCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.operatorCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.operatorCombo.Items.AddRange( new object[] {
-															   "Convolution",
-															   "Correlation"} );
-            this.operatorCombo.Location = new System.Drawing.Point( 450, 75 );
+            this.operatorCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.operatorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.operatorCombo.Items.AddRange(new object[] {
+            "Convolution",
+            "Correlation"});
+            this.operatorCombo.Location = new System.Drawing.Point(1004, 152);
             this.operatorCombo.Name = "operatorCombo";
-            this.operatorCombo.Size = new System.Drawing.Size( 170, 21 );
+            this.operatorCombo.Size = new System.Drawing.Size(442, 40);
             this.operatorCombo.TabIndex = 3;
-            this.operatorCombo.SelectedIndexChanged += new System.EventHandler( this.operatorCombo_SelectedIndexChanged );
+            this.operatorCombo.SelectedIndexChanged += new System.EventHandler(this.operatorCombo_SelectedIndexChanged);
             // 
             // label2
             // 
-            this.label2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.label2.Location = new System.Drawing.Point( 450, 60 );
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Location = new System.Drawing.Point(1004, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 62, 15 );
+            this.label2.Size = new System.Drawing.Size(161, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Operation:";
             // 
             // sizeCombo
             // 
-            this.sizeCombo.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.sizeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.sizeCombo.Location = new System.Drawing.Point( 450, 30 );
+            this.sizeCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sizeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sizeCombo.Location = new System.Drawing.Point(1004, 55);
             this.sizeCombo.Name = "sizeCombo";
-            this.sizeCombo.Size = new System.Drawing.Size( 170, 21 );
+            this.sizeCombo.Size = new System.Drawing.Size(442, 40);
             this.sizeCombo.TabIndex = 1;
-            this.sizeCombo.SelectedIndexChanged += new System.EventHandler( this.sizeCombo_SelectedIndexChanged );
+            this.sizeCombo.SelectedIndexChanged += new System.EventHandler(this.sizeCombo_SelectedIndexChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
-                | AnchorStyles.Left )
-                | AnchorStyles.Right );
-            this.groupBox1.Controls.AddRange( new Control[] {
-																					this.loadButton,
-																					this.saveButton,
-																					this.grid} );
-            this.groupBox1.Location = new System.Drawing.Point( 10, 10 );
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.loadButton);
+            this.groupBox1.Controls.Add(this.saveButton);
+            this.groupBox1.Controls.Add(this.grid);
+            this.groupBox1.Location = new System.Drawing.Point(26, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 425, 375 );
+            this.groupBox1.Size = new System.Drawing.Size(961, 988);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kernel";
             // 
             // loadButton
             // 
-            this.loadButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.loadButton.FlatStyle = FlatStyle.Flat;
-            this.loadButton.Location = new System.Drawing.Point( 340, 344 );
+            this.loadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.loadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadButton.Location = new System.Drawing.Point(740, 922);
             this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(195, 49);
             this.loadButton.TabIndex = 0;
             this.loadButton.TabStop = false;
             this.loadButton.Text = "&Load";
-            this.loadButton.Click += new System.EventHandler( this.loadButton_Click );
+            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
             // saveButton
             // 
-            this.saveButton.Anchor = ( AnchorStyles.Bottom | AnchorStyles.Right );
-            this.saveButton.FlatStyle = FlatStyle.Flat;
-            this.saveButton.Location = new System.Drawing.Point( 260, 344 );
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Location = new System.Drawing.Point(532, 922);
             this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(195, 49);
             this.saveButton.TabIndex = 1;
             this.saveButton.TabStop = false;
             this.saveButton.Text = "&Save";
-            this.saveButton.Click += new System.EventHandler( this.saveButton_Click );
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // grid
             // 
-            this.grid.Anchor = ( ( ( AnchorStyles.Top | AnchorStyles.Bottom )
-                | AnchorStyles.Left )
-                | AnchorStyles.Right );
+            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.AutoSizeMinHeight = 10;
             this.grid.AutoSizeMinWidth = 10;
             this.grid.AutoStretchColumnsToFitWidth = false;
             this.grid.AutoStretchRowsToFitHeight = false;
-            this.grid.BorderStyle = BorderStyle.FixedSingle;
+            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.grid.ContextMenuStyle = SourceGrid2.ContextMenuStyle.None;
             this.grid.CustomSort = false;
             this.grid.GridToolTipActive = true;
-            this.grid.Location = new System.Drawing.Point( 10, 20 );
+            this.grid.Location = new System.Drawing.Point(26, 43);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size( 405, 315 );
-            this.grid.SpecialKeys = SourceGrid2.GridSpecialKeys.Default;
+            this.grid.Size = new System.Drawing.Size(909, 860);
+            this.grid.SpecialKeys = ((SourceGrid2.GridSpecialKeys)(((((((((((SourceGrid2.GridSpecialKeys.Ctrl_C | SourceGrid2.GridSpecialKeys.Ctrl_V) 
+            | SourceGrid2.GridSpecialKeys.Ctrl_X) 
+            | SourceGrid2.GridSpecialKeys.Delete) 
+            | SourceGrid2.GridSpecialKeys.Arrows) 
+            | SourceGrid2.GridSpecialKeys.Tab) 
+            | SourceGrid2.GridSpecialKeys.PageDownUp) 
+            | SourceGrid2.GridSpecialKeys.Enter) 
+            | SourceGrid2.GridSpecialKeys.Escape) 
+            | SourceGrid2.GridSpecialKeys.Control) 
+            | SourceGrid2.GridSpecialKeys.Shift)));
             this.grid.TabIndex = 2;
             this.grid.TabStop = true;
-            this.grid.ValueChanged += new IPLab.GridArrayInt.GridEventHandler( this.grid_ValueChanged );
+            this.grid.ValueChanged += new IPLab.GridArrayInt.GridEventHandler(this.grid_ValueChanged);
             // 
             // label1
             // 
-            this.label1.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.label1.Location = new System.Drawing.Point( 450, 15 );
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Location = new System.Drawing.Point(1004, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 66, 15 );
+            this.label1.Size = new System.Drawing.Size(172, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kernel size:";
             // 
@@ -252,45 +264,47 @@ namespace IPLab
             // 
             // filterPreview
             // 
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filterPreview.Image = null;
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(461, 586);
             this.filterPreview.TabIndex = 8;
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ( AnchorStyles.Top | AnchorStyles.Right );
-            this.groupBox2.Controls.AddRange( new Control[] {
-																					this.filterPreview} );
-            this.groupBox2.Location = new System.Drawing.Point( 450, 105 );
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.filterPreview);
+            this.groupBox2.Location = new System.Drawing.Point(1007, 219);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox2.Size = new System.Drawing.Size(467, 630);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Preview";
             // 
             // ConvolutionForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 627, 396 );
-            this.Controls.AddRange( new Control[] {
-																		  this.groupBox2,
-																		  this.cancelButton,
-																		  this.okButton,
-																		  this.operatorCombo,
-																		  this.label2,
-																		  this.sizeCombo,
-																		  this.groupBox1,
-																		  this.label1} );
-            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.ClientSize = new System.Drawing.Size(1486, 1034);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.operatorCombo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sizeCombo);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ConvolutionForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Convolution & Correlation";
-            this.groupBox1.ResumeLayout( false );
-            this.groupBox2.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
 
         }
         #endregion

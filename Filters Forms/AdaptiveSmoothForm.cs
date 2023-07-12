@@ -22,7 +22,6 @@ namespace IPLab
         private Button okButton;
         private GroupBox groupBox1;
         private TrackBar trackBar;
-        private PictureBox pictureBox1;
         private IPLab.FilterPreview filterPreview;
         /// <summary>
         /// Required designer variable.
@@ -84,15 +83,13 @@ namespace IPLab
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.filterPreview = new IPLab.FilterPreview();
             this.trackBar = new System.Windows.Forms.TrackBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(26, 39);
+            this.label1.Location = new System.Drawing.Point(30, 337);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 30);
             this.label1.TabIndex = 0;
@@ -100,9 +97,9 @@ namespace IPLab
             // 
             // factorBox
             // 
-            this.factorBox.Location = new System.Drawing.Point(156, 32);
+            this.factorBox.Location = new System.Drawing.Point(160, 330);
             this.factorBox.Name = "factorBox";
-            this.factorBox.Size = new System.Drawing.Size(130, 35);
+            this.factorBox.Size = new System.Drawing.Size(130, 45);
             this.factorBox.TabIndex = 1;
             this.factorBox.TextChanged += new System.EventHandler(this.factorBox_TextChanged);
             // 
@@ -110,7 +107,7 @@ namespace IPLab
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point(312, 345);
+            this.cancelButton.Location = new System.Drawing.Point(759, 859);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 11;
@@ -120,7 +117,7 @@ namespace IPLab
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point(91, 345);
+            this.okButton.Location = new System.Drawing.Point(377, 859);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(195, 49);
             this.okButton.TabIndex = 10;
@@ -131,7 +128,7 @@ namespace IPLab
             this.groupBox1.Controls.Add(this.filterPreview);
             this.groupBox1.Location = new System.Drawing.Point(598, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(442, 376);
+            this.groupBox1.Size = new System.Drawing.Size(780, 766);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preview";
@@ -141,12 +138,12 @@ namespace IPLab
             this.filterPreview.Image = null;
             this.filterPreview.Location = new System.Drawing.Point(26, 32);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size(390, 323);
+            this.filterPreview.Size = new System.Drawing.Size(732, 728);
             this.filterPreview.TabIndex = 13;
             // 
             // trackBar
             // 
-            this.trackBar.Location = new System.Drawing.Point(26, 97);
+            this.trackBar.Location = new System.Drawing.Point(30, 395);
             this.trackBar.Maximum = 100;
             this.trackBar.Minimum = 1;
             this.trackBar.Name = "trackBar";
@@ -156,28 +153,20 @@ namespace IPLab
             this.trackBar.Value = 2;
             this.trackBar.ValueChanged += new System.EventHandler(this.trackBar_ValueChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 323);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(546, 4);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // AdaptiveSmoothForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(1357, 970);
+            this.ClientSize = new System.Drawing.Size(1456, 959);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.trackBar);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.factorBox);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -187,7 +176,6 @@ namespace IPLab
             this.Text = "Adaptive Smooth";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

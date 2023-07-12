@@ -116,366 +116,366 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new GroupBox( );
-            this.ySlider = new IPLab.ColorSlider( );
-            this.maxYBox = new TextBox( );
-            this.label2 = new Label( );
-            this.minYBox = new TextBox( );
-            this.label1 = new Label( );
-            this.groupBox2 = new GroupBox( );
-            this.cbSlider = new IPLab.ColorSlider( );
-            this.maxCbBox = new TextBox( );
-            this.label4 = new Label( );
-            this.minCbBox = new TextBox( );
-            this.label3 = new Label( );
-            this.groupBox3 = new GroupBox( );
-            this.crSlider = new IPLab.ColorSlider( );
-            this.maxCrBox = new TextBox( );
-            this.label5 = new Label( );
-            this.minCrBox = new TextBox( );
-            this.label6 = new Label( );
-            this.groupBox4 = new GroupBox( );
-            this.fillCrBox = new TextBox( );
-            this.label9 = new Label( );
-            this.fillCbBox = new TextBox( );
-            this.label8 = new Label( );
-            this.fillYBox = new TextBox( );
-            this.label7 = new Label( );
-            this.groupBox5 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.label10 = new Label( );
-            this.fillTypeCombo = new ComboBox( );
-            this.okButton = new Button( );
-            this.cancelButton = new Button( );
-            this.groupBox1.SuspendLayout( );
-            this.groupBox2.SuspendLayout( );
-            this.groupBox3.SuspendLayout( );
-            this.groupBox4.SuspendLayout( );
-            this.groupBox5.SuspendLayout( );
-            this.SuspendLayout( );
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ySlider = new IPLab.ColorSlider();
+            this.maxYBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.minYBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbSlider = new IPLab.ColorSlider();
+            this.maxCbBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.minCbBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.crSlider = new IPLab.ColorSlider();
+            this.maxCrBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.minCrBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.fillCrBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.fillCbBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fillYBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.label10 = new System.Windows.Forms.Label();
+            this.fillTypeCombo = new System.Windows.Forms.ComboBox();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add( this.ySlider );
-            this.groupBox1.Controls.Add( this.maxYBox );
-            this.groupBox1.Controls.Add( this.label2 );
-            this.groupBox1.Controls.Add( this.minYBox );
-            this.groupBox1.Controls.Add( this.label1 );
-            this.groupBox1.Location = new System.Drawing.Point( 10, 10 );
+            this.groupBox1.Controls.Add(this.ySlider);
+            this.groupBox1.Controls.Add(this.maxYBox);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.minYBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(26, 81);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 280, 75 );
+            this.groupBox1.Size = new System.Drawing.Size(728, 161);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Y";
             // 
             // ySlider
             // 
-            this.ySlider.Location = new System.Drawing.Point( 8, 45 );
+            this.ySlider.Location = new System.Drawing.Point(21, 97);
             this.ySlider.Name = "ySlider";
-            this.ySlider.Size = new System.Drawing.Size( 263, 23 );
+            this.ySlider.Size = new System.Drawing.Size(684, 49);
             this.ySlider.TabIndex = 4;
             this.ySlider.Type = IPLab.ColorSliderType.InnerGradient;
-            this.ySlider.ValuesChanged += new System.EventHandler( this.ySlider_ValuesChanged );
+            this.ySlider.ValuesChanged += new System.EventHandler(this.ySlider_ValuesChanged);
             // 
             // maxYBox
             // 
-            this.maxYBox.Location = new System.Drawing.Point( 218, 20 );
+            this.maxYBox.Location = new System.Drawing.Point(567, 43);
             this.maxYBox.Name = "maxYBox";
-            this.maxYBox.Size = new System.Drawing.Size( 50, 20 );
+            this.maxYBox.Size = new System.Drawing.Size(130, 45);
             this.maxYBox.TabIndex = 3;
-            this.maxYBox.Text = "";
-            this.maxYBox.TextChanged += new System.EventHandler( this.maxYBox_TextChanged );
+            this.maxYBox.TextChanged += new System.EventHandler(this.maxYBox_TextChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 186, 23 );
+            this.label2.Location = new System.Drawing.Point(484, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 30, 15 );
+            this.label2.Size = new System.Drawing.Size(78, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Max:";
             // 
             // minYBox
             // 
-            this.minYBox.Location = new System.Drawing.Point( 40, 20 );
+            this.minYBox.Location = new System.Drawing.Point(104, 43);
             this.minYBox.Name = "minYBox";
-            this.minYBox.Size = new System.Drawing.Size( 50, 20 );
+            this.minYBox.Size = new System.Drawing.Size(130, 45);
             this.minYBox.TabIndex = 1;
-            this.minYBox.Text = "";
-            this.minYBox.TextChanged += new System.EventHandler( this.minYBox_TextChanged );
+            this.minYBox.TextChanged += new System.EventHandler(this.minYBox_TextChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 23 );
+            this.label1.Location = new System.Drawing.Point(26, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 30, 16 );
+            this.label1.Size = new System.Drawing.Size(78, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Min:";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add( this.cbSlider );
-            this.groupBox2.Controls.Add( this.maxCbBox );
-            this.groupBox2.Controls.Add( this.label4 );
-            this.groupBox2.Controls.Add( this.minCbBox );
-            this.groupBox2.Controls.Add( this.label3 );
-            this.groupBox2.Location = new System.Drawing.Point( 10, 90 );
+            this.groupBox2.Controls.Add(this.cbSlider);
+            this.groupBox2.Controls.Add(this.maxCbBox);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.minCbBox);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(26, 253);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size( 280, 75 );
+            this.groupBox2.Size = new System.Drawing.Size(728, 161);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cb";
             // 
             // cbSlider
             // 
-            this.cbSlider.Location = new System.Drawing.Point( 8, 45 );
+            this.cbSlider.Location = new System.Drawing.Point(21, 97);
             this.cbSlider.Name = "cbSlider";
-            this.cbSlider.Size = new System.Drawing.Size( 263, 23 );
+            this.cbSlider.Size = new System.Drawing.Size(684, 49);
             this.cbSlider.TabIndex = 4;
             this.cbSlider.Type = IPLab.ColorSliderType.InnerGradient;
-            this.cbSlider.ValuesChanged += new System.EventHandler( this.cbSlider_ValuesChanged );
+            this.cbSlider.ValuesChanged += new System.EventHandler(this.cbSlider_ValuesChanged);
             // 
             // maxCbBox
             // 
-            this.maxCbBox.Location = new System.Drawing.Point( 218, 20 );
+            this.maxCbBox.Location = new System.Drawing.Point(567, 43);
             this.maxCbBox.Name = "maxCbBox";
-            this.maxCbBox.Size = new System.Drawing.Size( 50, 20 );
+            this.maxCbBox.Size = new System.Drawing.Size(130, 45);
             this.maxCbBox.TabIndex = 3;
-            this.maxCbBox.Text = "";
-            this.maxCbBox.TextChanged += new System.EventHandler( this.maxCbBox_TextChanged );
+            this.maxCbBox.TextChanged += new System.EventHandler(this.maxCbBox_TextChanged);
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point( 186, 23 );
+            this.label4.Location = new System.Drawing.Point(484, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size( 30, 15 );
+            this.label4.Size = new System.Drawing.Size(78, 32);
             this.label4.TabIndex = 2;
             this.label4.Text = "Max:";
             // 
             // minCbBox
             // 
-            this.minCbBox.Location = new System.Drawing.Point( 40, 20 );
+            this.minCbBox.Location = new System.Drawing.Point(104, 43);
             this.minCbBox.Name = "minCbBox";
-            this.minCbBox.Size = new System.Drawing.Size( 50, 20 );
+            this.minCbBox.Size = new System.Drawing.Size(130, 45);
             this.minCbBox.TabIndex = 1;
-            this.minCbBox.Text = "";
-            this.minCbBox.TextChanged += new System.EventHandler( this.minCbBox_TextChanged );
+            this.minCbBox.TextChanged += new System.EventHandler(this.minCbBox_TextChanged);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point( 10, 23 );
+            this.label3.Location = new System.Drawing.Point(26, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 30, 15 );
+            this.label3.Size = new System.Drawing.Size(78, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Min:";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add( this.crSlider );
-            this.groupBox3.Controls.Add( this.maxCrBox );
-            this.groupBox3.Controls.Add( this.label5 );
-            this.groupBox3.Controls.Add( this.minCrBox );
-            this.groupBox3.Controls.Add( this.label6 );
-            this.groupBox3.Location = new System.Drawing.Point( 10, 170 );
+            this.groupBox3.Controls.Add(this.crSlider);
+            this.groupBox3.Controls.Add(this.maxCrBox);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.minCrBox);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Location = new System.Drawing.Point(26, 425);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size( 280, 75 );
+            this.groupBox3.Size = new System.Drawing.Size(728, 162);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cr";
             // 
             // crSlider
             // 
-            this.crSlider.Location = new System.Drawing.Point( 8, 45 );
+            this.crSlider.Location = new System.Drawing.Point(21, 97);
             this.crSlider.Name = "crSlider";
-            this.crSlider.Size = new System.Drawing.Size( 263, 23 );
+            this.crSlider.Size = new System.Drawing.Size(684, 49);
             this.crSlider.TabIndex = 4;
             this.crSlider.Type = IPLab.ColorSliderType.InnerGradient;
-            this.crSlider.ValuesChanged += new System.EventHandler( this.crSlider_ValuesChanged );
+            this.crSlider.ValuesChanged += new System.EventHandler(this.crSlider_ValuesChanged);
             // 
             // maxCrBox
             // 
-            this.maxCrBox.Location = new System.Drawing.Point( 218, 20 );
+            this.maxCrBox.Location = new System.Drawing.Point(567, 43);
             this.maxCrBox.Name = "maxCrBox";
-            this.maxCrBox.Size = new System.Drawing.Size( 50, 20 );
+            this.maxCrBox.Size = new System.Drawing.Size(130, 45);
             this.maxCrBox.TabIndex = 3;
-            this.maxCrBox.Text = "";
-            this.maxCrBox.TextChanged += new System.EventHandler( this.maxCrBox_TextChanged );
+            this.maxCrBox.TextChanged += new System.EventHandler(this.maxCrBox_TextChanged);
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point( 186, 23 );
+            this.label5.Location = new System.Drawing.Point(484, 50);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size( 30, 15 );
+            this.label5.Size = new System.Drawing.Size(78, 32);
             this.label5.TabIndex = 2;
             this.label5.Text = "Max:";
             // 
             // minCrBox
             // 
-            this.minCrBox.Location = new System.Drawing.Point( 40, 20 );
+            this.minCrBox.Location = new System.Drawing.Point(104, 43);
             this.minCrBox.Name = "minCrBox";
-            this.minCrBox.Size = new System.Drawing.Size( 50, 20 );
+            this.minCrBox.Size = new System.Drawing.Size(130, 45);
             this.minCrBox.TabIndex = 1;
-            this.minCrBox.Text = "";
-            this.minCrBox.TextChanged += new System.EventHandler( this.minCrBox_TextChanged );
+            this.minCrBox.TextChanged += new System.EventHandler(this.minCrBox_TextChanged);
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point( 10, 23 );
+            this.label6.Location = new System.Drawing.Point(26, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size( 30, 15 );
+            this.label6.Size = new System.Drawing.Size(78, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Min:";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add( this.fillCrBox );
-            this.groupBox4.Controls.Add( this.label9 );
-            this.groupBox4.Controls.Add( this.fillCbBox );
-            this.groupBox4.Controls.Add( this.label8 );
-            this.groupBox4.Controls.Add( this.fillYBox );
-            this.groupBox4.Controls.Add( this.label7 );
-            this.groupBox4.Location = new System.Drawing.Point( 10, 250 );
+            this.groupBox4.Controls.Add(this.fillCrBox);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.fillCbBox);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.fillYBox);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Location = new System.Drawing.Point(26, 597);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size( 280, 50 );
+            this.groupBox4.Size = new System.Drawing.Size(728, 108);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Fill Color";
             // 
             // fillCrBox
             // 
-            this.fillCrBox.Location = new System.Drawing.Point( 218, 20 );
+            this.fillCrBox.Location = new System.Drawing.Point(567, 43);
             this.fillCrBox.Name = "fillCrBox";
-            this.fillCrBox.Size = new System.Drawing.Size( 50, 20 );
+            this.fillCrBox.Size = new System.Drawing.Size(130, 45);
             this.fillCrBox.TabIndex = 5;
-            this.fillCrBox.Text = "";
-            this.fillCrBox.TextChanged += new System.EventHandler( this.fillCrBox_TextChanged );
+            this.fillCrBox.TextChanged += new System.EventHandler(this.fillCrBox_TextChanged);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point( 195, 23 );
+            this.label9.Location = new System.Drawing.Point(507, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size( 21, 16 );
+            this.label9.Size = new System.Drawing.Size(55, 34);
             this.label9.TabIndex = 4;
             this.label9.Text = "Cr:";
             // 
             // fillCbBox
             // 
-            this.fillCbBox.Location = new System.Drawing.Point( 120, 20 );
+            this.fillCbBox.Location = new System.Drawing.Point(312, 43);
             this.fillCbBox.Name = "fillCbBox";
-            this.fillCbBox.Size = new System.Drawing.Size( 50, 20 );
+            this.fillCbBox.Size = new System.Drawing.Size(130, 45);
             this.fillCbBox.TabIndex = 3;
-            this.fillCbBox.Text = "";
-            this.fillCbBox.TextChanged += new System.EventHandler( this.fillCbBox_TextChanged );
+            this.fillCbBox.TextChanged += new System.EventHandler(this.fillCbBox_TextChanged);
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point( 96, 23 );
+            this.label8.Location = new System.Drawing.Point(250, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size( 25, 15 );
+            this.label8.Size = new System.Drawing.Size(65, 32);
             this.label8.TabIndex = 2;
             this.label8.Text = "Cb:";
             // 
             // fillYBox
             // 
-            this.fillYBox.Location = new System.Drawing.Point( 30, 20 );
+            this.fillYBox.Location = new System.Drawing.Point(78, 43);
             this.fillYBox.Name = "fillYBox";
-            this.fillYBox.Size = new System.Drawing.Size( 50, 20 );
+            this.fillYBox.Size = new System.Drawing.Size(130, 45);
             this.fillYBox.TabIndex = 1;
-            this.fillYBox.Text = "";
-            this.fillYBox.TextChanged += new System.EventHandler( this.fillYBox_TextChanged );
+            this.fillYBox.TextChanged += new System.EventHandler(this.fillYBox_TextChanged);
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point( 10, 23 );
+            this.label7.Location = new System.Drawing.Point(26, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size( 20, 15 );
+            this.label7.Size = new System.Drawing.Size(52, 32);
             this.label7.TabIndex = 0;
             this.label7.Text = "Y:";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add( this.filterPreview );
-            this.groupBox5.Location = new System.Drawing.Point( 300, 10 );
+            this.groupBox5.Controls.Add(this.filterPreview);
+            this.groupBox5.Location = new System.Drawing.Point(780, 22);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox5.Size = new System.Drawing.Size(683, 622);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Preview";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(677, 578);
             this.filterPreview.TabIndex = 0;
             this.filterPreview.Text = "filterPreview1";
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point( 300, 198 );
+            this.label10.Location = new System.Drawing.Point(793, 673);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size( 52, 15 );
+            this.label10.Size = new System.Drawing.Size(135, 33);
             this.label10.TabIndex = 8;
             this.label10.Text = "Fill type:";
             // 
             // fillTypeCombo
             // 
-            this.fillTypeCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.fillTypeCombo.Items.AddRange( new object[] {
-															   "Outside",
-															   "Inside"} );
-            this.fillTypeCombo.Location = new System.Drawing.Point( 350, 195 );
+            this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fillTypeCombo.Items.AddRange(new object[] {
+            "Outside",
+            "Inside"});
+            this.fillTypeCombo.Location = new System.Drawing.Point(976, 673);
             this.fillTypeCombo.Name = "fillTypeCombo";
-            this.fillTypeCombo.Size = new System.Drawing.Size( 120, 21 );
+            this.fillTypeCombo.Size = new System.Drawing.Size(312, 40);
             this.fillTypeCombo.TabIndex = 9;
-            this.fillTypeCombo.SelectedIndexChanged += new System.EventHandler( this.fillTypeCombo_SelectedIndexChanged );
+            this.fillTypeCombo.SelectedIndexChanged += new System.EventHandler(this.fillTypeCombo_SelectedIndexChanged);
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 310, 275 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(479, 766);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 50);
             this.okButton.TabIndex = 10;
             this.okButton.Text = "Ok";
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 395, 275 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(780, 766);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 50);
             this.cancelButton.TabIndex = 11;
             this.cancelButton.Text = "Cancel";
             // 
             // YCbCrFilteringForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 479, 308 );
-            this.Controls.Add( this.cancelButton );
-            this.Controls.Add( this.okButton );
-            this.Controls.Add( this.fillTypeCombo );
-            this.Controls.Add( this.label10 );
-            this.Controls.Add( this.groupBox5 );
-            this.Controls.Add( this.groupBox4 );
-            this.Controls.Add( this.groupBox2 );
-            this.Controls.Add( this.groupBox1 );
-            this.Controls.Add( this.groupBox3 );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1494, 860);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.fillTypeCombo);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "YCbCrFilteringForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YCbCr Filtering";
-            this.groupBox1.ResumeLayout( false );
-            this.groupBox2.ResumeLayout( false );
-            this.groupBox3.ResumeLayout( false );
-            this.groupBox4.ResumeLayout( false );
-            this.groupBox5.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.ResumeLayout(false);
 
         }
         #endregion

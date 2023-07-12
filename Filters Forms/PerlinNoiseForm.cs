@@ -21,7 +21,6 @@ namespace IPLab
         private Button okButton;
         private GroupBox groupBox1;
         private IPLab.FilterPreview filterPreview;
-        private PictureBox pictureBox1;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -80,65 +79,66 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new Label( );
-            this.effectComboBox = new ComboBox( );
-            this.cancelButton = new Button( );
-            this.okButton = new Button( );
-            this.groupBox1 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.pictureBox1 = new PictureBox( );
-            this.groupBox1.SuspendLayout( );
-            this.SuspendLayout( );
+            this.label1 = new System.Windows.Forms.Label();
+            this.effectComboBox = new System.Windows.Forms.ComboBox();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 18 );
+            this.label1.Location = new System.Drawing.Point(55, 468);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 42, 13 );
+            this.label1.Size = new System.Drawing.Size(109, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Effect:";
             // 
             // effectComboBox
             // 
-            this.effectComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.effectComboBox.Items.AddRange( new object[] {
-																"Marble",
-																"Wood",
-																"Clouds",
-																"Labyrinth",
-																"Textile",
-																"Dirty",
-																"Rusty"} );
-            this.effectComboBox.Location = new System.Drawing.Point( 55, 15 );
+            this.effectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.effectComboBox.Items.AddRange(new object[] {
+            "Marble",
+            "Wood",
+            "Clouds",
+            "Labyrinth",
+            "Textile",
+            "Dirty",
+            "Rusty"});
+            this.effectComboBox.Location = new System.Drawing.Point(193, 464);
             this.effectComboBox.Name = "effectComboBox";
-            this.effectComboBox.Size = new System.Drawing.Size( 140, 21 );
+            this.effectComboBox.Size = new System.Drawing.Size(364, 40);
             this.effectComboBox.TabIndex = 1;
-            this.effectComboBox.SelectedIndexChanged += new System.EventHandler( this.effectComboBox_SelectedIndexChanged );
+            this.effectComboBox.SelectedIndexChanged += new System.EventHandler(this.effectComboBox_SelectedIndexChanged);
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 209, 195 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(793, 929);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 50);
             this.cancelButton.TabIndex = 9;
             this.cancelButton.Text = "Cancel";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 124, 195 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(445, 929);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 50);
             this.okButton.TabIndex = 8;
             this.okButton.Text = "Ok";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add( this.filterPreview );
-            this.groupBox1.Location = new System.Drawing.Point( 230, 10 );
+            this.groupBox1.Controls.Add(this.filterPreview);
+            this.groupBox1.Location = new System.Drawing.Point(598, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox1.Size = new System.Drawing.Size(897, 859);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preview";
@@ -146,40 +146,32 @@ namespace IPLab
             // filterPreview
             // 
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(6, 32);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(885, 810);
             this.filterPreview.TabIndex = 0;
             this.filterPreview.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point( 10, 182 );
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size( 210, 2 );
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // PerlinNoiseForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
-            this.ClientSize = new System.Drawing.Size( 409, 226 );
-            this.Controls.Add( this.pictureBox1 );
-            this.Controls.Add( this.cancelButton );
-            this.Controls.Add( this.okButton );
-            this.Controls.Add( this.groupBox1 );
-            this.Controls.Add( this.effectComboBox );
-            this.Controls.Add( this.label1 );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ClientSize = new System.Drawing.Size(1532, 1037);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.effectComboBox);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PerlinNoiseForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perlin Noise";
-            this.groupBox1.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
 
         }
         #endregion

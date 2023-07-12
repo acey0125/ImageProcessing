@@ -30,16 +30,13 @@ namespace IPLab
         private GroupBox groupBox4;
         private IPLab.FilterPreview filterPreview;
         private IPLab.ColorSlider outSlider;
-        private PictureBox pictureBox3;
         private TextBox outMaxBox;
         private TextBox outMinBox;
         private Label label3;
         private IPLab.ColorSlider inSlider;
-        private PictureBox pictureBox2;
         private IPLab.Histogram histogram;
         private Label label2;
         private TextBox inMinBox;
-        private PictureBox pictureBox1;
         private Label label1;
         private TextBox inMaxBox;
         private ComboBox componentCombo;
@@ -97,225 +94,192 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.cancelButton = new Button( );
-            this.okButton = new Button( );
-            this.groupBox4 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.outSlider = new IPLab.ColorSlider( );
-            this.pictureBox3 = new PictureBox( );
-            this.outMaxBox = new TextBox( );
-            this.outMinBox = new TextBox( );
-            this.label3 = new Label( );
-            this.inSlider = new IPLab.ColorSlider( );
-            this.pictureBox2 = new PictureBox( );
-            this.histogram = new IPLab.Histogram( );
-            this.label2 = new Label( );
-            this.inMinBox = new TextBox( );
-            this.pictureBox1 = new PictureBox( );
-            this.label1 = new Label( );
-            this.inMaxBox = new TextBox( );
-            this.componentCombo = new ComboBox( );
-            this.groupBox4.SuspendLayout( );
-            this.SuspendLayout( );
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.outSlider = new IPLab.ColorSlider();
+            this.outMaxBox = new System.Windows.Forms.TextBox();
+            this.outMinBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.inSlider = new IPLab.ColorSlider();
+            this.histogram = new IPLab.Histogram();
+            this.label2 = new System.Windows.Forms.Label();
+            this.inMinBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.inMaxBox = new System.Windows.Forms.TextBox();
+            this.componentCombo = new System.Windows.Forms.ComboBox();
+            this.groupBox4.SuspendLayout();
+            this.SuspendLayout();
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 385, 300 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(754, 827);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 50);
             this.cancelButton.TabIndex = 42;
             this.cancelButton.Text = "Cancel";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 295, 300 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(380, 827);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 50);
             this.okButton.TabIndex = 41;
             this.okButton.Text = "Ok";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.AddRange( new Control[] {
-																					this.filterPreview} );
-            this.groupBox4.Location = new System.Drawing.Point( 290, 10 );
+            this.groupBox4.Controls.Add(this.filterPreview);
+            this.groupBox4.Location = new System.Drawing.Point(707, 33);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox4.Size = new System.Drawing.Size(721, 788);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Preview";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(715, 744);
             this.filterPreview.TabIndex = 0;
             this.filterPreview.TabStop = false;
             // 
             // outSlider
             // 
-            this.outSlider.Location = new System.Drawing.Point( 8, 295 );
+            this.outSlider.Location = new System.Drawing.Point(25, 701);
             this.outSlider.Name = "outSlider";
-            this.outSlider.Size = new System.Drawing.Size( 262, 20 );
+            this.outSlider.Size = new System.Drawing.Size(681, 43);
             this.outSlider.TabIndex = 39;
             this.outSlider.TabStop = false;
-            this.outSlider.ValuesChanged += new System.EventHandler( this.outSlider_ValuesChanged );
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point( 10, 323 );
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox3.TabIndex = 38;
-            this.pictureBox3.TabStop = false;
+            this.outSlider.ValuesChanged += new System.EventHandler(this.outSlider_ValuesChanged);
             // 
             // outMaxBox
             // 
-            this.outMaxBox.Location = new System.Drawing.Point( 140, 270 );
+            this.outMaxBox.Location = new System.Drawing.Point(368, 648);
             this.outMaxBox.Name = "outMaxBox";
-            this.outMaxBox.Size = new System.Drawing.Size( 50, 20 );
+            this.outMaxBox.Size = new System.Drawing.Size(130, 45);
             this.outMaxBox.TabIndex = 37;
-            this.outMaxBox.Text = "";
-            this.outMaxBox.TextChanged += new System.EventHandler( this.outMaxBox_TextChanged );
+            this.outMaxBox.TextChanged += new System.EventHandler(this.outMaxBox_TextChanged);
             // 
             // outMinBox
             // 
-            this.outMinBox.Location = new System.Drawing.Point( 80, 270 );
+            this.outMinBox.Location = new System.Drawing.Point(212, 648);
             this.outMinBox.Name = "outMinBox";
-            this.outMinBox.Size = new System.Drawing.Size( 50, 20 );
+            this.outMinBox.Size = new System.Drawing.Size(130, 45);
             this.outMinBox.TabIndex = 36;
-            this.outMinBox.Text = "";
-            this.outMinBox.TextChanged += new System.EventHandler( this.outMinBox_TextChanged );
+            this.outMinBox.TextChanged += new System.EventHandler(this.outMinBox_TextChanged);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point( 10, 273 );
+            this.label3.Location = new System.Drawing.Point(30, 654);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 73, 17 );
+            this.label3.Size = new System.Drawing.Size(190, 37);
             this.label3.TabIndex = 35;
             this.label3.Text = "&Output levels:";
             // 
             // inSlider
             // 
-            this.inSlider.Location = new System.Drawing.Point( 8, 232 );
+            this.inSlider.Location = new System.Drawing.Point(25, 566);
             this.inSlider.Max = 253;
             this.inSlider.Min = 2;
             this.inSlider.Name = "inSlider";
-            this.inSlider.Size = new System.Drawing.Size( 262, 20 );
+            this.inSlider.Size = new System.Drawing.Size(681, 43);
             this.inSlider.TabIndex = 34;
             this.inSlider.TabStop = false;
-            this.inSlider.ValuesChanged += new System.EventHandler( this.inSlider_ValuesChanged );
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point( 10, 260 );
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
+            this.inSlider.ValuesChanged += new System.EventHandler(this.inSlider_ValuesChanged);
             // 
             // histogram
             // 
-            this.histogram.Location = new System.Drawing.Point( 10, 75 );
+            this.histogram.Location = new System.Drawing.Point(30, 228);
             this.histogram.Name = "histogram";
-            this.histogram.Size = new System.Drawing.Size( 258, 162 );
+            this.histogram.Size = new System.Drawing.Size(671, 348);
             this.histogram.TabIndex = 32;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 10, 53 );
+            this.label2.Location = new System.Drawing.Point(30, 180);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 65, 17 );
+            this.label2.Size = new System.Drawing.Size(169, 37);
             this.label2.TabIndex = 29;
             this.label2.Text = "&Input levels:";
             // 
             // inMinBox
             // 
-            this.inMinBox.Location = new System.Drawing.Point( 80, 50 );
+            this.inMinBox.Location = new System.Drawing.Point(212, 174);
             this.inMinBox.Name = "inMinBox";
-            this.inMinBox.Size = new System.Drawing.Size( 50, 20 );
+            this.inMinBox.Size = new System.Drawing.Size(130, 45);
             this.inMinBox.TabIndex = 30;
-            this.inMinBox.Text = "";
-            this.inMinBox.TextChanged += new System.EventHandler( this.inMinBox_TextChanged );
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point( 10, 40 );
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size( 258, 2 );
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.inMinBox.TextChanged += new System.EventHandler(this.inMinBox_TextChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 15 );
+            this.label1.Location = new System.Drawing.Point(30, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 70, 15 );
+            this.label1.Size = new System.Drawing.Size(182, 33);
             this.label1.TabIndex = 26;
             this.label1.Text = "Component:";
             // 
             // inMaxBox
             // 
-            this.inMaxBox.Location = new System.Drawing.Point( 140, 50 );
+            this.inMaxBox.Location = new System.Drawing.Point(368, 174);
             this.inMaxBox.Name = "inMaxBox";
-            this.inMaxBox.Size = new System.Drawing.Size( 50, 20 );
+            this.inMaxBox.Size = new System.Drawing.Size(130, 45);
             this.inMaxBox.TabIndex = 31;
-            this.inMaxBox.Text = "";
-            this.inMaxBox.TextChanged += new System.EventHandler( this.inMaxBox_TextChanged );
+            this.inMaxBox.TextChanged += new System.EventHandler(this.inMaxBox_TextChanged);
             // 
             // componentCombo
             // 
-            this.componentCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.componentCombo.Items.AddRange( new object[] {
-																"Y Channel",
-																"Cb Channel",
-																"Cr Channel"} );
-            this.componentCombo.Location = new System.Drawing.Point( 80, 10 );
+            this.componentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.componentCombo.Items.AddRange(new object[] {
+            "Y Channel",
+            "Cb Channel",
+            "Cr Channel"});
+            this.componentCombo.Location = new System.Drawing.Point(212, 88);
             this.componentCombo.Name = "componentCombo";
-            this.componentCombo.Size = new System.Drawing.Size( 90, 21 );
+            this.componentCombo.Size = new System.Drawing.Size(234, 40);
             this.componentCombo.TabIndex = 27;
-            this.componentCombo.SelectedIndexChanged += new System.EventHandler( this.componentCombo_SelectedIndexChanged );
+            this.componentCombo.SelectedIndexChanged += new System.EventHandler(this.componentCombo_SelectedIndexChanged);
             // 
             // YCbCrLinearForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 469, 333 );
-            this.Controls.AddRange( new Control[] {
-																		  this.cancelButton,
-																		  this.okButton,
-																		  this.groupBox4,
-																		  this.outSlider,
-																		  this.pictureBox3,
-																		  this.outMaxBox,
-																		  this.outMinBox,
-																		  this.label3,
-																		  this.inSlider,
-																		  this.pictureBox2,
-																		  this.histogram,
-																		  this.label2,
-																		  this.inMinBox,
-																		  this.pictureBox1,
-																		  this.label1,
-																		  this.inMaxBox,
-																		  this.componentCombo} );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1440, 926);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.outSlider);
+            this.Controls.Add(this.outMaxBox);
+            this.Controls.Add(this.outMinBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.inSlider);
+            this.Controls.Add(this.histogram);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.inMinBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.inMaxBox);
+            this.Controls.Add(this.componentCombo);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "YCbCrLinearForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YCbCr Linear Correction";
-            this.groupBox4.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox4.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion

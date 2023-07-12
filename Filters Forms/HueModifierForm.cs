@@ -75,115 +75,118 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.groupBox1 = new GroupBox( );
-            this.huePicker = new IPLab.HuePicker( );
-            this.hueBox = new TextBox( );
-            this.label1 = new Label( );
-            this.groupBox2 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new Button( );
-            this.okButton = new Button( );
-            this.groupBox1.SuspendLayout( );
-            this.groupBox2.SuspendLayout( );
-            this.SuspendLayout( );
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.huePicker = new IPLab.HuePicker();
+            this.hueBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.AddRange( new Control[] {
-																					this.huePicker,
-																					this.hueBox,
-																					this.label1} );
-            this.groupBox1.Location = new System.Drawing.Point( 10, 5 );
+            this.groupBox1.Controls.Add(this.huePicker);
+            this.groupBox1.Controls.Add(this.hueBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(26, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 195, 225 );
+            this.groupBox1.Size = new System.Drawing.Size(564, 599);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Hue Value";
             // 
             // huePicker
             // 
-            this.huePicker.Location = new System.Drawing.Point( 10, 45 );
+            this.huePicker.Location = new System.Drawing.Point(65, 191);
             this.huePicker.Name = "huePicker";
-            this.huePicker.Size = new System.Drawing.Size( 170, 170 );
+            this.huePicker.Size = new System.Drawing.Size(442, 366);
             this.huePicker.TabIndex = 2;
             this.huePicker.TabStop = false;
-            this.huePicker.ValuesChanged += new System.EventHandler( this.huePicker_ValuesChanged );
+            this.huePicker.ValuesChanged += new System.EventHandler(this.huePicker_ValuesChanged);
             // 
             // hueBox
             // 
-            this.hueBox.Location = new System.Drawing.Point( 45, 20 );
+            this.hueBox.Location = new System.Drawing.Point(150, 96);
             this.hueBox.Name = "hueBox";
+            this.hueBox.Size = new System.Drawing.Size(260, 45);
             this.hueBox.TabIndex = 1;
-            this.hueBox.Text = "";
-            this.hueBox.TextChanged += new System.EventHandler( this.hueBox_TextChanged );
+            this.hueBox.TextChanged += new System.EventHandler(this.hueBox_TextChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 23 );
+            this.label1.Location = new System.Drawing.Point(59, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 30, 14 );
+            this.label1.Size = new System.Drawing.Size(78, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "&Hue:";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.AddRange( new Control[] {
-																					this.filterPreview} );
-            this.groupBox2.Location = new System.Drawing.Point( 215, 5 );
+            this.groupBox2.Controls.Add(this.filterPreview);
+            this.groupBox2.Location = new System.Drawing.Point(596, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size( 160, 165 );
+            this.groupBox2.Size = new System.Drawing.Size(704, 589);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Preview";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 140, 140 );
+            this.filterPreview.Size = new System.Drawing.Size(698, 545);
             this.filterPreview.TabIndex = 12;
             this.filterPreview.TabStop = false;
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 300, 205 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(695, 691);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "&Cancel";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 215, 205 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(338, 691);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 49);
             this.okButton.TabIndex = 2;
             this.okButton.Text = "&Ok";
             // 
             // HueModifierForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 384, 238 );
-            this.Controls.AddRange( new Control[] {
-																		  this.cancelButton,
-																		  this.okButton,
-																		  this.groupBox2,
-																		  this.groupBox1} );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1312, 795);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HueModifierForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hue Modifier";
-            this.groupBox1.ResumeLayout( false );
-            this.groupBox2.ResumeLayout( false );
-            this.ResumeLayout( false );
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
 
         }
         #endregion

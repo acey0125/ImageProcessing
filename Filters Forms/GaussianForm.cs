@@ -25,7 +25,6 @@ namespace IPLab
         private IPLab.FilterPreview filterPreview;
         private Button cancelButton;
         private Button okButton;
-        private PictureBox pictureBox1;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -83,149 +82,142 @@ namespace IPLab
         /// </summary>
         private void InitializeComponent( )
         {
-            this.label1 = new Label( );
-            this.sigmaTrackBar = new TrackBar( );
-            this.sigmaBox = new TextBox( );
-            this.label2 = new Label( );
-            this.sizeBox = new TextBox( );
-            this.sizeTrackBar = new TrackBar( );
-            this.groupBox3 = new GroupBox( );
-            this.filterPreview = new IPLab.FilterPreview( );
-            this.cancelButton = new Button( );
-            this.okButton = new Button( );
-            this.pictureBox1 = new PictureBox( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).BeginInit( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).BeginInit( );
-            this.groupBox3.SuspendLayout( );
-            this.SuspendLayout( );
+            this.label1 = new System.Windows.Forms.Label();
+            this.sigmaTrackBar = new System.Windows.Forms.TrackBar();
+            this.sigmaBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sizeBox = new System.Windows.Forms.TextBox();
+            this.sizeTrackBar = new System.Windows.Forms.TrackBar();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.filterPreview = new IPLab.FilterPreview();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.sigmaTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point( 10, 13 );
+            this.label1.Location = new System.Drawing.Point(34, 306);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 42, 19 );
+            this.label1.Size = new System.Drawing.Size(109, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sigma:";
             // 
             // sigmaTrackBar
             // 
-            this.sigmaTrackBar.Location = new System.Drawing.Point( 10, 40 );
+            this.sigmaTrackBar.Location = new System.Drawing.Point(34, 364);
             this.sigmaTrackBar.Maximum = 50;
             this.sigmaTrackBar.Name = "sigmaTrackBar";
-            this.sigmaTrackBar.Size = new System.Drawing.Size( 260, 45 );
+            this.sigmaTrackBar.Size = new System.Drawing.Size(676, 90);
             this.sigmaTrackBar.TabIndex = 2;
             this.sigmaTrackBar.TickFrequency = 2;
-            this.sigmaTrackBar.ValueChanged += new System.EventHandler( this.sigmaTrackBar_ValueChanged );
+            this.sigmaTrackBar.ValueChanged += new System.EventHandler(this.sigmaTrackBar_ValueChanged);
             // 
             // sigmaBox
             // 
-            this.sigmaBox.Location = new System.Drawing.Point( 60, 10 );
+            this.sigmaBox.Location = new System.Drawing.Point(164, 300);
             this.sigmaBox.Name = "sigmaBox";
-            this.sigmaBox.Size = new System.Drawing.Size( 60, 20 );
+            this.sigmaBox.Size = new System.Drawing.Size(156, 45);
             this.sigmaBox.TabIndex = 1;
-            this.sigmaBox.Text = "";
-            this.sigmaBox.TextChanged += new System.EventHandler( this.sigmaBox_TextChanged );
+            this.sigmaBox.TextChanged += new System.EventHandler(this.sigmaBox_TextChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point( 10, 93 );
+            this.label2.Location = new System.Drawing.Point(34, 478);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size( 35, 15 );
+            this.label2.Size = new System.Drawing.Size(91, 33);
             this.label2.TabIndex = 3;
             this.label2.Text = "Size:";
             // 
             // sizeBox
             // 
-            this.sizeBox.Location = new System.Drawing.Point( 60, 90 );
+            this.sizeBox.Location = new System.Drawing.Point(164, 472);
             this.sizeBox.Name = "sizeBox";
-            this.sizeBox.Size = new System.Drawing.Size( 60, 20 );
+            this.sizeBox.Size = new System.Drawing.Size(156, 45);
             this.sizeBox.TabIndex = 4;
-            this.sizeBox.Text = "";
-            this.sizeBox.TextChanged += new System.EventHandler( this.sizeBox_TextChanged );
+            this.sizeBox.TextChanged += new System.EventHandler(this.sizeBox_TextChanged);
             // 
             // sizeTrackBar
             // 
             this.sizeTrackBar.LargeChange = 1;
-            this.sizeTrackBar.Location = new System.Drawing.Point( 10, 120 );
+            this.sizeTrackBar.Location = new System.Drawing.Point(34, 536);
             this.sizeTrackBar.Maximum = 9;
             this.sizeTrackBar.Name = "sizeTrackBar";
-            this.sizeTrackBar.Size = new System.Drawing.Size( 260, 45 );
+            this.sizeTrackBar.Size = new System.Drawing.Size(676, 90);
             this.sizeTrackBar.TabIndex = 5;
             this.sizeTrackBar.Value = 1;
-            this.sizeTrackBar.ValueChanged += new System.EventHandler( this.sizeTrackBar_ValueChanged );
+            this.sizeTrackBar.ValueChanged += new System.EventHandler(this.sizeTrackBar_ValueChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add( this.filterPreview );
-            this.groupBox3.Location = new System.Drawing.Point( 280, 5 );
+            this.groupBox3.Controls.Add(this.filterPreview);
+            this.groupBox3.Location = new System.Drawing.Point(754, 53);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size( 170, 175 );
+            this.groupBox3.Size = new System.Drawing.Size(769, 716);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Preview";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point( 10, 15 );
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size( 150, 150 );
+            this.filterPreview.Size = new System.Drawing.Size(763, 672);
             this.filterPreview.TabIndex = 13;
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = DialogResult.Cancel;
-            this.cancelButton.FlatStyle = FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point( 237, 195 );
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Location = new System.Drawing.Point(754, 793);
             this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(195, 50);
             this.cancelButton.TabIndex = 15;
             this.cancelButton.Text = "Cancel";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = DialogResult.OK;
-            this.okButton.FlatStyle = FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point( 152, 195 );
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Location = new System.Drawing.Point(483, 793);
             this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(195, 50);
             this.okButton.TabIndex = 14;
             this.okButton.Text = "Ok";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point( 10, 178 );
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size( 260, 2 );
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // GaussianForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size( 5, 13 );
+            this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size( 464, 226 );
-            this.Controls.Add( this.pictureBox1 );
-            this.Controls.Add( this.cancelButton );
-            this.Controls.Add( this.okButton );
-            this.Controls.Add( this.groupBox3 );
-            this.Controls.Add( this.sizeTrackBar );
-            this.Controls.Add( this.sizeBox );
-            this.Controls.Add( this.sigmaBox );
-            this.Controls.Add( this.label2 );
-            this.Controls.Add( this.sigmaTrackBar );
-            this.Controls.Add( this.label1 );
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(1535, 924);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.sizeTrackBar);
+            this.Controls.Add(this.sizeBox);
+            this.Controls.Add(this.sigmaBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sigmaTrackBar);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GaussianForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gaussian Blur";
-            ( (System.ComponentModel.ISupportInitialize) ( this.sigmaTrackBar ) ).EndInit( );
-            ( (System.ComponentModel.ISupportInitialize) ( this.sizeTrackBar ) ).EndInit( );
-            this.groupBox3.ResumeLayout( false );
-            this.ResumeLayout( false );
+            ((System.ComponentModel.ISupportInitialize)(this.sigmaTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizeTrackBar)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
