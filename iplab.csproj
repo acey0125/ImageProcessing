@@ -156,6 +156,12 @@
     <Compile Include="Filters Forms\ChannelFilteringForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Filters Forms\ColorChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\ColorChanged.Designer.cs">
+      <DependentUpon>ColorChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filters Forms\ColorFilteringForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,12 @@
     </Compile>
     <Compile Include="Filters Forms\MorphForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\MorphologyChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\MorphologyChanged.Designer.cs">
+      <DependentUpon>MorphologyChanged.cs</DependentUpon>
     </Compile>
     <Compile Include="Filters Forms\OilPaintingForm.cs">
       <SubType>Form</SubType>
@@ -290,6 +302,9 @@
     <EmbeddedResource Include="Filters Forms\ChannelFilteringForm.resx">
       <DependentUpon>ChannelFilteringForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Filters Forms\ColorChanged.resx">
+      <DependentUpon>ColorChanged.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\ColorFilteringForm.resx">
       <DependentUpon>ColorFilteringForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\MorphForm.resx">
       <DependentUpon>MorphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters Forms\MorphologyChanged.resx">
+      <DependentUpon>MorphologyChanged.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\OilPaintingForm.resx">
       <DependentUpon>OilPaintingForm.cs</DependentUpon>

@@ -71,7 +71,7 @@ namespace IPLab
             this.propertyGrid.HelpVisible = false;
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(691, 533);
+            this.propertyGrid.Size = new System.Drawing.Size(749, 664);
             this.propertyGrid.TabIndex = 0;
             this.propertyGrid.ToolbarVisible = false;
             // 
@@ -81,7 +81,8 @@ namespace IPLab
             | WeifenLuo.WinFormsUI.ContentStates.DockRight)));
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(691, 533);
+            this.ClientSize = new System.Drawing.Size(749, 664);
+            this.CloseButton = false;
             this.Controls.Add(this.propertyGrid);
             this.Font = new System.Drawing.Font("»ªÎÄÖÐËÎ", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

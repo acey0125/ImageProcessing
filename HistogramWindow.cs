@@ -304,6 +304,7 @@ namespace IPLab
             this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(809, 837);
+            this.CloseButton = false;
             this.Controls.Add(this.logCheck);
             this.Controls.Add(this.maxLabel);
             this.Controls.Add(this.minLabel);
@@ -324,6 +325,7 @@ namespace IPLab
             this.Controls.Add(this.label1);
             this.Controls.Add(this.channelCombo);
             this.Controls.Add(this.histogram);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HideOnClose = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -331,9 +333,10 @@ namespace IPLab
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(718, 603);
             this.Name = "HistogramWindow";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowHint = WeifenLuo.WinFormsUI.DockState.DockRight;
             this.ShowInTaskbar = false;
-            this.Text = "Histogram";
+            this.Text = "2";
             this.ResumeLayout(false);
 
         }
