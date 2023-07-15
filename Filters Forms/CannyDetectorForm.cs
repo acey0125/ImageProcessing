@@ -141,7 +141,7 @@ namespace IPLab
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lowThresholdBox);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(26, 604);
+            this.groupBox2.Location = new System.Drawing.Point(26, 561);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(728, 199);
             this.groupBox2.TabIndex = 3;
@@ -150,7 +150,7 @@ namespace IPLab
             // 
             // thresholdSlider
             // 
-            this.thresholdSlider.Location = new System.Drawing.Point(21, 108);
+            this.thresholdSlider.Location = new System.Drawing.Point(21, 132);
             this.thresholdSlider.Name = "thresholdSlider";
             this.thresholdSlider.Size = new System.Drawing.Size(681, 49);
             this.thresholdSlider.TabIndex = 4;
@@ -159,7 +159,7 @@ namespace IPLab
             // 
             // highThresholdBox
             // 
-            this.highThresholdBox.Location = new System.Drawing.Point(403, 43);
+            this.highThresholdBox.Location = new System.Drawing.Point(506, 44);
             this.highThresholdBox.Name = "highThresholdBox";
             this.highThresholdBox.Size = new System.Drawing.Size(130, 45);
             this.highThresholdBox.TabIndex = 3;
@@ -167,7 +167,7 @@ namespace IPLab
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(312, 50);
+            this.label2.Location = new System.Drawing.Point(397, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 30);
             this.label2.TabIndex = 2;
@@ -201,10 +201,11 @@ namespace IPLab
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point(26, 32);
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size(842, 906);
+            this.filterPreview.Size = new System.Drawing.Size(880, 900);
             this.filterPreview.TabIndex = 13;
             // 
             // cancelButton
@@ -231,6 +232,7 @@ namespace IPLab
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(1678, 1113);

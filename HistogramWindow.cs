@@ -118,7 +118,7 @@ namespace IPLab
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(13, 363);
+            this.label1.Location = new System.Drawing.Point(51, 490);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 35);
             this.label1.TabIndex = 1;
@@ -128,7 +128,7 @@ namespace IPLab
             // 
             this.channelCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.channelCombo.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.channelCombo.Location = new System.Drawing.Point(283, 355);
+            this.channelCombo.Location = new System.Drawing.Point(321, 482);
             this.channelCombo.Name = "channelCombo";
             this.channelCombo.Size = new System.Drawing.Size(338, 40);
             this.channelCombo.TabIndex = 3;
@@ -137,16 +137,16 @@ namespace IPLab
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(15, 474);
+            this.label2.Location = new System.Drawing.Point(53, 601);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 26);
+            this.label2.Size = new System.Drawing.Size(134, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mean:";
             // 
             // meanLabel
             // 
             this.meanLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.meanLabel.Location = new System.Drawing.Point(132, 474);
+            this.meanLabel.Location = new System.Drawing.Point(170, 601);
             this.meanLabel.Name = "meanLabel";
             this.meanLabel.Size = new System.Drawing.Size(104, 30);
             this.meanLabel.TabIndex = 5;
@@ -155,16 +155,16 @@ namespace IPLab
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(15, 517);
+            this.label3.Location = new System.Drawing.Point(53, 644);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 26);
+            this.label3.Size = new System.Drawing.Size(143, 26);
             this.label3.TabIndex = 6;
             this.label3.Text = "Std Dev:";
             // 
             // stdDevLabel
             // 
             this.stdDevLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.stdDevLabel.Location = new System.Drawing.Point(132, 517);
+            this.stdDevLabel.Location = new System.Drawing.Point(170, 644);
             this.stdDevLabel.Name = "stdDevLabel";
             this.stdDevLabel.Size = new System.Drawing.Size(104, 30);
             this.stdDevLabel.TabIndex = 7;
@@ -173,16 +173,16 @@ namespace IPLab
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(15, 560);
+            this.label4.Location = new System.Drawing.Point(53, 687);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 26);
+            this.label4.Size = new System.Drawing.Size(134, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Median:";
             // 
             // medianLabel
             // 
             this.medianLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.medianLabel.Location = new System.Drawing.Point(132, 560);
+            this.medianLabel.Location = new System.Drawing.Point(170, 687);
             this.medianLabel.Name = "medianLabel";
             this.medianLabel.Size = new System.Drawing.Size(104, 30);
             this.medianLabel.TabIndex = 9;
@@ -191,7 +191,7 @@ namespace IPLab
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(327, 474);
+            this.label5.Location = new System.Drawing.Point(365, 601);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 28);
             this.label5.TabIndex = 10;
@@ -200,7 +200,7 @@ namespace IPLab
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(327, 517);
+            this.label6.Location = new System.Drawing.Point(365, 644);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 32);
             this.label6.TabIndex = 11;
@@ -209,16 +209,16 @@ namespace IPLab
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(327, 560);
+            this.label7.Location = new System.Drawing.Point(365, 687);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 35);
+            this.label7.Size = new System.Drawing.Size(184, 35);
             this.label7.TabIndex = 12;
             this.label7.Text = "Percentile:";
             // 
             // levelLabel
             // 
             this.levelLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.levelLabel.Location = new System.Drawing.Point(496, 474);
+            this.levelLabel.Location = new System.Drawing.Point(534, 601);
             this.levelLabel.Name = "levelLabel";
             this.levelLabel.Size = new System.Drawing.Size(156, 32);
             this.levelLabel.TabIndex = 13;
@@ -226,7 +226,7 @@ namespace IPLab
             // countLabel
             // 
             this.countLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.countLabel.Location = new System.Drawing.Point(496, 517);
+            this.countLabel.Location = new System.Drawing.Point(534, 644);
             this.countLabel.Name = "countLabel";
             this.countLabel.Size = new System.Drawing.Size(156, 32);
             this.countLabel.TabIndex = 14;
@@ -234,7 +234,7 @@ namespace IPLab
             // percentileLabel
             // 
             this.percentileLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.percentileLabel.Location = new System.Drawing.Point(496, 560);
+            this.percentileLabel.Location = new System.Drawing.Point(534, 687);
             this.percentileLabel.Name = "percentileLabel";
             this.percentileLabel.Size = new System.Drawing.Size(156, 32);
             this.percentileLabel.TabIndex = 15;
@@ -242,7 +242,7 @@ namespace IPLab
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(15, 603);
+            this.label8.Location = new System.Drawing.Point(53, 730);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 30);
             this.label8.TabIndex = 16;
@@ -251,7 +251,7 @@ namespace IPLab
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(15, 646);
+            this.label9.Location = new System.Drawing.Point(53, 773);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 30);
             this.label9.TabIndex = 17;
@@ -260,7 +260,7 @@ namespace IPLab
             // minLabel
             // 
             this.minLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.minLabel.Location = new System.Drawing.Point(132, 603);
+            this.minLabel.Location = new System.Drawing.Point(170, 730);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(104, 30);
             this.minLabel.TabIndex = 18;
@@ -269,7 +269,7 @@ namespace IPLab
             // maxLabel
             // 
             this.maxLabel.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.maxLabel.Location = new System.Drawing.Point(132, 646);
+            this.maxLabel.Location = new System.Drawing.Point(170, 773);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(104, 30);
             this.maxLabel.TabIndex = 19;
@@ -279,7 +279,7 @@ namespace IPLab
             // 
             this.logCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.logCheck.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.logCheck.Location = new System.Drawing.Point(12, 404);
+            this.logCheck.Location = new System.Drawing.Point(50, 531);
             this.logCheck.Name = "logCheck";
             this.logCheck.Size = new System.Drawing.Size(296, 34);
             this.logCheck.TabIndex = 20;
@@ -290,9 +290,11 @@ namespace IPLab
             // 
             this.histogram.AllowSelection = true;
             this.histogram.Dock = System.Windows.Forms.DockStyle.Top;
+            this.histogram.HistogramHeight = 200;
+            this.histogram.HistogramWidth = 300;
             this.histogram.Location = new System.Drawing.Point(0, 0);
             this.histogram.Name = "histogram";
-            this.histogram.Size = new System.Drawing.Size(809, 349);
+            this.histogram.Size = new System.Drawing.Size(809, 442);
             this.histogram.TabIndex = 0;
             this.histogram.PositionChanged += new IPLab.Histogram.HistogramEventHandler(this.histogram_PositionChanged);
             this.histogram.SelectionChanged += new IPLab.Histogram.HistogramEventHandler(this.histogram_SelectionChanged);
@@ -303,7 +305,7 @@ namespace IPLab
             | WeifenLuo.WinFormsUI.ContentStates.DockRight)));
             this.AutoScaleBaseSize = new System.Drawing.Size(13, 28);
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(809, 837);
+            this.ClientSize = new System.Drawing.Size(809, 873);
             this.CloseButton = false;
             this.Controls.Add(this.logCheck);
             this.Controls.Add(this.maxLabel);

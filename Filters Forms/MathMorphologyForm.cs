@@ -174,7 +174,7 @@ namespace IPLab
             this.legendLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.legendLabel.Location = new System.Drawing.Point(26, 798);
             this.legendLabel.Name = "legendLabel";
-            this.legendLabel.Size = new System.Drawing.Size(624, 39);
+            this.legendLabel.Size = new System.Drawing.Size(270, 39);
             this.legendLabel.TabIndex = 4;
             this.legendLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -187,7 +187,7 @@ namespace IPLab
             this.loadButton.Size = new System.Drawing.Size(195, 50);
             this.loadButton.TabIndex = 2;
             this.loadButton.TabStop = false;
-            this.loadButton.Text = "&Load";
+            this.loadButton.Text = "Load";
             this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
             // saveButton
@@ -199,7 +199,7 @@ namespace IPLab
             this.saveButton.Size = new System.Drawing.Size(195, 50);
             this.saveButton.TabIndex = 3;
             this.saveButton.TabStop = false;
-            this.saveButton.Text = "&Save";
+            this.saveButton.Text = "Save";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // grid

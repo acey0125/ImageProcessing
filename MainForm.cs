@@ -116,6 +116,7 @@ namespace IPLab
         private Panel panel4;
         private PictureBox pictureBox1;
         private Panel panel5;
+        private Timer timer1;
         private IContainer components;
 
 		public MainForm()
@@ -124,7 +125,9 @@ namespace IPLab
 			InitializeComponent();
             customizeDesing();
 			toolBarManager = new ToolBarManager(this, this);
-
+            processingDate();
+            timer1.Interval = 1000;
+            timer1.Start();
 
 			histogramWin.DockStateChanged += new EventHandler(histogram_DockStateChanged);
 			statisticsWin.DockStateChanged += new EventHandler(statistics_DockStateChanged);
@@ -132,6 +135,14 @@ namespace IPLab
 			histogramWin.VisibleChanged += new EventHandler( histogram_VisibleChanged );
 			statisticsWin.VisibleChanged += new EventHandler( statistics_VisibleChanged );
 		}
+
+        private void processingDate()
+        {
+            String date = DateTime.Now.ToString("yyyy/MM/dd");
+            String time = DateTime.Now.ToString("HH:mm:ss");
+           
+            this.infoPanel.Text = "Date: " + date + "       " + " Time: " + time;
+        }
 
         private void customizeDesing()
         {
@@ -228,7 +239,6 @@ namespace IPLab
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelComplex = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -265,6 +275,8 @@ namespace IPLab
             this.fileButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusBar = new IPLab.Controls.CustomStatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -275,7 +287,6 @@ namespace IPLab
             this.infoPanel = new System.Windows.Forms.StatusBarPanel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelComplex.SuspendLayout();
             this.panelBasic.SuspendLayout();
@@ -284,6 +295,7 @@ namespace IPLab
             this.filePanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).BeginInit();
@@ -581,17 +593,8 @@ namespace IPLab
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 370);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 638);
             this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.statusBar);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 370);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1663, 50);
-            this.panel3.TabIndex = 6;
             // 
             // panel2
             // 
@@ -1172,6 +1175,19 @@ namespace IPLab
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.statusBar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 638);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1663, 50);
+            this.panel3.TabIndex = 6;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // statusBar
             // 
             this.statusBar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1194,45 +1210,48 @@ namespace IPLab
             // 
             this.zoomPanel.Name = "zoomPanel";
             this.zoomPanel.ToolTipText = "Zoom coefficient";
-            this.zoomPanel.Width = 50;
+            this.zoomPanel.Width = 60;
             // 
             // sizePanel
             // 
             this.sizePanel.Name = "sizePanel";
             this.sizePanel.ToolTipText = "Image size";
+            this.sizePanel.Width = 110;
             // 
             // selectionPanel
             // 
             this.selectionPanel.Name = "selectionPanel";
             this.selectionPanel.ToolTipText = "Current point and selection size";
+            this.selectionPanel.Width = 110;
             // 
             // colorPanel
             // 
             this.colorPanel.Name = "colorPanel";
             this.colorPanel.ToolTipText = "Current color";
-            this.colorPanel.Width = 135;
+            this.colorPanel.Width = 150;
             // 
             // hslPanel
             // 
             this.hslPanel.Name = "hslPanel";
-            this.hslPanel.Width = 185;
+            this.hslPanel.Width = 200;
             // 
             // ycbcrPanel
             // 
             this.ycbcrPanel.Name = "ycbcrPanel";
-            this.ycbcrPanel.Width = 230;
+            this.ycbcrPanel.Width = 250;
             // 
             // infoPanel
             // 
+            this.infoPanel.Alignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.infoPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Width = 830;
+            this.infoPanel.Width = 750;
             // 
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 37);
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1663, 420);
+            this.ClientSize = new System.Drawing.Size(1663, 688);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
@@ -1247,7 +1266,6 @@ namespace IPLab
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelComplex.ResumeLayout(false);
@@ -1257,6 +1275,7 @@ namespace IPLab
             this.filePanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).EndInit();
@@ -2340,6 +2359,14 @@ namespace IPLab
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             About();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            String date = DateTime.Now.ToString("yyyy/MM/dd");
+            String time = DateTime.Now.ToString("HH:mm:ss");
+
+            this.infoPanel.Text = "Date: " + date+ "       " +" Time: " + time;
         }
     }
 }

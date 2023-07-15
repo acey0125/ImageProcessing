@@ -168,8 +168,20 @@
     <Compile Include="Filters Forms\ContrastForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Filters Forms\ConvolutionChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\ConvolutionChanged.Designer.cs">
+      <DependentUpon>ConvolutionChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filters Forms\ConvolutionForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\EdgeChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\EdgeChanged.Designer.cs">
+      <DependentUpon>EdgeChanged.cs</DependentUpon>
     </Compile>
     <Compile Include="Filters Forms\EuclideanColorFilteringForm.cs">
       <SubType>Form</SubType>
@@ -317,8 +329,14 @@
     <EmbeddedResource Include="Filters Forms\ContrastForm.resx">
       <DependentUpon>ContrastForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Filters Forms\ConvolutionChanged.resx">
+      <DependentUpon>ConvolutionChanged.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\ConvolutionForm.resx">
       <DependentUpon>ConvolutionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters Forms\EdgeChanged.resx">
+      <DependentUpon>EdgeChanged.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\EuclideanColorFilteringForm.resx">
       <DependentUpon>EuclideanColorFilteringForm.cs</DependentUpon>
