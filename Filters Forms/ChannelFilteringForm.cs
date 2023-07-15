@@ -428,9 +428,9 @@ namespace IPLab
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(86, 788);
+            this.label10.Location = new System.Drawing.Point(20, 797);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(174, 31);
+            this.label10.Size = new System.Drawing.Size(193, 31);
             this.label10.TabIndex = 4;
             this.label10.Text = "Red fill type:";
             // 
@@ -452,7 +452,7 @@ namespace IPLab
             this.greenFillTypeCombo.Items.AddRange(new object[] {
             "Outside",
             "Inside"});
-            this.greenFillTypeCombo.Location = new System.Drawing.Point(703, 785);
+            this.greenFillTypeCombo.Location = new System.Drawing.Point(760, 791);
             this.greenFillTypeCombo.Name = "greenFillTypeCombo";
             this.greenFillTypeCombo.Size = new System.Drawing.Size(234, 40);
             this.greenFillTypeCombo.TabIndex = 7;
@@ -464,7 +464,7 @@ namespace IPLab
             this.blueFillTypeCombo.Items.AddRange(new object[] {
             "Outside",
             "Inside"});
-            this.blueFillTypeCombo.Location = new System.Drawing.Point(1219, 785);
+            this.blueFillTypeCombo.Location = new System.Drawing.Point(1267, 788);
             this.blueFillTypeCombo.Name = "blueFillTypeCombo";
             this.blueFillTypeCombo.Size = new System.Drawing.Size(234, 40);
             this.blueFillTypeCombo.TabIndex = 9;
@@ -472,9 +472,9 @@ namespace IPLab
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(523, 788);
+            this.label11.Location = new System.Drawing.Point(505, 788);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(200, 30);
+            this.label11.Size = new System.Drawing.Size(249, 30);
             this.label11.TabIndex = 6;
             this.label11.Text = "Green fill type:";
             // 
@@ -482,7 +482,7 @@ namespace IPLab
             // 
             this.label12.Location = new System.Drawing.Point(1039, 791);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 30);
+            this.label12.Size = new System.Drawing.Size(213, 30);
             this.label12.TabIndex = 8;
             this.label12.Text = "Blue fill type:";
             // 
@@ -490,6 +490,7 @@ namespace IPLab
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(1547, 994);

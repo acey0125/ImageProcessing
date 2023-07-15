@@ -231,6 +231,12 @@
     <Compile Include="Filters Forms\ShrinkForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Filters Forms\ThresholdChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters Forms\ThresholdChanged.Designer.cs">
+      <DependentUpon>ThresholdChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filters Forms\ThresholdForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\ShrinkForm.resx">
       <DependentUpon>ShrinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters Forms\ThresholdChanged.resx">
+      <DependentUpon>ThresholdChanged.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filters Forms\ThresholdForm.resx">
       <DependentUpon>ThresholdForm.cs</DependentUpon>

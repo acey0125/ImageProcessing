@@ -228,6 +228,7 @@ namespace IPLab
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelComplex = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -264,7 +265,6 @@ namespace IPLab
             this.fileButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.statusBar = new IPLab.Controls.CustomStatusBar();
             this.zoomPanel = new System.Windows.Forms.StatusBarPanel();
             this.sizePanel = new System.Windows.Forms.StatusBarPanel();
@@ -275,6 +275,7 @@ namespace IPLab
             this.infoPanel = new System.Windows.Forms.StatusBarPanel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelComplex.SuspendLayout();
             this.panelBasic.SuspendLayout();
@@ -283,7 +284,6 @@ namespace IPLab
             this.filePanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).BeginInit();
@@ -581,8 +581,17 @@ namespace IPLab
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 770);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1663, 370);
             this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.statusBar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 370);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1663, 50);
+            this.panel3.TabIndex = 6;
             // 
             // panel2
             // 
@@ -1163,15 +1172,6 @@ namespace IPLab
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.statusBar);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 770);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1663, 50);
-            this.panel3.TabIndex = 6;
-            // 
             // statusBar
             // 
             this.statusBar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1232,7 +1232,7 @@ namespace IPLab
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 37);
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1663, 820);
+            this.ClientSize = new System.Drawing.Size(1663, 420);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
@@ -1247,6 +1247,7 @@ namespace IPLab
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelComplex.ResumeLayout(false);
@@ -1256,7 +1257,6 @@ namespace IPLab
             this.filePanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.zoomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizePanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectionPanel)).EndInit();

@@ -92,15 +92,15 @@ namespace IPLab
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(26, 391);
+            this.label1.Location = new System.Drawing.Point(62, 390);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 32);
+            this.label1.Size = new System.Drawing.Size(253, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "&Threshold value:";
+            this.label1.Text = "Threshold value:";
             // 
             // thresholdBox
             // 
-            this.thresholdBox.Location = new System.Drawing.Point(260, 385);
+            this.thresholdBox.Location = new System.Drawing.Point(380, 387);
             this.thresholdBox.Name = "thresholdBox";
             this.thresholdBox.Size = new System.Drawing.Size(130, 45);
             this.thresholdBox.TabIndex = 1;
@@ -109,10 +109,10 @@ namespace IPLab
             // slider
             // 
             this.slider.DoubleArrow = false;
-            this.slider.Location = new System.Drawing.Point(21, 449);
+            this.slider.Location = new System.Drawing.Point(-3, 484);
             this.slider.Min = 127;
             this.slider.Name = "slider";
-            this.slider.Size = new System.Drawing.Size(681, 50);
+            this.slider.Size = new System.Drawing.Size(655, 54);
             this.slider.TabIndex = 4;
             this.slider.Type = IPLab.ColorSliderType.Threshold;
             this.slider.ValuesChanged += new System.EventHandler(this.slider_ValuesChanged);
@@ -121,36 +121,37 @@ namespace IPLab
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.okButton.Location = new System.Drawing.Point(382, 836);
+            this.okButton.Location = new System.Drawing.Point(429, 959);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(195, 49);
             this.okButton.TabIndex = 6;
-            this.okButton.Text = "&Ok";
+            this.okButton.Text = "Ok";
             // 
             // cancelButton
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point(835, 836);
+            this.cancelButton.Location = new System.Drawing.Point(896, 959);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(195, 49);
             this.cancelButton.TabIndex = 7;
-            this.cancelButton.Text = "&Cancel";
+            this.cancelButton.Text = "Cancel";
             // 
             // filterPreview
             // 
+            this.filterPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterPreview.Image = null;
-            this.filterPreview.Location = new System.Drawing.Point(6, 32);
+            this.filterPreview.Location = new System.Drawing.Point(3, 41);
             this.filterPreview.Name = "filterPreview";
-            this.filterPreview.Size = new System.Drawing.Size(776, 743);
+            this.filterPreview.Size = new System.Drawing.Size(955, 857);
             this.filterPreview.TabIndex = 12;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.filterPreview);
-            this.groupBox1.Location = new System.Drawing.Point(708, 22);
+            this.groupBox1.Location = new System.Drawing.Point(655, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(788, 781);
+            this.groupBox1.Size = new System.Drawing.Size(961, 901);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preview";
@@ -159,9 +160,10 @@ namespace IPLab
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(1508, 958);
+            this.ClientSize = new System.Drawing.Size(1642, 1046);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);

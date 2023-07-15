@@ -249,6 +249,7 @@ namespace IPLab
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleBaseSize = new System.Drawing.Size(15, 38);
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(1520, 1074);

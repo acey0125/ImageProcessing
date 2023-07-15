@@ -336,7 +336,7 @@ namespace IPLab
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowHint = WeifenLuo.WinFormsUI.DockState.DockRight;
             this.ShowInTaskbar = false;
-            this.Text = "2";
+            this.Text = "Histogram";
             this.ResumeLayout(false);
 
         }

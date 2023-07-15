@@ -375,8 +375,8 @@ namespace IPLab
             // 
             this.fillTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fillTypeCombo.Items.AddRange(new object[] {
-            "Outside",
-            "Inside"});
+            "Inside",
+            "Outside"});
             this.fillTypeCombo.Location = new System.Drawing.Point(293, 777);
             this.fillTypeCombo.Name = "fillTypeCombo";
             this.fillTypeCombo.Size = new System.Drawing.Size(312, 40);
@@ -544,7 +544,7 @@ namespace IPLab
         // Fill type changed
         private void fillTypeCombo_SelectedIndexChanged( object sender, System.EventArgs e )
         {
-            filter.FillOutside = ( fillTypeCombo.SelectedIndex == 0 );
+            filter.FillOutside = ( fillTypeCombo.SelectedIndex == 1 );
             filterPreview.RefreshFilter( );
         }
     }
